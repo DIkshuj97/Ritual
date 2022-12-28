@@ -53,7 +53,6 @@ public class FlashlightAdvanced : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(f_light.intensity);
         if (lifetime < flickLimit && lifetime > 0)
         {
             canFlicker = true;
