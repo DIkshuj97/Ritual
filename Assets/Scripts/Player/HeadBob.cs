@@ -5,16 +5,16 @@ using UnityEngine;
 public class HeadBob : MonoBehaviour
 {
     [Header("Transform references")]
-    public Transform headTransform;
-    public Transform cameraTransform;
-   
+    [SerializeField] private Transform headTransform;
+    [SerializeField] private Transform cameraTransform;
+
     [Header("Head bobbing")]
-    public float bobFrequency = 5f;
-    public float bobHorizonalAmplitude = 0.1f;
-    public float bobverticalAmplitude = 0.1f;
-   [Range(0, 1)] public float headBobSmoothing = 0.1f;
-// State
-    public bool isWalking;
+    [SerializeField] private float bobFrequency = 5f;
+    [SerializeField] private float bobHorizonalAmplitude = 0.1f;
+    [SerializeField] private float bobverticalAmplitude = 0.1f;
+   [Range(0, 1)] [SerializeField] private float headBobSmoothing = 0.1f;
+    // State
+    [HideInInspector] public bool isWalking;
     private float walkingTime;
     private Vector3 targetCameraPosition;
     private void Update()

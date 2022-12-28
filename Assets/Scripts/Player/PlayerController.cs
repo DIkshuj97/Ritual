@@ -23,11 +23,14 @@ public class PlayerController : MonoBehaviour
 
     HeadBob headBobScript;
 
+    public GameObject Flashlight;
+
     void Start()
     {
         headBobScript = GetComponent<HeadBob>();
         characterController = GetComponent<CharacterController>();
         rotation.y = transform.eulerAngles.y;
+        Flashlight.SetActive(false);
     }
 
     void Update()
