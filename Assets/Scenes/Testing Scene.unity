@@ -1192,21 +1192,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2531918283774224101, guid: 44623e9ed9402654ea5d456460f41153,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 2531918283774224101, guid: 44623e9ed9402654ea5d456460f41153,
-        type: 3}
-      propertyPath: m_InnerSpotPercent
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2531918283774224101, guid: 44623e9ed9402654ea5d456460f41153,
-        type: 3}
-      propertyPath: m_CustomSpotLightShadowCone
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 3027216656766828922, guid: 44623e9ed9402654ea5d456460f41153,
         type: 3}
       propertyPath: m_Name
@@ -1266,21 +1251,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8119579072288016544, guid: 44623e9ed9402654ea5d456460f41153,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 11879.485
-      objectReference: {fileID: 0}
-    - target: {fileID: 8119579072288016544, guid: 44623e9ed9402654ea5d456460f41153,
-        type: 3}
-      propertyPath: m_SpotAngle
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 8119579072288016544, guid: 44623e9ed9402654ea5d456460f41153,
-        type: 3}
-      propertyPath: m_InnerSpotAngle
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44623e9ed9402654ea5d456460f41153, type: 3}

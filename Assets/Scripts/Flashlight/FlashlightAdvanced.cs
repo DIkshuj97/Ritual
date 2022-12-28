@@ -8,31 +8,32 @@ public class FlashlightAdvanced : MonoBehaviour
     Light f_light;
 
     [SerializeField] private float lifetime;
-    [SerializeField] private float batteries;
+    float lifeAmount;
+    [SerializeField] private float batteries; // Extra batteries
 
     bool on;
     bool off;
 
-   [SerializeField] private float flickerSpeed;
-   [SerializeField] private float flickerNoise;
+    [SerializeField] private float flickerSpeed;
+    [SerializeField] private float flickerNoise;
 
-    public bool canFlicker = false;
+    [SerializeField] private bool canFlicker = false;
     float flickLimit;
+    [SerializeField] private int flickPercent;
 
-    public float baseIntensity = 1f;
-    public float intensityVariance;
+    [SerializeField] private float baseIntensity = 1f;
+    [SerializeField] private float intensityVariance;
 
     float initialIntensity;
 
-   // public bool stopFlickering = false;
     void Start()
     {
         f_light = GetComponent<Light>();
-        flickLimit = lifetime / 100 * 20;
+        lifeAmount = lifetime;
+        flickLimit = lifetime / 100 * flickPercent;
         initialIntensity = f_light.intensity;
         off = true;
         f_light.enabled = false;
-      //  StartCoroutine(Flicker());
     }
 
     private void TurnOn()
@@ -57,9 +58,9 @@ public class FlashlightAdvanced : MonoBehaviour
         {
             canFlicker = true;
         }
-        if (canFlicker) FlickerUsingPerlinNoise();
+        if (canFlicker) Flicker();
 
-        if (Input.GetKeyDown(KeyCode.F) && off)
+        if (Input.GetKeyDown(KeyCode.F) && off) 
         {
             TurnOn();
         }
@@ -87,26 +88,19 @@ public class FlashlightAdvanced : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R) && batteries >= 1)
         {
-            if (batteries <= 0)
-            {
-                batteries = 0;
-                return;
-            }
             batteries -= 1;
-            lifetime += 10;
-            flickLimit = lifetime / 100 * 20;
-
+            lifetime += lifeAmount;
+            flickLimit = lifetime / 100 * flickPercent;
         }
-
-        // Debug.Log(canFlicker);
-        //  if (Input.GetKeyDown(KeyCode.R) && batteries == 0)
-        //  {
-        //      return;
-        //    }
     }
 
+    public void GotBattery()
+    {
+        if (batteries >= 3) return;
+        batteries++;
+    }
   
-    private void FlickerUsingPerlinNoise()
+    private void Flicker()
     {
         float intensity = baseIntensity + (intensityVariance * baseIntensity) * Mathf.PerlinNoise(Time.time * flickerSpeed, 0f);
 

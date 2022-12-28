@@ -682,10 +682,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 10
-  batteries: 1
+  batteries: 0
   flickerSpeed: 5
   flickerNoise: 0.1
   canFlicker: 0
+  flickPercent: 20
   baseIntensity: 50
   intensityVariance: 200
 --- !u!1 &5360078921073310470
@@ -734,4 +735,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goFollow: {fileID: 2853290959381086445}
-  speed: 3
+  speed: 5
