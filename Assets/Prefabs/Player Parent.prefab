@@ -337,6 +337,7 @@ GameObject:
   - component: {fileID: 2853290959821714014}
   - component: {fileID: 2853290959821714013}
   - component: {fileID: 2853290959821714008}
+  - component: {fileID: 3678442699082215284}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -419,6 +420,24 @@ MonoBehaviour:
   bobverticalAmplitude: 0.1
   headBobSmoothing: 0.1
   isWalking: 0
+--- !u!114 &3678442699082215284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2853290959821714012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba93e6304986e954ba3be987ab0f4fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayRange: 4
+  head: {fileID: 2853290959381086446}
+  handIcon: {fileID: 0}
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &3027216656766828922
 GameObject:
   m_ObjectHideFlags: 0
