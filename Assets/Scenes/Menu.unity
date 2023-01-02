@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 4
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -9264,7 +9264,6 @@ GameObject:
   - component: {fileID: 575907292645785751}
   - component: {fileID: 330691094339069181}
   - component: {fileID: 338788975933931773}
-  - component: {fileID: 573739936226663919}
   - component: {fileID: 393555165227550523}
   - component: {fileID: 352728125062828692}
   m_Layer: 0
@@ -28416,14 +28415,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352949558362107143}
   m_CullTransparentMesh: 0
---- !u!222 &573739936226663919
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 352728125062828683}
-  m_CullTransparentMesh: 0
 --- !u!222 &573745125552774445
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34270,7 +34261,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3158255783648603334}
   - component: {fileID: 2925787170699662398}
-  - component: {fileID: 3160736774806006276}
   - component: {fileID: 2980702111111923012}
   - component: {fileID: 2940375405098727267}
   m_Layer: 0
@@ -34533,14 +34523,6 @@ RectTransform:
   m_AnchoredPosition: {x: 261, y: -38.65}
   m_SizeDelta: {x: 522, y: 77.3}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3160736774806006276
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2940375405098727264}
-  m_CullTransparentMesh: 0
 --- !u!222 &3161247066487226706
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34559,7 +34541,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4554864011957700663}
   - component: {fileID: 4357298229590847695}
-  - component: {fileID: 4557485665550520053}
   - component: {fileID: 4449508664639021493}
   - component: {fileID: 4335857666929054610}
   m_Layer: 0
@@ -34920,14 +34901,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4335942066897924827}
   m_CullTransparentMesh: 0
---- !u!222 &4557485665550520053
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4335857666929054609}
-  m_CullTransparentMesh: 0
 --- !u!224 &4684131443466013993
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34977,14 +34950,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4762636055698504625}
   m_CullTransparentMesh: 0
---- !u!222 &4686950908996421535
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4762586874718591739}
-  m_CullTransparentMesh: 0
 --- !u!114 &4762586874718591736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35010,7 +34975,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4684364543244943709}
   - component: {fileID: 4777245752681085349}
-  - component: {fileID: 4686950908996421535}
   - component: {fileID: 4867195591214180575}
   - component: {fileID: 4762586874718591736}
   m_Layer: 0
@@ -35398,7 +35362,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5178098615946037229}
   - component: {fileID: 4941106614534389525}
-  - component: {fileID: 5176075228199387439}
   - component: {fileID: 4996103185136365167}
   - component: {fileID: 4955756730830101576}
   m_Layer: 0
@@ -35617,14 +35580,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!222 &5176075228199387439
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4955756730830101579}
-  m_CullTransparentMesh: 0
 --- !u!222 &5176655579093068409
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36498,14 +36453,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9094327622196176437}
   m_CullTransparentMesh: 0
---- !u!222 &9018079538022439451
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9094413671495157631}
-  m_CullTransparentMesh: 0
 --- !u!224 &9019762486250918061
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36608,7 +36555,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9020699264680598745}
   - component: {fileID: 9106820749702358049}
-  - component: {fileID: 9018079538022439451}
   - component: {fileID: 9198041565229872475}
   - component: {fileID: 9094413671495157628}
   m_Layer: 0
