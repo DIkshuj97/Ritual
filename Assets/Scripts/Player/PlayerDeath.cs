@@ -9,6 +9,7 @@ public class PlayerDeath : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        anim.enabled = false;
     }
 
     // Update is called once per frame
@@ -19,6 +20,7 @@ public class PlayerDeath : MonoBehaviour
 
     public void TriggerDeath()
     {
+        anim.enabled = true;
         anim.SetTrigger("Death");
         UIManager.ins.bloodScreen.SetActive(true);
     }
