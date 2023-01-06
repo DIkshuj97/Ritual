@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
         characterController.Move(moveDirection * Time.deltaTime);
 
         // Player and Camera rotation
-        if (canMove)
+        if (canMove && !UIManager.ins.gameIsPaused)
         {
            
             rotation.y += Input.GetAxis("Mouse X") * lookSpeed;

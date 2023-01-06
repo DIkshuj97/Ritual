@@ -6,7 +6,6 @@ public class PlayerInteract : MonoBehaviour
 {
     [SerializeField] private float rayRange = 4;
     [SerializeField] private Transform head;
-    [SerializeField] private GameObject handIcon;
     [SerializeField] private LayerMask interactLayer;
 
     void Update()
@@ -21,7 +20,7 @@ public class PlayerInteract : MonoBehaviour
         bool hit = Physics.Raycast(ray, out hitInfo, rayRange, interactLayer);
         if (hit)
         {
-           // handIcon.SetActive(true);
+            UIManager.ins.handIcon.SetActive(true);
             GameObject hitObject = hitInfo.transform.gameObject;
             if (hitObject.GetComponent<IInteractable>() != null && Input.GetKeyDown(KeyCode.E))
             {
@@ -29,7 +28,7 @@ public class PlayerInteract : MonoBehaviour
             }
         } else
         {
-           // handIcon.SetActive(false);
+            UIManager.ins.handIcon.SetActive(false);
         }
     }
 }
