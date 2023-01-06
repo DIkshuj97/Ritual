@@ -21,7 +21,7 @@ public class PlayerInteract : MonoBehaviour
         bool hit = Physics.Raycast(ray, out hitInfo, rayRange, interactLayer);
         if (hit)
         {
-            handIcon.SetActive(true);
+           // handIcon.SetActive(true);
             GameObject hitObject = hitInfo.transform.gameObject;
             if (hitObject.GetComponent<IInteractable>() != null && Input.GetKeyDown(KeyCode.E))
             {
@@ -29,7 +29,7 @@ public class PlayerInteract : MonoBehaviour
             }
         } else
         {
-            handIcon.SetActive(false);
+           // handIcon.SetActive(false);
         }
     }
 }
