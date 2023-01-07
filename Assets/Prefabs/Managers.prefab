@@ -45,10 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 229070d6a915dc0419418e04fa295541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameIsPaused: 0
   PauseMenu: {fileID: 0}
   handIcon: {fileID: 0}
   bloodScreen: {fileID: 0}
-  gameIsPaused: 0
+  batteryBar: {fileID: 0}
 --- !u!114 &941990876178393015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,3 +62,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab4ca743e121344291dde3866f11009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  fLightScript: {fileID: 0}

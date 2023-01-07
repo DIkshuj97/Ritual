@@ -173,7 +173,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 1000
+  far clip plane: 1500
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -403,6 +403,7 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 0, z: 0}
   canMove: 1
   Flashlight: {fileID: 5360078921073310470}
+  flashLightScript: {fileID: 477213257}
 --- !u!114 &2853290959821714008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -742,6 +743,7 @@ MonoBehaviour:
   flickPercent: 20
   baseIntensity: 50
   intensityVariance: 200
+  fillvalue: 0
 --- !u!1 &5360078921073310470
 GameObject:
   m_ObjectHideFlags: 0

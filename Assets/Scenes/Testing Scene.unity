@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 4
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -1272,7 +1272,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1924,6 +1924,11 @@ PrefabInstance:
       objectReference: {fileID: 621394937}
     - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
         type: 3}
+      propertyPath: batteryBar
+      value: 
+      objectReference: {fileID: 1905305150}
+    - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
+        type: 3}
       propertyPath: bloodScreen
       value: 
       objectReference: {fileID: 836193820}
@@ -2065,11 +2070,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2853290959733488190, guid: 44623e9ed9402654ea5d456460f41153,
-        type: 3}
-      propertyPath: far clip plane
-      value: 1500
-      objectReference: {fileID: 0}
     - target: {fileID: 3027216656766828922, guid: 44623e9ed9402654ea5d456460f41153,
         type: 3}
       propertyPath: m_Name

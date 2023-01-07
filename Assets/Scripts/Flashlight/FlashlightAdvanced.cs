@@ -9,7 +9,7 @@ public class FlashlightAdvanced : MonoBehaviour
 
     [SerializeField] private float lifetime;
     float lifeAmount;
-    [SerializeField] private float batteries; // Extra batteries
+    public float batteries; // Extra batteries
 
     bool on;
     bool off;
@@ -25,7 +25,7 @@ public class FlashlightAdvanced : MonoBehaviour
     [SerializeField] private float intensityVariance;
 
     float initialIntensity;
-
+   [HideInInspector] public float fillvalue;
     void Start()
     {
         f_light = GetComponent<Light>();
@@ -53,6 +53,8 @@ public class FlashlightAdvanced : MonoBehaviour
     }
     void Update()
     {
+       
+
         if (lifetime < flickLimit && lifetime > 0)
         {
             canFlicker = true;
@@ -91,6 +93,8 @@ public class FlashlightAdvanced : MonoBehaviour
             lifetime += lifeAmount;
             flickLimit = lifetime / 100 * flickPercent;
         }
+
+        fillvalue = lifetime / lifeAmount;
     }
 
     public void GotBattery()

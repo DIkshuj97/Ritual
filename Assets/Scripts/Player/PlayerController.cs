@@ -24,9 +24,11 @@ public class PlayerController : MonoBehaviour
     HeadBob headBobScript;
 
     public GameObject Flashlight;
-
+    public FlashlightAdvanced flashLightScript;
+   
     void Start()
     {
+        GameManager.ins.player = gameObject;
         headBobScript = GetComponent<HeadBob>();
         characterController = GetComponent<CharacterController>();
         rotation.y = transform.eulerAngles.y;

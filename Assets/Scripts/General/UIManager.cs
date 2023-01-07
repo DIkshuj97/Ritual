@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 public class UIManager : MonoBehaviour
 {
     public static UIManager ins;
+    public bool gameIsPaused;
+
     public GameObject PauseMenu;
     public GameObject handIcon;
     public GameObject bloodScreen;
+    public Image batteryBar;
 
-    public bool gameIsPaused;
     private void Awake()
     {
         if (ins != null && ins != this)
@@ -22,7 +24,8 @@ public class UIManager : MonoBehaviour
             ins = this;
         }
     }
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +41,7 @@ public class UIManager : MonoBehaviour
             Pause_ResumeGame();
         }
 
+        batteryBar.fillAmount = GameManager.ins.fLightScript.fillvalue;
     }
     void TurnOffInitially()
     {
