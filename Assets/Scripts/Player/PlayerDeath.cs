@@ -23,5 +23,12 @@ public class PlayerDeath : MonoBehaviour
         anim.enabled = true;
         anim.SetTrigger("Death");
         UIManager.ins.bloodScreen.SetActive(true);
+        StartCoroutine(ShowGameOverMenu());
+    }
+
+    IEnumerator ShowGameOverMenu()
+    {
+        yield return new WaitForSeconds(2);
+        UIManager.ins.gameOverMenu.SetActive(true);
     }
 }

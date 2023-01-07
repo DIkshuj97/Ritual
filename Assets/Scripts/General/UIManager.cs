@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     public bool gameIsPaused;
 
     public GameObject PauseMenu;
+    public GameObject gameOverMenu;
     public GameObject handIcon;
     public GameObject bloodScreen;
     public Image batteryBar;
@@ -46,6 +47,7 @@ public class UIManager : MonoBehaviour
     void TurnOffInitially()
     {
         PauseMenu.SetActive(false);
+        gameOverMenu.SetActive(false);
         handIcon.SetActive(false);
         bloodScreen.SetActive(false);
     }
@@ -72,7 +74,10 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 1;
         AudioListener.pause = false;
     }
-
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     public void Menu()
     {
         SceneManager.LoadScene("Menu");

@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameIsPaused: 0
   PauseMenu: {fileID: 0}
+  gameOverMenu: {fileID: 0}
   handIcon: {fileID: 0}
   bloodScreen: {fileID: 0}
   batteryBar: {fileID: 0}
