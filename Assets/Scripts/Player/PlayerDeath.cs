@@ -16,7 +16,15 @@ public class PlayerDeath : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.G)) TriggerDeath();
-    }   
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {       
+        if (hit.gameObject.layer ==4) //4 : water layer
+        {
+            TriggerDeath();
+        }
+    }
 
     public void TriggerDeath()
     {
