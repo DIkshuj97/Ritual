@@ -1178,6 +1178,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10224f8aa9f587a42852b9526f09ea3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1907348798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1520331953515516337, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+    type: 3}
+  m_PrefabInstance: {fileID: 1520331953153704160}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1935694584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,6 +1311,11 @@ PrefabInstance:
       propertyPath: PauseMenu
       value: 
       objectReference: {fileID: 621394937}
+    - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
+        type: 3}
+      propertyPath: batteryUI
+      value: 
+      objectReference: {fileID: 1907348798}
     - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
         type: 3}
       propertyPath: batteryBar

@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour
     public GameObject handIcon;
     public GameObject bloodScreen;
     public Image batteryBar;
-
+    public GameObject batteryUI;
     private void Awake()
     {
         if (ins != null && ins != this)
@@ -50,6 +50,7 @@ public class UIManager : MonoBehaviour
         gameOverMenu.SetActive(false);
         handIcon.SetActive(false);
         bloodScreen.SetActive(false);
+        batteryUI.SetActive(false);
     }
     void Pause_ResumeGame()
     {
