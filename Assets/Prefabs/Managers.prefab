@@ -55,6 +55,7 @@ MonoBehaviour:
   handIcon: {fileID: 0}
   bloodScreen: {fileID: 0}
   batteryBar: {fileID: 0}
+  batteryUI: {fileID: 0}
 --- !u!114 &941990876178393015
 MonoBehaviour:
   m_ObjectHideFlags: 0
