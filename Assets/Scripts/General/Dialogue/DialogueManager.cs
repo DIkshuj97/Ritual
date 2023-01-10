@@ -13,6 +13,8 @@ public class DialogueManager : MonoBehaviour {
 	private Queue<string> sentences;
 	private bool triggerOnce = true;
 
+	public AudioSource aS;
+	//public AudioClip clickClip;
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
@@ -23,9 +25,11 @@ public class DialogueManager : MonoBehaviour {
 	{
 		if (sentences != null)
         {
-			if (Input.GetKeyDown(KeyCode.E))
+			if (Input.GetKeyDown(KeyCode.E) && animator.GetBool("IsOpen"))
             {
+				//aS.s
 				DisplayNextSentence();
+				SoundManager.ins.PlayExtraAudio("DialogueSkip", aS);
 			}
         }
     }
@@ -57,7 +61,7 @@ public class DialogueManager : MonoBehaviour {
 			EndDialogue();
 			return;
 		}
-
+		
 		string sentence = sentences.Dequeue();
 		StopAllCoroutines();
 		StartCoroutine(TypeSentence(sentence));
@@ -68,11 +72,13 @@ public class DialogueManager : MonoBehaviour {
 		dialogueText.text = "";
 		foreach (char letter in sentence.ToCharArray())
 		{
+			if (triggerOnce) break;
+			SoundManager.ins.PlayExtraAudio("DialogueType", aS);
 			dialogueText.text += letter;
-			yield return null;
+			yield return new WaitForSeconds(0.05f);
 		}
 	}
-
+	
 	void EndDialogue()
 	{
 		triggerOnce = true;

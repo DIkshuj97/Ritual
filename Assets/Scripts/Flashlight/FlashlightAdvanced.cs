@@ -26,6 +26,8 @@ public class FlashlightAdvanced : MonoBehaviour
 
     float initialIntensity;
    [HideInInspector] public float fillvalue;
+
+    [SerializeField] private AudioSource aS;
     void Start()
     {
         f_light = GetComponent<Light>();
@@ -39,6 +41,7 @@ public class FlashlightAdvanced : MonoBehaviour
     private void TurnOn()
     {
         // sound of button on
+        SoundManager.ins.PlayExtraAudio("FlashlightToggle", aS);
         f_light.enabled = true;
         on = true;
         off = false;
@@ -47,6 +50,7 @@ public class FlashlightAdvanced : MonoBehaviour
     private void TurnOff()
     {
         // sound of button off
+        SoundManager.ins.PlayExtraAudio("FlashlightToggle", aS);
         f_light.enabled = false;
         on = false;
         off = true;

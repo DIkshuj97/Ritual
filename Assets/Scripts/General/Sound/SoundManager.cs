@@ -5,6 +5,7 @@ public class SoundManager : MonoBehaviour
 {
     public Sound[] allSfx;
     public Sound[] allMusic;
+    public Sound[] extras;
     public AudioSource EffectsSource;
     public AudioSource MusicSource;
 
@@ -52,6 +53,17 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    void SetExtras(Sound sound,AudioSource _aS)
+    {
+      
+            sound.source = _aS;
+            sound.source.clip = sound.clip;
+
+            sound.source.volume = sound.volume;
+            sound.source.pitch = sound.pitch;
+            sound.source.loop = sound.loop;
+     
+    }
     public void StopSfx()
     {
         EffectsSource.Stop();
@@ -60,7 +72,20 @@ public class SoundManager : MonoBehaviour
     {
         MusicSource.Stop();
     }
-
+    
+    public void PlayExtraAudio(string name,AudioSource aSource)
+    {
+        Sound snd = Array.Find(extras, sound => sound.name == name);
+        SetExtras(snd,aSource);
+        try
+        {
+            snd.source.Play();
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning("extra clip not found");
+        }
+    }
     public void PlaySfx(string name)
     {
         Sound snd = Array.Find(allSfx, sound => sound.name == name);

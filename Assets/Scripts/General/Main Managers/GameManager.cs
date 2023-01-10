@@ -5,9 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager ins;
-    public GameObject player;
+    [HideInInspector] public GameObject player;
 
-    public FlashlightAdvanced fLightScript; //Get Player Controller
+    [HideInInspector] public FlashlightAdvanced fLightScript; //Get Player Controller
     private void Awake()
     {
         if (ins != null && ins != this)
