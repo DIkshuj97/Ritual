@@ -81,6 +81,7 @@ public class UIManager : MonoBehaviour
     }
     public void Menu()
     {
+        Resume();
         SceneManager.LoadScene("Menu");
     }
 
