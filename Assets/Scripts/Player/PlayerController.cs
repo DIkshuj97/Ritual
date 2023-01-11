@@ -26,7 +26,9 @@ public class PlayerController : MonoBehaviour
     public GameObject Flashlight;
     public FlashlightAdvanced flashLightScript;
 
-    public AudioSource audioSource;
+    public AudioSource walkaS;
+    public AudioSource jumpaS;
+
     void Start()
     {
         GameManager.ins.player = gameObject;
@@ -34,7 +36,7 @@ public class PlayerController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         rotation.y = transform.eulerAngles.y;
         Flashlight.SetActive(false);
-        SoundManager.ins.PlayExtraAudio("PlayerWalk", audioSource);
+        SoundManager.ins.PlayExtraAudio("PlayerWalk", walkaS);
     }
 
     void Update()
@@ -50,6 +52,7 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetButton("Jump") && canMove)
             {
+                SoundManager.ins.PlayExtraAudio("PlayerJump", jumpaS);
                 moveDirection.y = jumpSpeed;
             }
         }
@@ -75,7 +78,7 @@ public class PlayerController : MonoBehaviour
         {
             headBobScript.isWalking = false;
             playOnce = true;
-            audioSource.Stop();
+            walkaS.Stop();
         }
 
 
@@ -83,11 +86,11 @@ public class PlayerController : MonoBehaviour
 
         if (canMove && headBobScript.isWalking && characterController.isGrounded)
         {
-            audioSource.UnPause();
+            walkaS.UnPause();
         } else
         {
 
-            audioSource.Pause();
+            walkaS.Pause();
 
         }
 
