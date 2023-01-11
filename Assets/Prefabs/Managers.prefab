@@ -71,6 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   fLightScript: {fileID: 0}
+  crawler: {fileID: 0}
 --- !u!114 &941990878095244552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,6 +120,12 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: Walk
+    clip: {fileID: 8300000, guid: 0a692d23ef99645458cfd49912c5cccf, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
   EffectsSource: {fileID: 4430052137790136163}
   MusicSource: {fileID: 3100070270045308181}

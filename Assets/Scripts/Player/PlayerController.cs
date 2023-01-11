@@ -25,7 +25,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Flashlight;
     public FlashlightAdvanced flashLightScript;
-   
+
+    public AudioSource audioSource;
     void Start()
     {
         GameManager.ins.player = gameObject;
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         rotation.y = transform.eulerAngles.y;
         Flashlight.SetActive(false);
+        SoundManager.ins.PlayExtraAudio("PlayerWalk", audioSource);
     }
 
     void Update()
@@ -63,20 +65,33 @@ public class PlayerController : MonoBehaviour
         // Player and Camera rotation
         if (canMove && !UIManager.ins.gameIsPaused)
         {
-           
+
             rotation.y += Input.GetAxis("Mouse X") * lookSpeed;
             rotation.x += -Input.GetAxis("Mouse Y") * lookSpeed;
             rotation.x = Mathf.Clamp(rotation.x, -lookXLimit, lookXLimit);
             playerHeadCam.localRotation = Quaternion.Euler(rotation.x, 0, 0);
             transform.eulerAngles = new Vector2(0, rotation.y);
-        }else
+        } else
         {
             headBobScript.isWalking = false;
+            playOnce = true;
+            audioSource.Stop();
         }
 
 
         headBobScript.isWalking = (Mathf.Abs(characterController.velocity.x) > 0.1f || Mathf.Abs(characterController.velocity.z) > 0.1f) ? true : false;
 
+        if (canMove && headBobScript.isWalking && characterController.isGrounded)
+        {
+            audioSource.UnPause();
+        } else
+        {
+
+            audioSource.Pause();
+
+        }
+
 
     }
+    bool playOnce = true;
 }
