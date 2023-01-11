@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public FlashlightAdvanced fLightScript; //Get Player Controller
 
-    public Crawler crawler;
+    public AIController crawler;
     private void Awake()
     {
         if (ins != null && ins != this)

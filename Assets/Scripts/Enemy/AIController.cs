@@ -22,13 +22,16 @@ public class AIController : MonoBehaviour
     public LayerMask targetMask;
     public List<Transform> visibleTargts = new List<Transform>();
 
+    public bool isCrawler = false;
+    public bool isCrawlerChasing = false;
+
     NavMeshAgent navMeshAgent;
     GameObject player;
     Vector3 guardPosition;
 
-    float timeSinceLastSawPlayer = Mathf.Infinity;
+    public float timeSinceLastSawPlayer = Mathf.Infinity;
     float timeSinceArrivedAtWaypoint = Mathf.Infinity;
-    float timeSinceAggrevated = Mathf.Infinity;
+    
     int currentWaypointIndex = 0;
 
 
@@ -59,36 +62,40 @@ public class AIController : MonoBehaviour
             PatrolBehaviour();
         }
         UpdateTimers();
-    }
 
-    public void Aggrevate()
-    {
-        timeSinceAggrevated = 0;
+        if(isCrawler)
+        {
+            if (navMeshAgent.velocity.magnitude > 0)
+            {
+                isCrawlerChasing = true;
+            }
+        }
     }
 
     private void UpdateTimers()
     {
         timeSinceLastSawPlayer += Time.deltaTime;
         timeSinceArrivedAtWaypoint += Time.deltaTime;
-        timeSinceAggrevated += Time.deltaTime;
     }
 
     private void AttackBehaviour()
-    {
+    { 
         timeSinceLastSawPlayer = 0;
-        // move enemy to player 
-
-        float distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
-
-        if(distanceToPlayer>attackDistance)
+        
+        if(!GetIsInRange())
         {
             MoveTo(player.transform.position,1f);
         }
         else
         {
-            Debug.Log("attack");
+            navMeshAgent.isStopped = true;
+            player.GetComponentInChildren<PlayerDeath>().TriggerDeath();
         }
-       
+    }
+
+    private bool GetIsInRange()
+    {
+        return Vector3.Distance(transform.position, player.transform.position) < attackDistance;
     }
 
 
@@ -138,17 +145,15 @@ public class AIController : MonoBehaviour
         return distanceToWaypoint < waypointTolerance;
     }
 
-   // private bool IsAggrevated()
-    //{
-        //float distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
-        //return distanceToPlayer < chaseDistance || timeSinceAggrevated < agroCooldownTime;
+  //  private bool IsAggrevated()
+   // {
+    //    float distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
+      //  return distanceToPlayer < chaseDistance || timeSinceAggrevated < agroCooldownTime;
     //}
-
-
 
     private bool IsAggrevated()
     {
-        visibleTargts.Clear();
+       
         Collider[] targetInViewRadius = Physics.OverlapSphere(transform.position, chaseDistance, targetMask);
 
         for (int i = 0; i < targetInViewRadius.Length; i++)
@@ -161,9 +166,10 @@ public class AIController : MonoBehaviour
 
                 if(!Physics.Raycast(transform.position,dirToTarget,disToTarget, obstaclesMask))
                 {
-                   if(!target.GetComponent<Hide>().isHide)
+                   
+                    if (!target.GetComponent<Hide>().isHide)
                     {
-                        visibleTargts.Add(target);
+                       
                         return true;
                     }      
                 }
