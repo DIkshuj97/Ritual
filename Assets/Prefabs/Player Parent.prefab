@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2853290959219142481}
   - component: {fileID: 2853290959219142483}
   - component: {fileID: 2853290959219142482}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2853290959381086446}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 2853290959733488190}
   - component: {fileID: 2853290959733488189}
   - component: {fileID: 2853290959733488184}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FPS Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,8 @@ GameObject:
   - component: {fileID: 3678442699082215284}
   - component: {fileID: 1573516561}
   - component: {fileID: 1573516567}
-  m_Layer: 0
+  - component: {fileID: 6935135205987175241}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -472,6 +473,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdedec557a84ec04ab790bbeb91b6fc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6935135205987175241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2853290959821714012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50eef43327ec3a0448b011ca9e39cadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHide: 0
 --- !u!1 &3027216656766828922
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,7 +497,7 @@ GameObject:
   - component: {fileID: 5252218107005548280}
   m_Layer: 0
   m_Name: Player Parent
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

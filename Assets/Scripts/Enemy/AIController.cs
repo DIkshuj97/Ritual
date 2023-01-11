@@ -89,7 +89,9 @@ public class AIController : MonoBehaviour
         else
         {
             navMeshAgent.isStopped = true;
+            transform.LookAt(player.transform);
             player.GetComponentInChildren<PlayerDeath>().TriggerDeath();
+            enabled = false;
         }
     }
 
