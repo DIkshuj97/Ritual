@@ -77,8 +77,6 @@ public class PlayerController : MonoBehaviour
         } else
         {
             headBobScript.isWalking = false;
-            playOnce = true;
-            walkaS.Stop();
         }
 
 
@@ -89,12 +87,7 @@ public class PlayerController : MonoBehaviour
             walkaS.UnPause();
         } else
         {
-
             walkaS.Pause();
-
         }
-
-
     }
-    bool playOnce = true;
 }

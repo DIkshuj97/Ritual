@@ -121,11 +121,23 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Walk
+  - name: PlayerWalk
     clip: {fileID: 8300000, guid: 0a692d23ef99645458cfd49912c5cccf, type: 3}
     volume: 0.3
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: PlayerJump
+    clip: {fileID: 8300000, guid: a529f901bd51a994ab50b87aa4784457, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WaterJump
+    clip: {fileID: 8300000, guid: 5ddddf6476cd1ca4e8376208a10a8100, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
   EffectsSource: {fileID: 4430052137790136163}
   MusicSource: {fileID: 3100070270045308181}
