@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public GameObject player;
 
     [HideInInspector] public FlashlightAdvanced fLightScript; //Get Player Controller
+
+    public Crawler crawler;
     private void Awake()
     {
         if (ins != null && ins != this)
