@@ -5,9 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager ins;
-    [HideInInspector] public GameObject player;
+    public GameObject player;
 
-    [HideInInspector] public FlashlightAdvanced fLightScript; //Get Player Controller
+     public FlashlightAdvanced fLightScript; //Get Player Controller
 
     public AIController crawler;
     private void Awake()
@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         fLightScript = player.GetComponent<PlayerController>().flashLightScript;
     }
 

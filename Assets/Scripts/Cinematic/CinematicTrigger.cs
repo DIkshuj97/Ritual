@@ -10,6 +10,7 @@ public class CinematicTrigger : MonoBehaviour
     {
         if (!alreadyTriggered && other.gameObject.tag == "Player")
         {
+            Debug.Log("Play");
             GetComponent<PlayableDirector>().Play();
             alreadyTriggered = true;
         }

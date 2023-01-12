@@ -28,12 +28,12 @@ public class CinematicControlRemover : MonoBehaviour
 
     void DisableControl(PlayableDirector pd)
     {
-       // player.GetComponent<PlayerController>().enabled = false;
+       player.GetComponent<PlayerController>().enabled = false;
     }
 
     void EnableControl(PlayableDirector pd)
     {
-      // player.GetComponent<PlayerController>().enabled = true;
+       player.GetComponent<PlayerController>().enabled = true;
     }
 
 }

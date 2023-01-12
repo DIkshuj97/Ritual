@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource walkaS;
     public AudioSource jumpaS;
 
-    void Start()
+    void Awake()
     {
         GameManager.ins.player = gameObject;
         headBobScript = GetComponent<HeadBob>();
