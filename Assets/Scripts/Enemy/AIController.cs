@@ -49,6 +49,7 @@ public class AIController : MonoBehaviour
 
     private void Update()
     {
+        updateAnimator();
         if (IsAggrevated() )
         {
             AttackBehaviour();
@@ -98,6 +99,14 @@ public class AIController : MonoBehaviour
     private bool GetIsInRange()
     {
         return Vector3.Distance(transform.position, player.transform.position) < attackDistance;
+    }
+
+    private void updateAnimator()
+    {
+        Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
+        Vector3 localvelocity = transform.InverseTransformDirection(velocity);
+        float speed = localvelocity.z;
+        GetComponentInChildren<Animator>().SetFloat("ForwardSpeed", speed);
     }
 
 
