@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.19986914, g: 0.19454, b: 0.19840062, a: 1}
+  m_IndirectSpecularColor: {r: 0.19973123, g: 0.19462806, b: 0.19912773, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2059,40 +2059,9 @@ PrefabInstance:
     - target: {fileID: 1036175901091176015, guid: c256e69225cb9e348bd0d1a2d45f229f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029891520632731169, guid: c256e69225cb9e348bd0d1a2d45f229f,
-        type: 3}
-      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4029891520632731169, guid: c256e69225cb9e348bd0d1a2d45f229f,
-        type: 3}
-      propertyPath: viewAngle
-      value: 291
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029891520632731169, guid: c256e69225cb9e348bd0d1a2d45f229f,
-        type: 3}
-      propertyPath: chaseDistance
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029891520632731169, guid: c256e69225cb9e348bd0d1a2d45f229f,
-        type: 3}
-      propertyPath: targetMask.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029891520632731169, guid: c256e69225cb9e348bd0d1a2d45f229f,
-        type: 3}
-      propertyPath: obstaclesMask.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 6151754660898148357, guid: c256e69225cb9e348bd0d1a2d45f229f,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4029891520632731169, guid: c256e69225cb9e348bd0d1a2d45f229f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c256e69225cb9e348bd0d1a2d45f229f, type: 3}
 --- !u!4 &395186752 stripped
 Transform:
@@ -2100,44 +2069,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 395186751}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &395186754 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1036175901091176015, guid: c256e69225cb9e348bd0d1a2d45f229f,
+--- !u!114 &395186755 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 395186755, guid: c256e69225cb9e348bd0d1a2d45f229f,
     type: 3}
   m_PrefabInstance: {fileID: 395186751}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &395186755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395186754}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6625b40bea28f4046ae3be2f7903d604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseDistance: 10
-  attackDistance: 2
-  viewAngle: 248
-  suspicionTime: 3
-  agroCooldownTime: 5
-  patrolPath: {fileID: 0}
-  waypointTolerance: 1
-  waypointDwellTime: 3
-  patrolSpeedFraction: 0.2
-  maxSpeed: 10
-  obstaclesMask:
-    serializedVersion: 2
-    m_Bits: 64
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 128
-  visibleTargts: []
-  isCrawler: 1
-  isCrawlerChasing: 0
-  timeSinceLastSawPlayer: Infinity
 --- !u!1001 &430825050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8674,7 +8617,7 @@ PrefabInstance:
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.036352586
+      value: 0.03635259
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -8684,7 +8627,7 @@ PrefabInstance:
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.06229826
+      value: -0.062298264
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -9208,19 +9151,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 941990876178393015, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
         type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 941990876178393015, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
-        type: 3}
       propertyPath: crawler
       value: 
       objectReference: {fileID: 395186755}
-    - target: {fileID: 941990876178393015, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
-        type: 3}
-      propertyPath: fLightScript
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 941990878095244552, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
         type: 3}
       propertyPath: animator
