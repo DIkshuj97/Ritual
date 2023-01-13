@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 1036175901091176014}
   - component: {fileID: 6428268782440387067}
   - component: {fileID: 2019001008482724752}
+  - component: {fileID: 395186755}
   m_Layer: 0
   m_Name: Crawler
-  m_TagString: Untagged
+  m_TagString: Crawler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,6 +155,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.572195, y: 2.9604828, z: 5.8083305}
   m_Center: {x: -0.26007938, y: 0.48024142, z: -0.244627}
+--- !u!114 &395186755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036175901091176015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6625b40bea28f4046ae3be2f7903d604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaseDistance: 10
+  attackDistance: 2
+  viewAngle: 248
+  suspicionTime: 3
+  agroCooldownTime: 5
+  patrolPath: {fileID: 0}
+  waypointTolerance: 1
+  waypointDwellTime: 3
+  patrolSpeedFraction: 0.2
+  maxSpeed: 10
+  obstaclesMask:
+    serializedVersion: 2
+    m_Bits: 64
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 128
+  visibleTargts: []
+  isCrawler: 1
+  isCrawlerChasing: 0
+  timeSinceLastSawPlayer: Infinity
 --- !u!1001 &6151754660905543013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -227,8 +260,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: aa723b44260e74040869a722c46a85c5, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: aa723b44260e74040869a722c46a85c5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 725b5b9db2e82a7458ff92dc65f06be3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa723b44260e74040869a722c46a85c5, type: 3}
 --- !u!4 &6151754660905942927 stripped

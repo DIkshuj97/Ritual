@@ -139,6 +139,18 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: PlayerDeath
+    clip: {fileID: 8300000, guid: f03ca00748cc75c438092911536058b5, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Heartbeat
+    clip: {fileID: 8300000, guid: 1a4a9c32c8c31304f9efc756d4423fd2, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
   EffectsSource: {fileID: 4430052137790136163}
   MusicSource: {fileID: 3100070270045308181}
 --- !u!1 &3580862854831801306

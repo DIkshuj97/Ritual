@@ -5,11 +5,21 @@ using UnityEngine;
 public class PlayerDeath : MonoBehaviour
 {
     Animator anim;
+    bool TriggerOnce;
+
+    public static bool isAlive;
+
+    AudioSource aS;
+    AudioSource aS_2;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         anim.enabled = false;
+        TriggerOnce = true;
+        isAlive = true;
+        aS = GetComponent<PlayerController>().jumpAS; // for water splash sound
+        aS_2 = GetComponent<PlayerController>().walkAS; // for death sound
     }
 
     // Update is called once per frame
@@ -20,14 +30,18 @@ public class PlayerDeath : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {       
-        if (hit.gameObject.layer ==4) //4 : water layer
+        if (hit.gameObject.layer ==4 && TriggerOnce) //4 : water layer
         {
+            TriggerOnce = false;
+            SoundManager.ins.PlayExtraAudio("WaterJump", aS);
             TriggerDeath();
         }
     }
 
     public void TriggerDeath()
     {
+        SoundManager.ins.PlayExtraAudio("PlayerDeath", aS_2);
+        isAlive = false;
         anim.enabled = true;
         anim.SetTrigger("Death");
         UIManager.ins.bloodScreen.SetActive(true);

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,68 +27,90 @@ public class PlayerController : MonoBehaviour
     public GameObject Flashlight;
     public FlashlightAdvanced flashLightScript;
 
-    public AudioSource walkaS;
-    public AudioSource jumpaS;
+    public AudioSource walkAS;
+    public AudioSource jumpAS;
+    public AudioSource heartBeatAS;
 
     void Awake()
     {
-        GameManager.ins.player = gameObject;
         headBobScript = GetComponent<HeadBob>();
         characterController = GetComponent<CharacterController>();
         rotation.y = transform.eulerAngles.y;
         Flashlight.SetActive(false);
-        SoundManager.ins.PlayExtraAudio("PlayerWalk", walkaS);
+        SoundManager.ins.PlayExtraAudio("PlayerWalk", walkAS);
+        SoundManager.ins.PlayExtraAudio("Heartbeat", heartBeatAS);
     }
 
     void Update()
     {
-        if (characterController.isGrounded)
-        {
-            // We are grounded, so recalculate move direction based on axes
-            Vector3 forward = transform.TransformDirection(Vector3.forward);
-            Vector3 right = transform.TransformDirection(Vector3.right);
-            float curSpeedX = canMove ? speed * Input.GetAxis("Vertical") : 0;
-            float curSpeedY = canMove ? speed * Input.GetAxis("Horizontal") : 0;
-            moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-            if (Input.GetButton("Jump") && canMove)
+        if(PlayerDeath.isAlive)
+        {
+
+            if (characterController.isGrounded)
             {
-                SoundManager.ins.PlayExtraAudio("PlayerJump", jumpaS);
-                moveDirection.y = jumpSpeed;
+                // We are grounded, so recalculate move direction based on axes
+                Vector3 forward = transform.TransformDirection(Vector3.forward);
+                Vector3 right = transform.TransformDirection(Vector3.right);
+                float curSpeedX = canMove ? speed * Input.GetAxis("Vertical") : 0;
+                float curSpeedY = canMove ? speed * Input.GetAxis("Horizontal") : 0;
+                moveDirection = (forward * curSpeedX) + (right * curSpeedY);
+
+                if (Input.GetButton("Jump") && canMove)
+                {
+                    SoundManager.ins.PlayExtraAudio("PlayerJump", jumpAS);
+                    moveDirection.y = jumpSpeed;
+                }
             }
-        }
 
-        // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
-        // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
-        // as an acceleration (ms^-2)
-        moveDirection.y -= gravity * Time.deltaTime;
+            // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
+            // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
+            // as an acceleration (ms^-2)
+            moveDirection.y -= gravity * Time.deltaTime;
 
-        // Move the controller
-        characterController.Move(moveDirection * Time.deltaTime);
+            // Move the controller
+            characterController.Move(moveDirection * Time.deltaTime);
 
-        // Player and Camera rotation
-        if (canMove && !UIManager.ins.gameIsPaused)
-        {
+            // Player and Camera rotation
+            if (canMove && !UIManager.ins.gameIsPaused)
+            {
 
-            rotation.y += Input.GetAxis("Mouse X") * lookSpeed;
-            rotation.x += -Input.GetAxis("Mouse Y") * lookSpeed;
-            rotation.x = Mathf.Clamp(rotation.x, -lookXLimit, lookXLimit);
-            playerHeadCam.localRotation = Quaternion.Euler(rotation.x, 0, 0);
-            transform.eulerAngles = new Vector2(0, rotation.y);
-        } else
-        {
-            headBobScript.isWalking = false;
-        }
+                rotation.y += Input.GetAxis("Mouse X") * lookSpeed;
+                rotation.x += -Input.GetAxis("Mouse Y") * lookSpeed;
+                rotation.x = Mathf.Clamp(rotation.x, -lookXLimit, lookXLimit);
+                playerHeadCam.localRotation = Quaternion.Euler(rotation.x, 0, 0);
+                transform.eulerAngles = new Vector2(0, rotation.y);
+            } else
+            {
+                headBobScript.isWalking = false;
+            }
 
 
-        headBobScript.isWalking = (Mathf.Abs(characterController.velocity.x) > 0.1f || Mathf.Abs(characterController.velocity.z) > 0.1f) ? true : false;
+            headBobScript.isWalking = (Mathf.Abs(characterController.velocity.x) > 0.1f || Mathf.Abs(characterController.velocity.z) > 0.1f) ? true : false;
 
-        if (canMove && headBobScript.isWalking && characterController.isGrounded)
-        {
-            walkaS.UnPause();
-        } else
-        {
-            walkaS.Pause();
+            if (canMove && headBobScript.isWalking && characterController.isGrounded)
+            {
+                walkAS.UnPause();
+            } else
+            {
+                walkAS.Pause();
+            }
+           
+            if(Vector3.Distance(transform.position, GameManager.ins.crawler.transform.position) > 15 && Vector3.Distance(transform.position, GameManager.ins.crawler.transform.position) < 30)
+            {
+                heartBeatAS.UnPause();
+                heartBeatAS.pitch = 0.75f;
+            }
+            else if(Vector3.Distance(transform.position, GameManager.ins.crawler.transform.position) < 15)
+            {
+                heartBeatAS.UnPause();
+                heartBeatAS.pitch = 1;
+            }
+            else if(Vector3.Distance(transform.position, GameManager.ins.crawler.transform.position) > 30)
+            {
+               heartBeatAS.Pause();
+            }
+
         }
     }
 }

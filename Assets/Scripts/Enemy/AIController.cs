@@ -35,9 +35,9 @@ public class AIController : MonoBehaviour
     int currentWaypointIndex = 0;
 
 
-    private void Awake()
+    private void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        player = GameManager.ins.player;
         navMeshAgent = GetComponent<NavMeshAgent>();
         guardPosition = GetGuardPosition();
     }
@@ -85,12 +85,15 @@ public class AIController : MonoBehaviour
         
         if(!GetIsInRange())
         {
+            StopAttack();
             MoveTo(player.transform.position,1f);
         }
         else
         {
             navMeshAgent.isStopped = true;
             transform.LookAt(player.transform);
+            GetComponentInChildren<Animator>().ResetTrigger("Attack");
+            GetComponentInChildren<Animator>().SetTrigger("Attack");
             player.GetComponentInChildren<PlayerDeath>().TriggerDeath();
             enabled = false;
         }
@@ -138,6 +141,12 @@ public class AIController : MonoBehaviour
         GetComponent<NavMeshAgent>().destination = destination;
         navMeshAgent.speed = maxSpeed * Mathf.Clamp01(speedFraction);
         navMeshAgent.isStopped = false;
+    }
+
+    private void StopAttack()
+    {
+        GetComponentInChildren<Animator>().ResetTrigger("Attack");
+        GetComponentInChildren<Animator>().SetTrigger("StopAttack");
     }
 
     private Vector3 GetCurrentWaypoint()

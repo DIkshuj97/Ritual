@@ -5,11 +5,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager ins;
-    public GameObject player;
 
-     public FlashlightAdvanced fLightScript; //Get Player Controller
+    [HideInInspector] public GameObject player;
 
-    public AIController crawler;
+    [HideInInspector] public FlashlightAdvanced fLightScript;
+
+    [HideInInspector] public AIController crawler;
     private void Awake()
     {
         if (ins != null && ins != this)
@@ -20,12 +21,21 @@ public class GameManager : MonoBehaviour
         {
             ins = this;
         }
+        Initiallizer();
     }
+
+    private void Initiallizer()
+    {
+        player = GameObject.FindWithTag("Player");
+        crawler = GameObject.FindWithTag("Crawler").GetComponent<AIController>();
+        GameObject.FindWithTag("Crawler").SetActive(false);
+        fLightScript = player.GetComponent<PlayerController>().flashLightScript;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
-
-        fLightScript = player.GetComponent<PlayerController>().flashLightScript;
     }
 
     // Update is called once per frame
