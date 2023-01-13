@@ -21,14 +21,21 @@ public class GameManager : MonoBehaviour
         {
             ins = this;
         }
+        Initiallizer();
     }
-    // Start is called before the first frame update
-    void Start()
+
+    private void Initiallizer()
     {
         player = GameObject.FindWithTag("Player");
         crawler = GameObject.FindWithTag("Crawler").GetComponent<AIController>();
         GameObject.FindWithTag("Crawler").SetActive(false);
         fLightScript = player.GetComponent<PlayerController>().flashLightScript;
+    }
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
     }
 
     // Update is called once per frame

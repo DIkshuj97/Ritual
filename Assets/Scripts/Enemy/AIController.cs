@@ -35,9 +35,9 @@ public class AIController : MonoBehaviour
     int currentWaypointIndex = 0;
 
 
-    private void Awake()
+    private void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        player = GameManager.ins.player;
         navMeshAgent = GetComponent<NavMeshAgent>();
         guardPosition = GetGuardPosition();
     }

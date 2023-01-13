@@ -18,8 +18,8 @@ public class PlayerDeath : MonoBehaviour
         anim.enabled = false;
         TriggerOnce = true;
         isAlive = true;
-        aS = GetComponent<PlayerController>().jumpaS; // for water splash sound
-        aS_2 = GetComponent<PlayerController>().walkaS; // for death sound
+        aS = GetComponent<PlayerController>().jumpAS; // for water splash sound
+        aS_2 = GetComponent<PlayerController>().walkAS; // for death sound
     }
 
     // Update is called once per frame

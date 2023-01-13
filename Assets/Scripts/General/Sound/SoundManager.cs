@@ -73,6 +73,11 @@ public class SoundManager : MonoBehaviour
         MusicSource.Stop();
     }
     
+    public void SetAudioClip(string name, AudioSource aSource)
+    {
+        Sound snd = Array.Find(extras, sound => sound.name == name);
+        aSource.clip = snd.clip;
+    }
     public void PlayExtraAudio(string name,AudioSource aSource)
     {
         Sound snd = Array.Find(extras, sound => sound.name == name);

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,8 +27,9 @@ public class PlayerController : MonoBehaviour
     public GameObject Flashlight;
     public FlashlightAdvanced flashLightScript;
 
-    public AudioSource walkaS;
-    public AudioSource jumpaS;
+    public AudioSource walkAS;
+    public AudioSource jumpAS;
+    public AudioSource heartBeatAS;
 
     void Awake()
     {
@@ -35,7 +37,8 @@ public class PlayerController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         rotation.y = transform.eulerAngles.y;
         Flashlight.SetActive(false);
-        SoundManager.ins.PlayExtraAudio("PlayerWalk", walkaS);
+        SoundManager.ins.PlayExtraAudio("PlayerWalk", walkAS);
+        SoundManager.ins.PlayExtraAudio("Heartbeat", heartBeatAS);
     }
 
     void Update()
@@ -55,7 +58,7 @@ public class PlayerController : MonoBehaviour
 
                 if (Input.GetButton("Jump") && canMove)
                 {
-                    SoundManager.ins.PlayExtraAudio("PlayerJump", jumpaS);
+                    SoundManager.ins.PlayExtraAudio("PlayerJump", jumpAS);
                     moveDirection.y = jumpSpeed;
                 }
             }
@@ -87,11 +90,27 @@ public class PlayerController : MonoBehaviour
 
             if (canMove && headBobScript.isWalking && characterController.isGrounded)
             {
-                walkaS.UnPause();
+                walkAS.UnPause();
             } else
             {
-                walkaS.Pause();
+                walkAS.Pause();
             }
+           
+            if(Vector3.Distance(transform.position, GameManager.ins.crawler.transform.position) > 15 && Vector3.Distance(transform.position, GameManager.ins.crawler.transform.position) < 30)
+            {
+                heartBeatAS.UnPause();
+                heartBeatAS.pitch = 0.75f;
+            }
+            else if(Vector3.Distance(transform.position, GameManager.ins.crawler.transform.position) < 15)
+            {
+                heartBeatAS.UnPause();
+                heartBeatAS.pitch = 1;
+            }
+            else if(Vector3.Distance(transform.position, GameManager.ins.crawler.transform.position) > 30)
+            {
+               heartBeatAS.Pause();
+            }
+
         }
     }
 }
