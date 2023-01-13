@@ -31,8 +31,9 @@ public class ObjectiveManager : MonoBehaviour
         objAnim = GetComponent<Animator>();
         objGO.SetActive(false);
     }
-    public void PlayAnim(GameObject triggerObj)
+    public void PlayAnim(GameObject triggerObj=null)
     {
+        objAnim.ResetTrigger("Obj");
         trigger = triggerObj;
         objGO.SetActive(true);
         objAnim.SetTrigger("Obj");

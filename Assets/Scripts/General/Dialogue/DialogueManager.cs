@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour {
 	void Start () {
 		sentences = new Queue<string>();
 
-		//StartCoroutine(StartingDialogue());
+		StartCoroutine(StartingDialogue());
 	}
 
 	
@@ -50,8 +50,9 @@ public class DialogueManager : MonoBehaviour {
         {
 			triggerOnce = false;
 
+			Debug.Log(animator.GetBool("IsOpen"));
 			animator.SetBool("IsOpen", true);
-
+			Debug.Log(animator.GetBool("IsOpen"));
 			nameText.text = dialogue.name;
 
 			sentences.Clear();

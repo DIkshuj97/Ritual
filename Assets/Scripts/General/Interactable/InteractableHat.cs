@@ -10,7 +10,7 @@ public class InteractableHat : MonoBehaviour,IInteractable
         var dt = GetComponent<DialogueTrigger>();
         if (dt != null) dt.TriggerDialogue();
         ObjectiveManager.ins.SetText(objectiveText);
-        ObjectiveManager.ins.PlayAnim(gameObject);
+        ObjectiveManager.ins.PlayAnim();
     }
 
 }
