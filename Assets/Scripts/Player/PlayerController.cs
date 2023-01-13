@@ -31,9 +31,11 @@ public class PlayerController : MonoBehaviour
     public AudioSource jumpAS;
     public AudioSource heartBeatAS;
 
+    public static bool playerControl;
 
     private void Start()
     {
+        playerControl = true;
         headBobScript = GetComponent<HeadBob>();
         characterController = GetComponent<CharacterController>();
         rotation.y = transform.eulerAngles.y;
@@ -51,7 +53,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        if(PlayerDeath.isAlive)
+        if(PlayerDeath.isAlive && playerControl)
         {
 
             if (characterController.isGrounded)
@@ -118,6 +120,9 @@ public class PlayerController : MonoBehaviour
                heartBeatAS.Pause();
             }
 
+        }else if(!playerControl)
+        {
+            walkAS.Pause();
         }
     }
 }

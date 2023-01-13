@@ -8,7 +8,7 @@ public class SoundManager : MonoBehaviour
     public Sound[] extras;
     public AudioSource EffectsSource;
     public AudioSource MusicSource;
-
+    [SerializeField] private AudioSource hoverSource;
     public static SoundManager ins;
     void Awake()
     {
@@ -27,6 +27,11 @@ public class SoundManager : MonoBehaviour
         SetAllSfx();
         SetAllMusic();
         // Play("bg_music"); 
+    }
+    public void PlayHover()
+    {
+        hoverSource.ignoreListenerPause = true;
+        PlayExtraAudio("Click", hoverSource);
     }
     void SetAllSfx()
     {

@@ -48,6 +48,9 @@ public class DialogueManager : MonoBehaviour {
 	{
 		if( triggerOnce)
         {
+
+			PlayerController.playerControl = false;
+
 			triggerOnce = false;
 
 			animator.SetBool("IsOpen", true);
@@ -92,6 +95,7 @@ public class DialogueManager : MonoBehaviour {
 	
 	void EndDialogue()
 	{
+		PlayerController.playerControl = true;
 		triggerOnce = true;
 		animator.SetBool("IsOpen", false);
 	}

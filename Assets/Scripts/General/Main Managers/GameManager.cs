@@ -31,17 +31,4 @@ public class GameManager : MonoBehaviour
         GameObject.FindWithTag("Crawler").SetActive(false);
         fLightScript = player.GetComponent<PlayerController>().flashLightScript;
     }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-  
 }
