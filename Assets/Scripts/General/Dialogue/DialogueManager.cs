@@ -14,12 +14,16 @@ public class DialogueManager : MonoBehaviour {
 	private bool triggerOnce = true;
 
 	public AudioSource aS;
+	public DialogueTrigger dialogueTrigger;
 	//public AudioClip clickClip;
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
+
+		//StartCoroutine(StartingDialogue());
 	}
 
+	
 
 	private void Update()
 	{
@@ -33,6 +37,13 @@ public class DialogueManager : MonoBehaviour {
 			}
         }
     }
+
+	IEnumerator StartingDialogue()
+    {
+		yield return new WaitForSeconds(2f);
+		dialogueTrigger.TriggerDialogue();
+    }
+
     public void StartDialogue (Dialogue dialogue)
 	{
 		if( triggerOnce)

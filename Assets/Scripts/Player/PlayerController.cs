@@ -31,7 +31,8 @@ public class PlayerController : MonoBehaviour
     public AudioSource jumpAS;
     public AudioSource heartBeatAS;
 
-    void Awake()
+
+    private void Start()
     {
         headBobScript = GetComponent<HeadBob>();
         characterController = GetComponent<CharacterController>();
@@ -39,6 +40,12 @@ public class PlayerController : MonoBehaviour
         Flashlight.SetActive(false);
         SoundManager.ins.PlayExtraAudio("PlayerWalk", walkAS);
         SoundManager.ins.PlayExtraAudio("Heartbeat", heartBeatAS);
+    }
+
+    public void UseTorch()
+    {
+        Flashlight.SetActive(true);
+        UIManager.ins.batteryUI.SetActive(true);
     }
 
     void Update()
