@@ -50,9 +50,8 @@ public class DialogueManager : MonoBehaviour {
         {
 			triggerOnce = false;
 
-			Debug.Log(animator.GetBool("IsOpen"));
 			animator.SetBool("IsOpen", true);
-			Debug.Log(animator.GetBool("IsOpen"));
+
 			nameText.text = dialogue.name;
 
 			sentences.Clear();

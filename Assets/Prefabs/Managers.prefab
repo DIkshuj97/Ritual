@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 
-    sentences: []
+    name: Story
+    sentences:
+    - ssasdasd
 --- !u!1 &941990876178393014
 GameObject:
   m_ObjectHideFlags: 0

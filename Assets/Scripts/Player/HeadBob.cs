@@ -19,17 +19,20 @@ public class HeadBob : MonoBehaviour
     private Vector3 targetCameraPosition;
     private void Update()
     {
-        // Set time and offset to 0
-        if (!isWalking) walkingTime = 0;
-        else walkingTime += Time.deltaTime;
+        if(PlayerDeath.isAlive)
+        {
+            // Set time and offset to 0
+            if (!isWalking) walkingTime = 0;
+            else walkingTime += Time.deltaTime;
        
-        // Calculate the camera's target position
-        targetCameraPosition = headTransform.position + CalculateHeadBobOffset(walkingTime);
+            // Calculate the camera's target position
+            targetCameraPosition = headTransform.position + CalculateHeadBobOffset(walkingTime);
         
-        // Interpolate positon
-        cameraTransform.position = Vector3.Lerp(cameraTransform.position, targetCameraPosition, headBobSmoothing);
-        // Snap to position 1f it is close enough
-        if((cameraTransform.position - targetCameraPosition).magnitude < -0.001) cameraTransform.position = targetCameraPosition;
+            // Interpolate positon
+            cameraTransform.position = Vector3.Lerp(cameraTransform.position, targetCameraPosition, headBobSmoothing);
+            // Snap to position 1f it is close enough
+            if((cameraTransform.position - targetCameraPosition).magnitude < -0.001) cameraTransform.position = targetCameraPosition;
+        }
     }
 
 

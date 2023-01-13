@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 4
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.19987272, g: 0.1945442, b: 0.19840676, a: 1}
+  m_IndirectSpecularColor: {r: 0.19986457, g: 0.1945422, b: 0.19841427, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1169,12 +1169,12 @@ PrefabInstance:
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.02184422
+      value: 0.02184425
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00040728415
+      value: 0.00040728535
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -1184,7 +1184,7 @@ PrefabInstance:
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.018637253
+      value: -0.018637283
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -5766,6 +5766,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 959022412404836885, guid: c8b0ee0e3965acf4b9c9abc1cf684d17,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 967255921733462944, guid: c8b0ee0e3965acf4b9c9abc1cf684d17,
         type: 3}
       propertyPath: m_Layer
@@ -7155,7 +7160,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Truck
-    sentences: []
+    sentences:
+    - a
+    - b
+    - c
 --- !u!1001 &777247619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11297,7 +11305,7 @@ PrefabInstance:
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.03635259
+      value: 0.036352586
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -11307,7 +11315,7 @@ PrefabInstance:
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.062298264
+      value: -0.06229826
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -13466,18 +13474,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1640530226, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a, type: 3}
-      propertyPath: dialogue.name
-      value: Story
-      objectReference: {fileID: 0}
-    - target: {fileID: 1640530226, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a, type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1640530226, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a, type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: ssasdasd
-      objectReference: {fileID: 0}
     - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
         type: 3}
       propertyPath: handIcon
@@ -24901,6 +24897,7 @@ MonoBehaviour:
     name: Torch
     sentences:
     - hry esfsefs
+    - hry esfsefs
 --- !u!65 &3240646239763418072
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26965,11 +26962,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7265322196802813650, guid: 44623e9ed9402654ea5d456460f41153,
-        type: 3}
-      propertyPath: antialiasing
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7586775966005183888, guid: 44623e9ed9402654ea5d456460f41153,
         type: 3}
