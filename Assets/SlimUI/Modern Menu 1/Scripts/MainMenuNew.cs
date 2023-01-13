@@ -162,7 +162,7 @@ namespace SlimUI.ModernMenu{
 			lineGame.SetActive(false);
 			lineControls.SetActive(false);
 			lineVideo.SetActive(false);
-			lineKeyBindings.SetActive(false);
+			//lineKeyBindings.SetActive(false);
 
 			PanelMovement.SetActive(false);
 			lineMovement.SetActive(false);
@@ -194,28 +194,28 @@ namespace SlimUI.ModernMenu{
 			DisablePanels();
 			MovementPanel();
 			PanelKeyBindings.SetActive(true);
-			lineKeyBindings.SetActive(true);
+			//lineKeyBindings.SetActive(true);
 		}
 
 		public void MovementPanel(){
 			DisablePanels();
 			PanelKeyBindings.SetActive(true);
 			PanelMovement.SetActive(true);
-			lineMovement.SetActive(true);
+			//lineMovement.SetActive(true);
 		}
 
 		public void CombatPanel(){
 			DisablePanels();
 			PanelKeyBindings.SetActive(true);
 			PanelCombat.SetActive(true);
-			lineCombat.SetActive(true);
+			//lineCombat.SetActive(true);
 		}
 
 		public void GeneralPanel(){
 			DisablePanels();
 			PanelKeyBindings.SetActive(true);
 			PanelGeneral.SetActive(true);
-			lineGeneral.SetActive(true);
+			//lineGeneral.SetActive(true);
 		}
 
 		public void PlayHover(){
