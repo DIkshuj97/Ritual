@@ -25,6 +25,7 @@ public class Interactableknife : MonoBehaviour,IInteractable
             ObjectiveManager.ins.SetText(objectiveText);
             ObjectiveManager.ins.PlayAnim(gameObject);
             gameObject.SetActive(false);
+            SoundManager.ins.PlaySfx("CrawlerWake");
         }
     }
 }

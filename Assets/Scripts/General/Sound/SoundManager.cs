@@ -33,6 +33,11 @@ public class SoundManager : MonoBehaviour
         hoverSource.ignoreListenerPause = true;
         PlayExtraAudio("Click", hoverSource);
     }
+    public void PlayPress()
+    {
+        hoverSource.ignoreListenerPause = true;
+        PlayExtraAudio("Press", hoverSource);
+    }
     void SetAllSfx()
     {
         foreach (Sound sound in allSfx)

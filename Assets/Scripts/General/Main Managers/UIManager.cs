@@ -39,7 +39,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && PlayerDeath.isAlive)
         {
             gameIsPaused = !gameIsPaused;
             Pause_ResumeGame();
@@ -74,6 +74,7 @@ public class UIManager : MonoBehaviour
     }
     public void Pause()
     {
+        SoundManager.ins.PlayPress();
         Cursor.visible = true;
         PauseMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -81,6 +82,7 @@ public class UIManager : MonoBehaviour
     }
     public void Resume()
     {
+        SoundManager.ins.PlayPress();
         gameIsPaused = false;
         Cursor.visible = false;
         PauseMenu.SetActive(false);
@@ -89,6 +91,7 @@ public class UIManager : MonoBehaviour
     }
     public void Restart()
     {
+        SoundManager.ins.PlayPress();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void Menu()
@@ -99,6 +102,7 @@ public class UIManager : MonoBehaviour
 
     public void Quit()
     {
+        SoundManager.ins.PlayPress();
         Application.Quit();
     }
 }
