@@ -15,11 +15,12 @@ public class DialogueManager : MonoBehaviour {
 
 	public AudioSource aS;
 	public DialogueTrigger dialogueTrigger;
+	public static bool introEnd = false;
 	//public AudioClip clickClip;
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
-
+		introEnd = false;
 		StartCoroutine(StartingDialogue());
 	}
 
@@ -97,6 +98,7 @@ public class DialogueManager : MonoBehaviour {
 	{
 		PlayerController.playerControl = true;
 		triggerOnce = true;
+		introEnd = true;
 		animator.SetBool("IsOpen", false);
 	}
 
