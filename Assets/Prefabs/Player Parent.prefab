@@ -231,8 +231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb4f353c91c80bb4d868ac9957f42428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 100
-  batteries: 0
+  lifetime: 60
+  batteries: 2
   flickerSpeed: 5
   flickerNoise: 0.1
   canFlicker: 0

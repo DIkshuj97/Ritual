@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 public class UIManager : MonoBehaviour
 {
     public static UIManager ins;
@@ -14,6 +16,7 @@ public class UIManager : MonoBehaviour
     public GameObject bloodScreen;
     public Image batteryBar;
     public GameObject batteryUI;
+    public TMP_Text batteryText;
     private void Awake()
     {
         if (ins != null && ins != this)
@@ -41,7 +44,7 @@ public class UIManager : MonoBehaviour
             gameIsPaused = !gameIsPaused;
             Pause_ResumeGame();
         }
-
+        batteryText.text = "Batteries : "+GameManager.ins.fLightScript.batteries.ToString();
         batteryBar.fillAmount = GameManager.ins.fLightScript.fillvalue;
     }
      public void GameOverUI()
