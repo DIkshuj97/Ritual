@@ -418,6 +418,30 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: CSFX1
+    clip: {fileID: 8300000, guid: 17d150da56d721842b3e0ce461730236, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CSFX2
+    clip: {fileID: 8300000, guid: c0196631ab34f1d4e86805fd4d010a82, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CSFX3
+    clip: {fileID: 8300000, guid: 8ed2bedc447438943a081e71114162f9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CSFX4
+    clip: {fileID: 8300000, guid: 210d1fa9fd2fa5f4ab8ad1158fcc94eb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   allMusic:
   - name: BGM
     clip: {fileID: 8300000, guid: 150fa3552c1cfa94e9a19f4f04d4d1c6, type: 3}

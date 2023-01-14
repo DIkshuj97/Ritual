@@ -10264,6 +10264,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -62.2
       objectReference: {fileID: 0}
+    - target: {fileID: 5070528376547538653, guid: 010bb16350f695646a45dc4f064739b9,
+        type: 3}
+      propertyPath: clipName
+      value: CSFX4
+      objectReference: {fileID: 0}
     - target: {fileID: 5070528376547538654, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_Size.x
@@ -16228,6 +16233,11 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
       objectReference: {fileID: 1270611400}
+    - target: {fileID: 5070528376547538653, guid: 010bb16350f695646a45dc4f064739b9,
+        type: 3}
+      propertyPath: clipName
+      value: CSFX1
+      objectReference: {fileID: 0}
     - target: {fileID: 5070528376547538654, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_Size.x
@@ -21101,6 +21111,11 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[2].value
       value: 
       objectReference: {fileID: 1270611400}
+    - target: {fileID: 5070528376547538653, guid: 010bb16350f695646a45dc4f064739b9,
+        type: 3}
+      propertyPath: clipName
+      value: CSFX2
+      objectReference: {fileID: 0}
     - target: {fileID: 5070528376547538654, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_Size.x
@@ -22974,6 +22989,11 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[2].value
       value: 
       objectReference: {fileID: 1270611400}
+    - target: {fileID: 5070528376547538653, guid: 010bb16350f695646a45dc4f064739b9,
+        type: 3}
+      propertyPath: clipName
+      value: CSFX3
+      objectReference: {fileID: 0}
     - target: {fileID: 5070528376547538654, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_Size.x
@@ -56012,6 +56032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255ebcae90c4c8e4ba899b7535fe17ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clipName: 
 --- !u!4 &3027192231045009840
 Transform:
   m_ObjectHideFlags: 0
@@ -60165,6 +60186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255ebcae90c4c8e4ba899b7535fe17ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clipName: 
 --- !u!114 &5070528377712693195
 MonoBehaviour:
   m_ObjectHideFlags: 0
