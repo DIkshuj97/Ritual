@@ -51,6 +51,6 @@ public class PlayerDeath : MonoBehaviour
     IEnumerator ShowGameOverMenu()
     {
         yield return new WaitForSeconds(2);
-        UIManager.ins.gameOverMenu.SetActive(true);
+        UIManager.ins.GameOverUI();
     }
 }

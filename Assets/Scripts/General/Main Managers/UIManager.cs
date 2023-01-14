@@ -44,8 +44,14 @@ public class UIManager : MonoBehaviour
 
         batteryBar.fillAmount = GameManager.ins.fLightScript.fillvalue;
     }
+     public void GameOverUI()
+     {
+        Cursor.visible = true;
+        gameOverMenu.SetActive(true);
+     }
     void TurnOffInitially()
     {
+        Cursor.visible = false;
         PauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
         handIcon.SetActive(false);
@@ -65,12 +71,15 @@ public class UIManager : MonoBehaviour
     }
     public void Pause()
     {
+        Cursor.visible = true;
         PauseMenu.SetActive(true);
         Time.timeScale = 0f;
         AudioListener.pause = true;
     }
     public void Resume()
     {
+        gameIsPaused = false;
+        Cursor.visible = false;
         PauseMenu.SetActive(false);
         Time.timeScale = 1;
         AudioListener.pause = false;

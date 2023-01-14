@@ -81,6 +81,7 @@ namespace SlimUI.ModernMenu{
 		public bool requireInputForNextScene = false;
 
 		void Start(){
+			Cursor.visible = true;
 			CameraObject = transform.GetComponent<Animator>();
 
 			playMenu.SetActive(false);

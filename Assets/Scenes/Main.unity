@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.19998854, g: 0.19449732, b: 0.19785649, a: 1}
+  m_IndirectSpecularColor: {r: 0.1997834, g: 0.19462326, b: 0.19897574, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11315,7 +11315,7 @@ PrefabInstance:
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.036352586
+      value: 0.03635258
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -11325,7 +11325,7 @@ PrefabInstance:
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.06229826
+      value: -0.06229825
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -13594,16 +13594,6 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1070325745}
-    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
-        type: 3}
-      propertyPath: extras.Array.data[8].pitch
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
-        type: 3}
-      propertyPath: extras.Array.data[8].volume
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a, type: 3}
 --- !u!114 &1793288818 stripped

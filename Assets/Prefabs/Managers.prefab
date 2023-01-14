@@ -332,8 +332,8 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Click
     clip: {fileID: 8300000, guid: 1e7a587164fcbef45b40536469e6c432, type: 3}
-    volume: 1
-    pitch: 1
+    volume: 0.1
+    pitch: 3
     loop: 0
     source: {fileID: 0}
   EffectsSource: {fileID: 4430052137790136163}
