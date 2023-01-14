@@ -91,7 +91,7 @@ public class DialogueManager : MonoBehaviour {
 			if (triggerOnce) break;
 			SoundManager.ins.PlayExtraAudio("DialogueType", aS);
 			dialogueText.text += letter;
-			yield return new WaitForSeconds(0.03f);
+			yield return new WaitForSeconds(0.02f);
 		}
 	}
 	
