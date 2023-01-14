@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.19986457, g: 0.1945422, b: 0.19841403, a: 1}
+  m_IndirectSpecularColor: {r: 0.08027472, g: 0.08027472, b: 0.08027472, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8246,65 +8246,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 20, y: 10, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &473112834
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 473112835}
-  - component: {fileID: 473112836}
-  - component: {fileID: 473112837}
-  m_Layer: 0
-  m_Name: Objective (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &473112835
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473112834}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -116.83, y: 11.87, z: -192.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1156241220}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &473112836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473112834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06db8056217ff704bb004213ece4f41d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectiveText: 
---- !u!65 &473112837
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473112834}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &481438208
 GameObject:
   m_ObjectHideFlags: 0
@@ -9239,7 +9180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &551004572
 Light:
   m_ObjectHideFlags: 0
@@ -10457,17 +10398,17 @@ PrefabInstance:
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_Waypoints.Array.data[1].position.x
-      value: 31.397339
+      value: 58.410583
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_Waypoints.Array.data[1].position.y
-      value: -4.0857162
+      value: -0.5564194
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_Waypoints.Array.data[1].position.z
-      value: -20.22931
+      value: -33.576385
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -15880,9 +15821,8 @@ MonoBehaviour:
   dialogue:
     name: Truck
     sentences:
-    - a
-    - b
-    - c
+    - .......
+    - There must be some useful stuff in the truck I should look
 --- !u!1 &751638564
 GameObject:
   m_ObjectHideFlags: 0
@@ -17388,7 +17328,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804874096}
-  m_LocalRotation: {x: -0.013638508, y: 0.020485628, z: 0.00027947803, w: 0.9996971}
+  m_LocalRotation: {x: -0.013638482, y: 0.020485591, z: 0.000279477, w: 0.9996971}
   m_LocalPosition: {x: 155.1, y: 102.15, z: 711.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -21236,12 +21176,12 @@ PrefabInstance:
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.32862267
+      value: -0.32862264
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0048283353
+      value: -0.004828325
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -21251,7 +21191,7 @@ PrefabInstance:
     - target: {fileID: 5070528377489727653, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.013874954
+      value: -0.013874926
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -21261,12 +21201,17 @@ PrefabInstance:
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_Waypoints.Array.data[1].position.x
-      value: 0.7565613
+      value: -20.028717
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
+        type: 3}
+      propertyPath: m_Waypoints.Array.data[1].position.y
+      value: 2.89077
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
       propertyPath: m_Waypoints.Array.data[1].position.z
-      value: -50.38907
+      value: -60.1951
       objectReference: {fileID: 0}
     - target: {fileID: 5070528377536772474, guid: 010bb16350f695646a45dc4f064739b9,
         type: 3}
@@ -24711,8 +24656,6 @@ Transform:
   - {fileID: 472679828}
   - {fileID: 250485699}
   - {fileID: 1304826529}
-  - {fileID: 473112835}
-  - {fileID: 1312369405}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25019,7 +24962,6 @@ MonoBehaviour:
   dialogue:
     name: Strange House
     sentences:
-    - ......
     - It looks like someone is in that big house
     - I can feel something is not right over here, I feel a evil presence here
 --- !u!65 &1179896259
@@ -27387,65 +27329,6 @@ Transform:
   m_Father: {fileID: 613038556}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1312369404
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1312369405}
-  - component: {fileID: 1312369407}
-  - component: {fileID: 1312369406}
-  m_Layer: 0
-  m_Name: Objective (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1312369405
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312369404}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 259.7, y: 18.93, z: -256.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1156241220}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1312369406
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312369404}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1312369407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312369404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06db8056217ff704bb004213ece4f41d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectiveText: 
 --- !u!114 &1312491433 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
@@ -37566,7 +37449,6 @@ Transform:
   - {fileID: 1568956037}
   - {fileID: 894464589}
   - {fileID: 1794450180}
-  - {fileID: 3240646239763096383}
   m_Father: {fileID: 1886358779}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37937,6 +37819,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1640530226, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a, type: 3}
+      propertyPath: dialogue.name
+      value: Jake
+      objectReference: {fileID: 0}
     - target: {fileID: 1640530226, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 2
@@ -40387,6 +40273,7 @@ Transform:
   - {fileID: 371353836}
   - {fileID: 1758231054}
   - {fileID: 1148570628}
+  - {fileID: 3240646239763096383}
   m_Father: {fileID: 1951072668}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43252,7 +43139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932862756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -221.4, y: 2.74, z: -17.6}
+  m_LocalPosition: {x: -221.4, y: 5.5, z: -17.6}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43274,7 +43161,6 @@ MonoBehaviour:
   dialogue:
     name: Praying Site
     sentences:
-    - .......
     - Who are these people in cloaks they don't seem friendly at all
     - It looks like they are praying
     - There's a hut over there. I should look if she's in there
@@ -56660,13 +56546,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3240646239763418069}
   m_LocalRotation: {x: 0.06931093, y: 0.91724044, z: 0.028610414, w: 0.39121282}
-  m_LocalPosition: {x: -599.12396, y: -4.4652786, z: -54.967285}
+  m_LocalPosition: {x: 150.78198, y: 107.844, z: 905.258}
   m_LocalScale: {x: 1.5000001, y: 1.5000001, z: 1.4999999}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3240646239763073837}
-  m_Father: {fileID: 1758231054}
-  m_RootOrder: 100
+  m_Father: {fileID: 1886358779}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0.1, y: 133.81, z: 8.6}
 --- !u!1 &3240646239763418069
 GameObject:
@@ -56712,10 +56598,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Torch
+    name: Flashlight
     sentences:
-    - hry esfsefs
-    - hry esfsefs
+    - .......
+    - Oh this flashlight will help me see in the forest.
 --- !u!65 &3240646239763418072
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58713,6 +58599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cinematicTrigger: {fileID: 5070528377712693193}
+  objectiveText: Run from Ghoul and Escape the Ritual site.
 --- !u!114 &4361178788204743147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61268,8 +61155,11 @@ MonoBehaviour:
       to the false gods, I tried to stop them but they would not listen'
     - 'Cultist: You should go and follow this path behind me it''ll lead you to the
       altar and maybe you could stop them'
-    - "Cultist: After you save her follow the path to the left from the ritual site
-      and don't deviate. \r\n"
+    - 'Cultist: After you save her, follow the path to the left from the ritual site
+      and if you don''t deviate, you will find a path to road
+
+'
+    - 'Cultist: GOOD LUCK!!!'
     - 'Jake (Player): Oh fuck, I''ll go right away, I must save her I can''t let
       this happen'
 --- !u!136 &5630871967020693744

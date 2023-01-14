@@ -6,6 +6,7 @@ public class Interactableknife : MonoBehaviour,IInteractable
 {
     private bool triggerOnce = false;
     [SerializeField] CinematicTrigger cinematicTrigger;
+    [TextArea(3, 10)] [SerializeField] private string objectiveText;
     public void Interact()
     {
         var dt = GetComponent<DialogueTrigger>();
@@ -21,6 +22,8 @@ public class Interactableknife : MonoBehaviour,IInteractable
             GameManager.ins.crawler.gameObject.SetActive(true);
             cinematicTrigger.TriggerCutscene();
             GameManager.ins.player.GetComponent<PlayerController>().speed = 15;
+            ObjectiveManager.ins.SetText(objectiveText);
+            ObjectiveManager.ins.PlayAnim(gameObject);
             gameObject.SetActive(false);
         }
     }

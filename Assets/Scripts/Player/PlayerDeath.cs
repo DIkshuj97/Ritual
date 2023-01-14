@@ -22,11 +22,7 @@ public class PlayerDeath : MonoBehaviour
         aS_2 = GetComponent<PlayerController>().walkAS; // for death sound
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.G)) TriggerDeath();
-    }
+
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {       
