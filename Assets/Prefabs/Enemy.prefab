@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseDistance: 10
-  attackDistance: 1.5
+  attackDistance: 3
   viewAngle: 180
   suspicionTime: 3
   agroCooldownTime: 5

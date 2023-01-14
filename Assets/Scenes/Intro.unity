@@ -1589,11 +1589,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: zxvzxvzx
+    name: Intro
     sentences:
-    - "Hi\t"
-    - hello
-    - sadad
+    - 'Jake (Player): Oh we have reached our destination, we will start our hike
+      early morning tomorrow'
+    - 'Sarah (Wife): Yeah we better set out our tents for the night and make a fire'
+    - 'Jake (Player): Agreed, I believe that not many people have discovered this
+      spot for hiking'
+    - 'Sarah (Wife): Hmm, it was a great idea to look up the internet to find this
+      spot. I''m sure we will have a great experience and share the journey online.'
+    - 'Jake (Player): Yeah totally, I''ll start a fire, I hear a river nearby why
+      don''t you fill out our water bottles in the meantime.'
+    - 'Sarah (Wife): Sure I''ll go'
 --- !u!4 &1419708255
 Transform:
   m_ObjectHideFlags: 0

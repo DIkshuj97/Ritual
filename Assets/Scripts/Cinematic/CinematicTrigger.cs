@@ -15,4 +15,14 @@ public class CinematicTrigger : MonoBehaviour
             alreadyTriggered = true;
         }
     }
+
+    public void TriggerCutscene()
+    {
+        if (!alreadyTriggered)
+        {
+            Debug.Log("Play");
+            GetComponent<PlayableDirector>().Play();
+            alreadyTriggered = true;
+        }
+    }
 }

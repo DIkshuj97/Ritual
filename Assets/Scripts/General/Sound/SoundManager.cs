@@ -26,7 +26,7 @@ public class SoundManager : MonoBehaviour
     {
         SetAllSfx();
         SetAllMusic();
-        // Play("bg_music"); 
+        PlayMusic("BGM");
     }
     public void PlayHover()
     {

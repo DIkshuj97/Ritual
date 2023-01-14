@@ -34,6 +34,7 @@ public class AIController : MonoBehaviour
     
     int currentWaypointIndex = 0;
 
+    public bool canChase = true;
 
     private void Start()
     {
@@ -50,6 +51,9 @@ public class AIController : MonoBehaviour
     private void Update()
     {
         updateAnimator();
+
+        if (!PlayerDeath.isAlive || !canChase) return;
+
         if (IsAggrevated() )
         {
             AttackBehaviour();
@@ -95,7 +99,7 @@ public class AIController : MonoBehaviour
             GetComponentInChildren<Animator>().ResetTrigger("Attack");
             GetComponentInChildren<Animator>().SetTrigger("Attack");
             player.GetComponentInChildren<PlayerDeath>().TriggerDeath();
-            enabled = false;
+           
         }
     }
 

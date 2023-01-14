@@ -15,12 +15,12 @@ public class DialogueManager : MonoBehaviour {
 
 	public AudioSource aS;
 	public DialogueTrigger dialogueTrigger;
-	public static bool introEnd = false;
+	public static bool isDialogueEnded = false;
 	//public AudioClip clickClip;
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
-		introEnd = false;
+		isDialogueEnded = false;
 		StartCoroutine(StartingDialogue());
 	}
 
@@ -41,15 +41,16 @@ public class DialogueManager : MonoBehaviour {
 
 	IEnumerator StartingDialogue()
     {
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(1f);
 		dialogueTrigger.TriggerDialogue();
     }
 
     public void StartDialogue (Dialogue dialogue)
 	{
+
 		if( triggerOnce)
         {
-
+			isDialogueEnded = false;
 			PlayerController.playerControl = false;
 
 			triggerOnce = false;
@@ -90,7 +91,7 @@ public class DialogueManager : MonoBehaviour {
 			if (triggerOnce) break;
 			SoundManager.ins.PlayExtraAudio("DialogueType", aS);
 			dialogueText.text += letter;
-			yield return new WaitForSeconds(0.05f);
+			yield return new WaitForSeconds(0.03f);
 		}
 	}
 	
@@ -98,7 +99,7 @@ public class DialogueManager : MonoBehaviour {
 	{
 		PlayerController.playerControl = true;
 		triggerOnce = true;
-		introEnd = true;
+		isDialogueEnded = true;
 		animator.SetBool("IsOpen", false);
 	}
 

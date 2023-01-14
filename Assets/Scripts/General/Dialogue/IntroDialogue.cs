@@ -6,7 +6,7 @@ public class IntroDialogue : MonoBehaviour
 {
     private void Update()
     {
-        if(DialogueManager.introEnd)
+        if(DialogueManager.isDialogueEnded)
         {
             FindObjectOfType<Fader>().FadeToLevel();
         }
