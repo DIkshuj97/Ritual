@@ -59,7 +59,7 @@ public class FlashlightAdvanced : MonoBehaviour
     }
     void Update()
     {
-       
+        if (!PlayerDeath.isAlive) return;
 
         if (lifetime < flickLimit && lifetime > 0)
         {
@@ -67,11 +67,11 @@ public class FlashlightAdvanced : MonoBehaviour
         }
         if (canFlicker) Flicker();
 
-        if (Input.GetKeyDown(KeyCode.F) && off) 
+        if (Input.GetKeyDown(KeyCode.F) && off ) 
         {
             TurnOn();
         }
-        else if (Input.GetKeyDown(KeyCode.F) && on)
+        else if (Input.GetKeyDown(KeyCode.F) && on )
         {
             TurnOff();
         }

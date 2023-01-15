@@ -500,8 +500,8 @@ MonoBehaviour:
   flashLightOFF: {fileID: 21300000, guid: 1479af53eb18ba04a9aaf04bb2ef9766, type: 3}
   flashLightON: {fileID: 21300000, guid: d58d906cfbc50b94590e76a822f4ccad, type: 3}
   hideBushImage: {fileID: 0}
-  hidingOn: {fileID: 0}
-  hidingOff: {fileID: 0}
+  hidingOn: {fileID: 21300000, guid: 4fc421cbfda36514db271f408c0ebd3c, type: 3}
+  hidingOff: {fileID: 21300000, guid: 41481b50f0d170c46b7725319951f281, type: 3}
 --- !u!114 &941990876178393015
 MonoBehaviour:
   m_ObjectHideFlags: 0

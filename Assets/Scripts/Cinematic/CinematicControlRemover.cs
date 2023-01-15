@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 using UnityEngine.AI;
 public class CinematicControlRemover : MonoBehaviour
 {
-   
+    public bool isLastCinematic;
     private void Awake()
     {
         GetComponent<PlayableDirector>().played += DisableControl;
@@ -27,11 +27,19 @@ public class CinematicControlRemover : MonoBehaviour
     void DisableControl(PlayableDirector pd)
     {
         PlayerController.playerControl = false;
+
+        if (isLastCinematic) 
+        {
+            GameManager.ins.crawler.gameObject.SetActive(false);
+        }
     }
 
     void EnableControl(PlayableDirector pd)
     {
         PlayerController.playerControl = true;
+        if (isLastCinematic)
+        {
+            GameManager.ins.crawler.gameObject.SetActive(true);
+        }
     }
-
 }
