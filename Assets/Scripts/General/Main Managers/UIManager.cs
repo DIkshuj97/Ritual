@@ -17,6 +17,16 @@ public class UIManager : MonoBehaviour
     public Image batteryBar;
     public GameObject batteryUI;
     public TMP_Text batteryText;
+    public Image flashLightImage;
+
+    public Sprite flashLightOFF;
+    public Sprite flashLightON;
+
+    public Image hideBushImage;
+
+    public Sprite hidingOn;
+    public Sprite hidingOff;
+
     private void Awake()
     {
         if (ins != null && ins != this)
@@ -105,4 +115,29 @@ public class UIManager : MonoBehaviour
         SoundManager.ins.PlayPress();
         Application.Quit();
     }
+
+    public void ChangeFlashLightImage(bool isOn)
+    {
+        if(isOn)
+        {
+            flashLightImage.sprite = flashLightON;
+        }
+        else
+        {
+            flashLightImage.sprite = flashLightOFF;
+        }
+    }
+
+    public void ChangeHideBushImage(bool isHide)
+    {
+        if (isHide)
+        {
+            hideBushImage.sprite = hidingOn;
+        }
+        else
+        {
+            hideBushImage.sprite = hidingOff;
+        }
+    }
+
 }

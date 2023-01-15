@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour
     public Sound[] extras;
     public AudioSource EffectsSource;
     public AudioSource MusicSource;
+    public AudioSource ChaseAudioSource;
     [SerializeField] private AudioSource hoverSource;
     public static SoundManager ins;
     void Awake()
@@ -28,6 +29,16 @@ public class SoundManager : MonoBehaviour
         SetAllMusic();
         PlayMusic("BGM");
     }
+
+    public void PlayChaseSound()
+    {
+        if(!ChaseAudioSource.isPlaying)
+        {
+            PlayExtraAudio("Chase", ChaseAudioSource);
+        }
+        
+    }
+
     public void PlayHover()
     {
         hoverSource.ignoreListenerPause = true;
@@ -74,6 +85,12 @@ public class SoundManager : MonoBehaviour
             sound.source.loop = sound.loop;
      
     }
+
+    public void StopChase()
+    {
+        ChaseAudioSource.Stop();
+    }
+
     public void StopSfx()
     {
         EffectsSource.Stop();

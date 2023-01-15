@@ -89,7 +89,7 @@ public class AIController : MonoBehaviour
         if(!GetIsInRange())
         {
             StopAttack();
-            SoundManager.ins.PlayMusic("Chase");
+            SoundManager.ins.PlayChaseSound();
             MoveTo(player.transform.position,1f);
         }
         else
@@ -119,7 +119,7 @@ public class AIController : MonoBehaviour
 
     private void suspicionBehaviour()
     {
-        SoundManager.ins.PlayMusic("BGM");
+        SoundManager.ins.StopChase();
         navMeshAgent.isStopped = true;
     }
 

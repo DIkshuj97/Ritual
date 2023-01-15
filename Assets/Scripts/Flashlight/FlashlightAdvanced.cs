@@ -45,6 +45,7 @@ public class FlashlightAdvanced : MonoBehaviour
         f_light.enabled = true;
         on = true;
         off = false;
+        UIManager.ins.ChangeFlashLightImage(on);
     }
 
     private void TurnOff()
@@ -54,6 +55,7 @@ public class FlashlightAdvanced : MonoBehaviour
         f_light.enabled = false;
         on = false;
         off = true;
+        UIManager.ins.ChangeFlashLightImage(on);
     }
     void Update()
     {

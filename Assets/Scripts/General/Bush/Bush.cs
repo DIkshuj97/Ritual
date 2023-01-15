@@ -27,9 +27,11 @@ public class Bush : MonoBehaviour
     private void SetModeTransparent()
     {
         meshRend.sharedMaterial = transparentMaterial;
+        UIManager.ins.ChangeHideBushImage(true);
     }
     private void RevertMode()
     {
         meshRend.sharedMaterial = originalMat;
+        UIManager.ins.ChangeHideBushImage(false);
     }
 }
