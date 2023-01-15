@@ -86,6 +86,7 @@ public class FlashlightAdvanced : MonoBehaviour
             on = false;
             off = true;
             lifetime = 0;
+            UIManager.ins.ChangeFlashLightImage(on);
         }
 
         if (lifetime >= 100)
