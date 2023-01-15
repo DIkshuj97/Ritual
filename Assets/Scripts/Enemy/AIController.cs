@@ -10,7 +10,6 @@ public class AIController : MonoBehaviour
     [Range(0,360)]
     [SerializeField] float viewAngle = 100;
     [SerializeField] float suspicionTime = 3f;
-    [SerializeField] float agroCooldownTime = 5f;
     [SerializeField] PatrolPath patrolPath;
     [SerializeField] float waypointTolerance = 1f;
     [SerializeField] float waypointDwellTime = 3f;
@@ -29,7 +28,7 @@ public class AIController : MonoBehaviour
     GameObject player;
     Vector3 guardPosition;
 
-    public float timeSinceLastSawPlayer = Mathf.Infinity;
+    float timeSinceLastSawPlayer = Mathf.Infinity;
     float timeSinceArrivedAtWaypoint = Mathf.Infinity;
     
     int currentWaypointIndex = 0;
