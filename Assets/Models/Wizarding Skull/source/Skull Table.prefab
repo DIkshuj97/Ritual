@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 839925903642816250}
   - component: {fileID: 5183628108271582654}
   - component: {fileID: 954414797611277088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_top8_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6077899140753659926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 6244117589717390802}
   - component: {fileID: 9199824444800308455}
   - component: {fileID: 1236026133775679308}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plane_flame6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,9 @@ GameObject:
   - component: {fileID: 981050903184556587}
   - component: {fileID: 727293837190393054}
   - component: {fileID: 727293837190393055}
-  m_Layer: 0
+  - component: {fileID: 969884360}
+  - component: {fileID: 969884359}
+  m_Layer: 8
   m_Name: Skull Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +233,7 @@ Transform:
   m_GameObject: {fileID: 492779351726889105}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.321, y: -3.502896, z: 2.2888932}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1793034068680895157}
@@ -273,6 +275,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &969884360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492779351726889105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9fd8b704c5aaa40948e24a6e5a5446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Occult Stuff
+    sentences:
+    - .......
+    - I think I should stay away from this creepy stuff and find Sarah
+--- !u!114 &969884359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492779351726889105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4862d1f571c876c40b58df5c2af5d0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &528633102071606802
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +315,7 @@ GameObject:
   - component: {fileID: 3195169480902178826}
   - component: {fileID: 2634522914027698896}
   - component: {fileID: 6262520266217891693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_bottom4_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +398,7 @@ GameObject:
   - component: {fileID: 6992730893416253668}
   - component: {fileID: 7052490237171840066}
   - component: {fileID: 2545563886862695116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_bottom6_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +481,7 @@ GameObject:
   - component: {fileID: 2490461583550978763}
   - component: {fileID: 6759639928973712757}
   - component: {fileID: 420342919633140097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stand:defaultobject_meshId1_name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +564,7 @@ GameObject:
   - component: {fileID: 501414173509216274}
   - component: {fileID: 2743210506968563874}
   - component: {fileID: 4116225366727825053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_top9_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +647,7 @@ GameObject:
   - component: {fileID: 1446007292351877437}
   - component: {fileID: 7367399566181252517}
   - component: {fileID: 5421009344975472856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_top4_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -699,7 +730,7 @@ GameObject:
   - component: {fileID: 2409258776744193037}
   - component: {fileID: 6783461643043296058}
   - component: {fileID: 3817979337664315016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plane_flame3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -782,7 +813,7 @@ GameObject:
   - component: {fileID: 7802684809919697728}
   - component: {fileID: 6736901537144638163}
   - component: {fileID: 1214033783394978302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_bottom1_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -865,7 +896,7 @@ GameObject:
   - component: {fileID: 6183993588794365581}
   - component: {fileID: 1226634021591092277}
   - component: {fileID: 7951330733587512146}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plane_flame2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +979,7 @@ GameObject:
   - component: {fileID: 4961579699856935588}
   - component: {fileID: 6967037704546278764}
   - component: {fileID: 3046912137964509538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_top5_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1031,7 +1062,7 @@ GameObject:
   - component: {fileID: 1512677659475000476}
   - component: {fileID: 6474600225979938379}
   - component: {fileID: 8108726097630849329}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Skull_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1114,7 +1145,7 @@ GameObject:
   - component: {fileID: 9104704468207940784}
   - component: {fileID: 6437646261692707683}
   - component: {fileID: 4351514250142225245}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_top1_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,7 +1228,7 @@ GameObject:
   - component: {fileID: 6126234192107445735}
   - component: {fileID: 9161134165262962570}
   - component: {fileID: 1463385530918942829}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_bottom8_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1280,7 +1311,7 @@ GameObject:
   - component: {fileID: 1589953999073046051}
   - component: {fileID: 8949933327546825936}
   - component: {fileID: 3181196130704879547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Horns_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1361,7 +1392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1793034068680895157}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1398,7 +1429,7 @@ GameObject:
   - component: {fileID: 2055069740447767848}
   - component: {fileID: 8504970024260590958}
   - component: {fileID: 979646188917098710}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_bottom3_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1481,7 +1512,7 @@ GameObject:
   - component: {fileID: 2983287538807693943}
   - component: {fileID: 6721710555183968638}
   - component: {fileID: 4258991241407636192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plane_flame5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1564,7 +1595,7 @@ GameObject:
   - component: {fileID: 3808248556192187924}
   - component: {fileID: 8209883322584953006}
   - component: {fileID: 7234304792849256850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_top7_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1647,7 +1678,7 @@ GameObject:
   - component: {fileID: 8046848753941301085}
   - component: {fileID: 8815457503138665707}
   - component: {fileID: 7726059114781932215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_top6_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1730,7 +1761,7 @@ GameObject:
   - component: {fileID: 5333134715670867105}
   - component: {fileID: 1891185709794039111}
   - component: {fileID: 2717672806893561808}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stand:defaultobject_meshId3_name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1813,7 +1844,7 @@ GameObject:
   - component: {fileID: 911642243191772227}
   - component: {fileID: 5874739566965743679}
   - component: {fileID: 617128009326853282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_bottom7_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1896,7 +1927,7 @@ GameObject:
   - component: {fileID: 1248372870999497263}
   - component: {fileID: 2283388908993233813}
   - component: {fileID: 1587931319565325836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_bottom2_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1979,7 +2010,7 @@ GameObject:
   - component: {fileID: 868946406669896523}
   - component: {fileID: 6852256453649034067}
   - component: {fileID: 7619609539848397978}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_top3_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2062,7 +2093,7 @@ GameObject:
   - component: {fileID: 3128658702892230688}
   - component: {fileID: 4791409233814206116}
   - component: {fileID: 3532529419600580927}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_bottom5_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2145,7 +2176,7 @@ GameObject:
   - component: {fileID: 6016435749569473507}
   - component: {fileID: 8058863924493587652}
   - component: {fileID: 4111051020838182108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Teeth_top2_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2228,7 +2259,7 @@ GameObject:
   - component: {fileID: 8635051062023759326}
   - component: {fileID: 6612655390480116026}
   - component: {fileID: 1141009811386199202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plane_flame4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2311,7 +2342,7 @@ GameObject:
   - component: {fileID: 1505488243318360771}
   - component: {fileID: 5949888257434268333}
   - component: {fileID: 6609640130888871491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plane_flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2394,7 +2425,7 @@ GameObject:
   - component: {fileID: 8936046470224083906}
   - component: {fileID: 1331845672660371783}
   - component: {fileID: 8753056281915324784}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plane_flame1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2477,7 +2508,7 @@ GameObject:
   - component: {fileID: 8179661066705259284}
   - component: {fileID: 4678007110375965710}
   - component: {fileID: 2621242947512719269}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stand:defaultobject_meshId0_name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2558,7 +2589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8081588794950725131}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2610,7 +2641,7 @@ GameObject:
   - component: {fileID: 4966980078239224854}
   - component: {fileID: 3080080185836604419}
   - component: {fileID: 4906356729869800929}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stand:defaultobject_meshId2_name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
