@@ -54,7 +54,7 @@ public class UIManager : MonoBehaviour
             gameIsPaused = !gameIsPaused;
             Pause_ResumeGame();
         }
-        batteryText.text = "Batteries : "+GameManager.ins.fLightScript.batteries.ToString();
+        batteryText.text = "Batteries : "+(GameManager.ins.fLightScript.batteries+1).ToString();
         batteryBar.fillAmount = GameManager.ins.fLightScript.fillvalue;
     }
      public void GameOverUI()
@@ -130,8 +130,11 @@ public class UIManager : MonoBehaviour
 
     public void ChangeHideBushImage(bool isHide)
     {
+        hideBushImage.gameObject.SetActive(true);
+
         if (isHide)
         {
+
             hideBushImage.sprite = hidingOn;
         }
         else
