@@ -24,7 +24,6 @@ public class CinematicControlRemover : MonoBehaviour
         GetComponent<PlayableDirector>().played -= DisableControl;
         GetComponent<PlayableDirector>().stopped -= EnableControl;
     }
-    
     void DisableControl(PlayableDirector pd)
     {
         PlayerController.playerControl = false;
@@ -39,7 +38,6 @@ public class CinematicControlRemover : MonoBehaviour
     {
         PlayerController.playerControl = true;
         cinematicPlaying = false;
-        Camera.main.cullingMask |= 1 << LayerMask.NameToLayer("Player");
         if (isLastCinematic)
         {
             GameManager.ins.crawler.gameObject.SetActive(true);
