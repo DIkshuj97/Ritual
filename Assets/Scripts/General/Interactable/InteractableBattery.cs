@@ -7,7 +7,7 @@ public class InteractableBattery : MonoBehaviour, IInteractable
     public void Interact()
     {
 
-        GameManager.ins.fLightScript.batteries = 2;
+        GameManager.ins.fLightScript.batteries++; 
         gameObject.SetActive(false);
     }
 }

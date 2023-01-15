@@ -54,7 +54,7 @@ public class UIManager : MonoBehaviour
             gameIsPaused = !gameIsPaused;
             Pause_ResumeGame();
         }
-        batteryText.text = "Batteries : "+(GameManager.ins.fLightScript.batteries+1).ToString();
+        //batteryText.text = "Batteries : "+(GameManager.ins.fLightScript.batteries+1).ToString();
         batteryBar.fillAmount = GameManager.ins.fLightScript.fillvalue;
     }
      public void GameOverUI()

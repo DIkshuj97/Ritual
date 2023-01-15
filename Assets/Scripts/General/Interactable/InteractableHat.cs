@@ -11,6 +11,7 @@ public class InteractableHat : MonoBehaviour,IInteractable
         if (dt != null) dt.TriggerDialogue();
         ObjectiveManager.ins.SetText(objectiveText);
         ObjectiveManager.ins.PlayAnim();
+        gameObject.SetActive(false);
     }
 
 }
