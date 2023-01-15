@@ -1968,6 +1968,11 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1036175901091176014, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 1036175901091176015, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
         type: 3}
       propertyPath: m_Name
@@ -9438,6 +9443,11 @@ PrefabInstance:
       propertyPath: m_AutoBraking
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1036175901091176014, guid: c256e69225cb9e348bd0d1a2d45f229f,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 1036175901091176015, guid: c256e69225cb9e348bd0d1a2d45f229f,
         type: 3}
       propertyPath: m_Name
@@ -13714,6 +13724,11 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 1452849551}
+    - target: {fileID: 1036175901091176014, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 1036175901091176015, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
         type: 3}
       propertyPath: m_Name
@@ -16969,6 +16984,11 @@ PrefabInstance:
       propertyPath: chaseDistance
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1036175901091176014, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 1036175901091176015, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
         type: 3}
       propertyPath: m_Name
@@ -20134,7 +20154,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804874096}
-  m_LocalRotation: {x: -0.013638508, y: 0.020485628, z: 0.00027947803, w: 0.9996971}
+  m_LocalRotation: {x: -0.013638482, y: 0.020485591, z: 0.000279477, w: 0.9996971}
   m_LocalPosition: {x: 155.1, y: 102.15, z: 711.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22264,6 +22284,11 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 1484330258}
+    - target: {fileID: 1036175901091176014, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 1036175901091176015, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
         type: 3}
       propertyPath: m_Name
@@ -25009,6 +25034,11 @@ PrefabInstance:
         type: 3}
       propertyPath: obstaclesMask.m_Bits
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036175901091176014, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1036175901091176015, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
         type: 3}
@@ -32559,6 +32589,11 @@ PrefabInstance:
       propertyPath: obstaclesMask.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 1036175901091176014, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 1036175901091176015, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
         type: 3}
       propertyPath: m_Name
@@ -39031,6 +39066,11 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1036175901091176014, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 1036175901091176015, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
         type: 3}
       propertyPath: m_Name
@@ -42592,6 +42632,12 @@ PrefabInstance:
       objectReference: {fileID: 1520331952982840065}
     - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
         type: 3}
+      propertyPath: hidingOn
+      value: 
+      objectReference: {fileID: 21300000, guid: 4fc421cbfda36514db271f408c0ebd3c,
+        type: 3}
+    - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
+        type: 3}
       propertyPath: PauseMenu
       value: 
       objectReference: {fileID: 1520331952788694262}
@@ -42600,6 +42646,12 @@ PrefabInstance:
       propertyPath: batteryUI
       value: 
       objectReference: {fileID: 838345176}
+    - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
+        type: 3}
+      propertyPath: hidingOff
+      value: 
+      objectReference: {fileID: 21300000, guid: 41481b50f0d170c46b7725319951f281,
+        type: 3}
     - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
         type: 3}
       propertyPath: batteryBar
@@ -45738,6 +45790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: patrolPath
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036175901091176014, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1036175901091176015, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
         type: 3}
@@ -50964,6 +51021,11 @@ PrefabInstance:
       propertyPath: obstaclesMask.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 1036175901091176014, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 1036175901091176015, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
         type: 3}
       propertyPath: m_Name
@@ -51884,6 +51946,11 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 885598997}
+    - target: {fileID: 1036175901091176014, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 1036175901091176015, guid: 871df935428ec5c4ea3abf8bf8a6dd7a,
         type: 3}
       propertyPath: m_Name
@@ -67858,6 +67925,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1312491433}
+    - target: {fileID: 1520331953515516338, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -70
+      objectReference: {fileID: 0}
     - target: {fileID: 1520331953704923545, guid: 26ff16c43d5d9ca40be08273eeb8b116,
         type: 3}
       propertyPath: m_Name
@@ -67968,6 +68040,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2414663425551091779, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1479af53eb18ba04a9aaf04bb2ef9766,
+        type: 3}
+    - target: {fileID: 3894833407261232516, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 41481b50f0d170c46b7725319951f281,
+        type: 3}
     - target: {fileID: 5710942413932602025, guid: 26ff16c43d5d9ca40be08273eeb8b116,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
