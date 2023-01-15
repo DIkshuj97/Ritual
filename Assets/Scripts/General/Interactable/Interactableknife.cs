@@ -21,7 +21,7 @@ public class Interactableknife : MonoBehaviour,IInteractable
             triggerOnce = false;
             GameManager.ins.crawler.gameObject.SetActive(true);
             cinematicTrigger.TriggerCutscene();
-            GameManager.ins.player.GetComponent<PlayerController>().speed = 13;
+            GameManager.ins.player.GetComponent<PlayerController>().speed = 15;
             ObjectiveManager.ins.SetText(objectiveText);
             ObjectiveManager.ins.PlayAnim(gameObject);
             gameObject.SetActive(false);

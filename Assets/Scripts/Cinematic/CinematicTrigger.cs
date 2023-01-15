@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
+
 public class CinematicTrigger : MonoBehaviour
 {
     bool alreadyTriggered = false;
     public string clipName;
+
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (!alreadyTriggered && other.gameObject.tag == "Player")
@@ -14,6 +18,7 @@ public class CinematicTrigger : MonoBehaviour
             SoundManager.ins.PlaySfx(clipName);
             Debug.Log("Play");
             GetComponent<PlayableDirector>().Play();
+           
             alreadyTriggered = true;
         }
     }

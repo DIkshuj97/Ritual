@@ -2,16 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
-
+using UnityEngine.AI;
 public class CinematicControlRemover : MonoBehaviour
 {
-    GameObject player;
-
+   
     private void Awake()
     {
         GetComponent<PlayableDirector>().played += DisableControl;
         GetComponent<PlayableDirector>().stopped += EnableControl;
-        player = GameObject.FindWithTag("Player");
     }
 
     private void OnEnable()
@@ -28,7 +26,6 @@ public class CinematicControlRemover : MonoBehaviour
 
     void DisableControl(PlayableDirector pd)
     {
-       
         PlayerController.playerControl = false;
     }
 
