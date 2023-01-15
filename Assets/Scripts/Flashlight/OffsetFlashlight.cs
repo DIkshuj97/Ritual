@@ -20,7 +20,10 @@ public class OffsetFlashlight : MonoBehaviour
 
     void Update()
     {
-        transform.position = goFollow.transform.position + vectOffset;
-        transform.rotation = Quaternion.Slerp(transform.rotation, goFollow.transform.rotation, speed * Time.deltaTime);
+        if(gameObject.activeSelf && !CinematicControlRemover.cinematicPlaying)
+        {
+            transform.position = goFollow.transform.position + vectOffset;
+            transform.rotation = Quaternion.Slerp(transform.rotation, goFollow.transform.rotation, speed * Time.deltaTime);
+        }
     }
 }

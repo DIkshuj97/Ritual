@@ -8,6 +8,7 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private Transform head;
     [SerializeField] private LayerMask interactLayer;
 
+     bool canInteractAgain = true;
     void Update()
     {
         CastRay();
@@ -22,13 +23,22 @@ public class PlayerInteract : MonoBehaviour
         {
             UIManager.ins.handIcon.SetActive(true);
             GameObject hitObject = hitInfo.transform.gameObject;
-            if (hitObject.GetComponent<IInteractable>() != null && Input.GetKeyDown(KeyCode.E))
+            if (hitObject.GetComponent<IInteractable>() != null && Input.GetKeyDown(KeyCode.E) && canInteractAgain)
             {
                 hitObject.GetComponent<IInteractable>().Interact();
+                canInteractAgain = false;
+                StartCoroutine(DelayInteract());
             }
         } else
         {
             UIManager.ins.handIcon.SetActive(false);
         }
+    }
+
+   
+    IEnumerator DelayInteract()
+    {
+        yield return new WaitForSeconds(2);
+        canInteractAgain = true;
     }
 }

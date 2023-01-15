@@ -5918,6 +5918,12 @@ Transform:
   m_Father: {fileID: 1962061409}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &196908283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1435246674670002, guid: 01504ea0633bca549bd9568ab5f5c7a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1839388407}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &198380520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7762,6 +7768,12 @@ Transform:
   m_Father: {fileID: 919035186}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &286023711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1435246674670002, guid: 01504ea0633bca549bd9568ab5f5c7a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2017719245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &293243691
 GameObject:
   m_ObjectHideFlags: 0
@@ -16476,6 +16488,51 @@ Transform:
   m_Father: {fileID: 1295695924}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &681812689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 681812690}
+  - component: {fileID: 681812691}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &681812690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681812689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.42, y: 0.231, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 765253952}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &681812691
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681812689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2, y: 0.5, z: 1.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &682885585
 GameObject:
   m_ObjectHideFlags: 0
@@ -18676,7 +18733,6 @@ MonoBehaviour:
   dialogue:
     name: Truck
     sentences:
-    - .......
     - There must be some useful stuff in the truck I should look
 --- !u!1001 &744109894
 PrefabInstance:
@@ -20211,7 +20267,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804874096}
-  m_LocalRotation: {x: -0.013638508, y: 0.020485628, z: 0.00027947803, w: 0.9996971}
+  m_LocalRotation: {x: -0.013638482, y: 0.020485591, z: 0.000279477, w: 0.9996971}
   m_LocalPosition: {x: 155.1, y: 102.15, z: 711.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23607,6 +23663,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1156276471}
     m_Modifications:
+    - target: {fileID: 969884360, guid: 1ddaad2133ac5034c8cd8a584512788a, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 969884360, guid: 1ddaad2133ac5034c8cd8a584512788a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: I think I should stay away from this creepy stuff and find Sarah
+      objectReference: {fileID: 0}
     - target: {fileID: 492779351726889105, guid: 1ddaad2133ac5034c8cd8a584512788a,
         type: 3}
       propertyPath: m_Name
@@ -23674,6 +23738,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 981050903184556587, guid: 1ddaad2133ac5034c8cd8a584512788a,
     type: 3}
   m_PrefabInstance: {fileID: 969884356}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &972304962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1435246674670002, guid: 01504ea0633bca549bd9568ab5f5c7a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2144516369}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &973886090
 GameObject:
@@ -24651,6 +24721,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4148558610199270, guid: 9864d3903a83fe04cba9fb988fe57231,
     type: 3}
   m_PrefabInstance: {fileID: 1012126217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1016540192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1435246674670002, guid: 01504ea0633bca549bd9568ab5f5c7a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1557079904}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1017289813
 GameObject:
@@ -36155,6 +36231,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1557079904}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1557079908
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016540192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2884758, y: 0.98790413, z: 0.7320496}
+  m_Center: {x: 0.00058203936, y: 0.06534782, z: -0.000089123845}
 --- !u!1 &1557608625
 GameObject:
   m_ObjectHideFlags: 0
@@ -43935,6 +44024,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1839388407}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1839388411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196908283}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2884758, y: 0.98790413, z: 0.7320496}
+  m_Center: {x: 0.00058203936, y: 0.06534782, z: -0.000089123845}
 --- !u!1 &1839527236
 GameObject:
   m_ObjectHideFlags: 0
@@ -49635,6 +49737,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2017719245}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2017719249
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286023711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2884758, y: 0.98790413, z: 0.7320496}
+  m_Center: {x: 0.00058203936, y: 0.06534782, z: -0.00008149445}
 --- !u!1 &2032535266
 GameObject:
   m_ObjectHideFlags: 0
@@ -49667,6 +49782,25 @@ Transform:
   m_Father: {fileID: 1715183952}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2034376532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1898911438740058, guid: 65bb21345d4f9ee4fb2933e981fdbdc1,
+    type: 3}
+  m_PrefabInstance: {fileID: 169378274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2034376535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034376532}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45581734, y: 2.0439036, z: 1.2915931}
+  m_Center: {x: 0.00032372028, y: 0.23746955, z: 0.0007775426}
 --- !u!1 &2037535776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1356600824448924, guid: 46f2c270715eb2648b9aeab078ee12b4,
@@ -54144,6 +54278,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2144516369}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2144516373
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972304962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2884758, y: 0.98790413, z: 0.7320496}
+  m_Center: {x: 0.00058203936, y: 0.06534782, z: -0.00008149445}
 --- !u!1001 &2146486369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56674,12 +56821,13 @@ PrefabInstance:
     - target: {fileID: 5921358947614890532, guid: 1856c9e1e13c1f44a995a49affd95bdd,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5921358947614890532, guid: 1856c9e1e13c1f44a995a49affd95bdd,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: ........
+      value: What the f**k is this! These people are worshipping this creature I
+        think so
       objectReference: {fileID: 0}
     - target: {fileID: 5921358947614890532, guid: 1856c9e1e13c1f44a995a49affd95bdd,
         type: 3}
@@ -60482,12 +60630,12 @@ PrefabInstance:
     - target: {fileID: 6897658895779343516, guid: 385c00b708a46a4448341e29c1e45ca5,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6897658895779343516, guid: 385c00b708a46a4448341e29c1e45ca5,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: ......
+      value: What is this doll seems like something to do with black magic
       objectReference: {fileID: 0}
     - target: {fileID: 6897658895779343516, guid: 385c00b708a46a4448341e29c1e45ca5,
         type: 3}
@@ -63062,7 +63210,6 @@ MonoBehaviour:
   dialogue:
     name: Flashlight
     sentences:
-    - .......
     - Oh this flashlight will help me see in the forest.
 --- !u!65 &3240646239763418072
 BoxCollider:
@@ -65077,7 +65224,6 @@ MonoBehaviour:
   dialogue:
     name: Ritual
     sentences:
-    - ......
     - 'Jake (Player): NO! they have killed her. Why has this happened to me'
     - 'Jake (Player): We should''ve never came to this place'
     - 'Jake (Player): I shouldn''t have told her to get water it''s all my fault'
@@ -65903,7 +66049,7 @@ PrefabInstance:
     - target: {fileID: 840151694137291282, guid: 44623e9ed9402654ea5d456460f41153,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 110.93
+      value: 109.31
       objectReference: {fileID: 0}
     - target: {fileID: 840151694137291282, guid: 44623e9ed9402654ea5d456460f41153,
         type: 3}
@@ -67856,7 +68002,6 @@ MonoBehaviour:
   dialogue:
     name: Hat
     sentences:
-    - ......
     - Her hat is dropped here, did something happened to her?
     - She may have crossed the river for some reason
 --- !u!114 &5612799633712189869
@@ -67945,7 +68090,6 @@ MonoBehaviour:
   dialogue:
     name: Strange Talk
     sentences:
-    - .........
     - "Cultist: Hey, who are you? you don't look like you're a cult member. What
       are you doing over here? \r\n"
     - 'Jake (Player): I''m Jake, me and my wife Sarah came here for hiking, she''s
@@ -68230,6 +68374,16 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1793288818}
+    - target: {fileID: 5710942415498440450, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -110.61035
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710942415498440450, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -127.170166
+      objectReference: {fileID: 0}
     - target: {fileID: 6509981870225352265, guid: 26ff16c43d5d9ca40be08273eeb8b116,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

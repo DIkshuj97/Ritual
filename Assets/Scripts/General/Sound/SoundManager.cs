@@ -85,7 +85,15 @@ public class SoundManager : MonoBehaviour
             sound.source.loop = sound.loop;
      
     }
-
+    void SetMusicandSfx(Sound sound, AudioSource _aS)
+    {
+        sound.source = _aS;
+        _aS.clip = sound.clip;
+        _aS.volume = sound.volume;
+        _aS.pitch = sound.pitch;
+        _aS.loop = sound.loop;
+    }
+    
     public void StopChase()
     {
         ChaseAudioSource.Stop();
@@ -121,6 +129,7 @@ public class SoundManager : MonoBehaviour
     public void PlaySfx(string name)
     {
         Sound snd = Array.Find(allSfx, sound => sound.name == name);
+        SetMusicandSfx(snd, EffectsSource);
         try
         {
             snd.source.Play();
@@ -133,6 +142,7 @@ public class SoundManager : MonoBehaviour
     public void PlayMusic(string name)
     {
         Sound snd = Array.Find(allMusic, sound => sound.name == name);
+        SetMusicandSfx(snd, MusicSource);
         try
         {
             snd.source.Play();

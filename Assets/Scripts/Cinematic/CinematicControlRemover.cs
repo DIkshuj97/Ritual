@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class CinematicControlRemover : MonoBehaviour
 {
     public bool isLastCinematic;
+    public static bool cinematicPlaying = false;
     private void Awake()
     {
         GetComponent<PlayableDirector>().played += DisableControl;
@@ -23,11 +24,11 @@ public class CinematicControlRemover : MonoBehaviour
         GetComponent<PlayableDirector>().played -= DisableControl;
         GetComponent<PlayableDirector>().stopped -= EnableControl;
     }
-
+    
     void DisableControl(PlayableDirector pd)
     {
         PlayerController.playerControl = false;
-
+        cinematicPlaying = true;
         if (isLastCinematic) 
         {
             GameManager.ins.crawler.gameObject.SetActive(false);
@@ -37,6 +38,8 @@ public class CinematicControlRemover : MonoBehaviour
     void EnableControl(PlayableDirector pd)
     {
         PlayerController.playerControl = true;
+        cinematicPlaying = false;
+        Camera.main.cullingMask |= 1 << LayerMask.NameToLayer("Player");
         if (isLastCinematic)
         {
             GameManager.ins.crawler.gameObject.SetActive(true);
