@@ -26661,6 +26661,28 @@ Transform:
   m_Father: {fileID: 1527087407}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1083538509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1123693314251274, guid: b741fa043c0908c499bb320804aa111b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2659932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1083538514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083538509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9fd8b704c5aaa40948e24a6e5a5446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Battery
+    sentences:
+    - Another one... Nice
 --- !u!1 &1087073666
 GameObject:
   m_ObjectHideFlags: 0
@@ -42026,6 +42048,12 @@ Transform:
   m_Father: {fileID: 756391366}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1738983451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1123693314251274, guid: b741fa043c0908c499bb320804aa111b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7078992286547085380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1740187744
 GameObject:
   m_ObjectHideFlags: 0
@@ -68000,7 +68028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Hat
+    name: Sarah's Hat
     sentences:
     - Her hat is dropped here, did something happened to her?
     - She may have crossed the river for some reason
@@ -70841,6 +70869,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7078992286547085380}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7078992286547085386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738983451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9fd8b704c5aaa40948e24a6e5a5446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Battery
+    sentences:
+    - This looks like something useful for my flashlight...
 --- !u!4 &7083334950027585558
 Transform:
   m_ObjectHideFlags: 0
