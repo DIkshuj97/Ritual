@@ -101,6 +101,12 @@ public class DialogueManager : MonoBehaviour {
 		triggerOnce = true;
 		isDialogueEnded = true;
 		animator.SetBool("IsOpen", false);
+		StartCoroutine(DelayInteract());
 	}
-
+	IEnumerator DelayInteract()
+	{
+		yield return new WaitForSeconds(1);
+		PlayerInteract.canInteractAgain = true;
+	}
 }
+

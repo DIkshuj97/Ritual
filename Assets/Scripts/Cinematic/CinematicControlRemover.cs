@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class CinematicControlRemover : MonoBehaviour
 {
     public bool isLastCinematic;
-    public static bool cinematicPlaying = false;
+    public static bool cinematicPlaying;
     private void Awake()
     {
         GetComponent<PlayableDirector>().played += DisableControl;

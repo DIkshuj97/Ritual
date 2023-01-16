@@ -8,7 +8,7 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private Transform head;
     [SerializeField] private LayerMask interactLayer;
 
-     bool canInteractAgain = true;
+    public static bool canInteractAgain = true;
     void Update()
     {
         CastRay();
@@ -19,7 +19,7 @@ public class PlayerInteract : MonoBehaviour
         RaycastHit hitInfo = new RaycastHit();
         Ray ray = new Ray(head.position, head.forward);
         bool hit = Physics.Raycast(ray, out hitInfo, rayRange, interactLayer);
-        if (hit)
+        if (hit && PlayerController.playerControl)
         {
             UIManager.ins.handIcon.SetActive(true);
             GameObject hitObject = hitInfo.transform.gameObject;
@@ -27,18 +27,14 @@ public class PlayerInteract : MonoBehaviour
             {
                 hitObject.GetComponent<IInteractable>().Interact();
                 canInteractAgain = false;
-                StartCoroutine(DelayInteract());
             }
-        } else
+        }
+        else
         {
             UIManager.ins.handIcon.SetActive(false);
         }
     }
+}
 
    
-    IEnumerator DelayInteract()
-    {
-        yield return new WaitForSeconds(2);
-        canInteractAgain = true;
-    }
-}
+    
