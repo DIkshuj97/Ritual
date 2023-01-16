@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour
 {
-    Animator anim;
+   [HideInInspector] public Animator anim;
     bool TriggerOnce;
 
     public static bool isAlive;
@@ -14,6 +14,7 @@ public class PlayerDeath : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         anim = GetComponent<Animator>();
         anim.enabled = false;
         TriggerOnce = true;
@@ -22,7 +23,12 @@ public class PlayerDeath : MonoBehaviour
         aS_2 = GetComponent<PlayerController>().walkAS; // for death sound
     }
 
+    private void Update()
+    {
 
+        if (Input.GetKeyDown(KeyCode.G)) TriggerDeath();
+
+    }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {       
@@ -44,9 +50,18 @@ public class PlayerDeath : MonoBehaviour
         StartCoroutine(ShowGameOverMenu());
     }
 
+    public void RespawnAnim()
+    {
+        anim.SetTrigger("Respawn");
+    }
+    public void DisableAnimator()
+    {
+        isAlive = true;
+        anim.enabled = false;
+    }
     IEnumerator ShowGameOverMenu()
     {
         yield return new WaitForSeconds(2);
-        UIManager.ins.GameOverUI();
+        UIManager.ins.GameOverUI(true);
     }
 }

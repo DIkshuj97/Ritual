@@ -26,7 +26,7 @@ public class UIManager : MonoBehaviour
 
     public Sprite hidingOn;
     public Sprite hidingOff;
-
+    public GameObject SaveUI; 
     private void Awake()
     {
         if (ins != null && ins != this)
@@ -57,11 +57,12 @@ public class UIManager : MonoBehaviour
         //batteryText.text = "Batteries : "+(GameManager.ins.fLightScript.batteries+1).ToString();
         batteryBar.fillAmount = GameManager.ins.fLightScript.fillvalue;
     }
-     public void GameOverUI()
+     public void GameOverUI(bool value)
      {
-        Cursor.visible = true;
-        gameOverMenu.SetActive(true);
+        Cursor.visible = value;
+        gameOverMenu.SetActive(value);
      }
+   
     void TurnOffInitially()
     {
         Cursor.visible = false;
@@ -70,6 +71,7 @@ public class UIManager : MonoBehaviour
         handIcon.SetActive(false);
         bloodScreen.SetActive(false);
         batteryUI.SetActive(false);
+        SaveUI.SetActive(false);
     }
     void Pause_ResumeGame()
     {
@@ -102,14 +104,17 @@ public class UIManager : MonoBehaviour
     public void Restart()
     {
         SoundManager.ins.PlayPress();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //  SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameOverUI(false);
+        bloodScreen.SetActive(false);
+        GameManager.ins.Respawn();        
     }
     public void Menu()
     {
         Resume();
         SceneManager.LoadScene("Menu");
     }
-
+  
     public void Quit()
     {
         SoundManager.ins.PlayPress();
@@ -141,6 +146,14 @@ public class UIManager : MonoBehaviour
         {
             hideBushImage.sprite = hidingOff;
         }
+    }
+
+    public IEnumerator ShowSaveUI()
+    {
+        SaveUI.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SaveUI.SetActive(false);
+
     }
 
 }

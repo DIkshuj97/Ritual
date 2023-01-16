@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public FlashlightAdvanced fLightScript;
 
     [HideInInspector] public AIController crawler;
+
+    [HideInInspector] public CheckPointManager checkpointManager;
+
+    [HideInInspector] public PlayerDeath playerDeath;
     private void Awake()
     {
         if (ins != null && ins != this)
@@ -30,5 +34,13 @@ public class GameManager : MonoBehaviour
         crawler = GameObject.FindWithTag("Crawler").GetComponent<AIController>();
         GameObject.FindWithTag("Crawler").SetActive(false);
         fLightScript = player.GetComponent<PlayerController>().flashLightScript;
+        checkpointManager = GetComponent<CheckPointManager>();
+        playerDeath = player.GetComponent<PlayerDeath>();
+    }
+
+    public void Respawn()
+    {
+        player.transform.position = GetComponent<CheckPointManager>().GetActiveCheckPointPosition();
+        playerDeath.RespawnAnim();
     }
 }

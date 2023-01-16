@@ -442,8 +442,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 941990876178393013}
-  - component: {fileID: 941990876178393012}
   - component: {fileID: 941990876178393015}
+  - component: {fileID: 941990876178393012}
+  - component: {fileID: 7178533307789635475}
   - component: {fileID: 941990878095244552}
   - component: {fileID: 941990878095244554}
   m_Layer: 0
@@ -476,6 +477,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &941990876178393015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941990876178393014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cab4ca743e121344291dde3866f11009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  fLightScript: {fileID: 0}
+  crawler: {fileID: 0}
+  checkpointManager: {fileID: 0}
+  playerDeath: {fileID: 0}
 --- !u!114 &941990876178393012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,7 +520,8 @@ MonoBehaviour:
   hideBushImage: {fileID: 0}
   hidingOn: {fileID: 21300000, guid: 4fc421cbfda36514db271f408c0ebd3c, type: 3}
   hidingOff: {fileID: 21300000, guid: 41481b50f0d170c46b7725319951f281, type: 3}
---- !u!114 &941990876178393015
+  SaveUI: {fileID: 0}
+--- !u!114 &7178533307789635475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -511,12 +530,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 941990876178393014}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cab4ca743e121344291dde3866f11009, type: 3}
+  m_Script: {fileID: 11500000, guid: f5ef4710938994c45aaebce00ec34c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  fLightScript: {fileID: 0}
-  crawler: {fileID: 0}
 --- !u!114 &941990878095244552
 MonoBehaviour:
   m_ObjectHideFlags: 0
