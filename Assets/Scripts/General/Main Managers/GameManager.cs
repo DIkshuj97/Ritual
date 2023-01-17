@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void Respawn()
     {
-        player.transform.position = GetComponent<CheckPointManager>().GetActiveCheckPointPosition();
+        player.transform.position = checkpointManager.GetActiveCheckPointPosition();
         playerDeath.RespawnAnim();
     }
 }
