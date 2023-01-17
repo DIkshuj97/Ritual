@@ -9,7 +9,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource EffectsSource;
     public AudioSource MusicSource;
     public AudioSource ChaseAudioSource;
-    [SerializeField] private AudioSource hoverSource;
+    [SerializeField] private AudioSource hover_bushSource;
     public static SoundManager ins;
     void Awake()
     {
@@ -38,16 +38,21 @@ public class SoundManager : MonoBehaviour
         }
         
     }
+    public void PlayBush()
+    {
+      //  hover_bushSource.ignoreListenerPause = true;
+        PlayExtraAudio("Bush", hover_bushSource);
+    }
 
     public void PlayHover()
     {
-        hoverSource.ignoreListenerPause = true;
-        PlayExtraAudio("Click", hoverSource);
+        hover_bushSource.ignoreListenerPause = true;
+        PlayExtraAudio("Click", hover_bushSource);
     }
     public void PlayPress()
     {
-        hoverSource.ignoreListenerPause = true;
-        PlayExtraAudio("Press", hoverSource);
+        hover_bushSource.ignoreListenerPause = true;
+        PlayExtraAudio("Press", hover_bushSource);
     }
     void SetAllSfx()
     {

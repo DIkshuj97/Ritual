@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 329426524}
   - component: {fileID: 329426523}
   m_Layer: 0
-  m_Name: Hover AudioSource
+  m_Name: Hover/Bush AudioSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -673,10 +673,16 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Bush
+    clip: {fileID: 8300000, guid: fb41c51a00370b34a91b39214ac3d04f, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   EffectsSource: {fileID: 4430052137790136163}
   MusicSource: {fileID: 3100070270045308181}
   ChaseAudioSource: {fileID: 723601232}
-  hoverSource: {fileID: 329426523}
+  hover_bushSource: {fileID: 0}
 --- !u!1 &3424230028452369056
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,11 +26,13 @@ public class Bush : MonoBehaviour
     }
     private void SetModeTransparent()
     {
+        SoundManager.ins.PlayBush();
         meshRend.sharedMaterial = transparentMaterial;
         UIManager.ins.ChangeHideBushImage(true);
     }
     private void RevertMode()
     {
+        SoundManager.ins.PlayBush();
         meshRend.sharedMaterial = originalMat;
         UIManager.ins.ChangeHideBushImage(false);
     }
