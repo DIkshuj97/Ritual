@@ -694,7 +694,7 @@ MonoBehaviour:
   EffectsSource: {fileID: 4430052137790136163}
   MusicSource: {fileID: 3100070270045308181}
   ChaseAudioSource: {fileID: 723601232}
-  hover_bushSource: {fileID: 0}
+  hover_bushSource: {fileID: 329426523}
 --- !u!1 &3424230028452369056
 GameObject:
   m_ObjectHideFlags: 0
