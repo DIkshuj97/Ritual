@@ -7,6 +7,8 @@ public class CinematicControlRemover : MonoBehaviour
 {
     public bool isLastCinematic;
     public static bool cinematicPlaying;
+    public Animator cinematicAnimator;
+
     private void Awake()
     {
         GetComponent<PlayableDirector>().played += DisableControl;
@@ -26,6 +28,7 @@ public class CinematicControlRemover : MonoBehaviour
     }
     void DisableControl(PlayableDirector pd)
     {
+        cinematicAnimator.SetBool("On",true);
         PlayerController.playerControl = false;
         cinematicPlaying = true;
         if (isLastCinematic) 
@@ -36,6 +39,7 @@ public class CinematicControlRemover : MonoBehaviour
 
     void EnableControl(PlayableDirector pd)
     {
+        cinematicAnimator.SetBool("On",false);
         PlayerController.playerControl = true;
         cinematicPlaying = false;
         if (isLastCinematic)

@@ -34,6 +34,7 @@ public class AIController : MonoBehaviour
     int currentWaypointIndex = 0;
 
     public bool canChase = true;
+    
 
     private void Start()
     {
@@ -55,6 +56,7 @@ public class AIController : MonoBehaviour
 
         if (IsAggrevated() )
         {
+            
             AttackBehaviour();
         }
         else if (timeSinceLastSawPlayer < suspicionTime)
@@ -67,13 +69,6 @@ public class AIController : MonoBehaviour
         }
         UpdateTimers();
 
-        if(isCrawler)
-        {
-            if (navMeshAgent.velocity.magnitude > 0)
-            {
-                isCrawlerChasing = true;
-            }
-        }
     }
 
     private void UpdateTimers()
@@ -115,7 +110,6 @@ public class AIController : MonoBehaviour
         float speed = localvelocity.z;
         GetComponentInChildren<Animator>().SetFloat("ForwardSpeed", speed);
     }
-
 
     private void suspicionBehaviour()
     {
@@ -194,7 +188,17 @@ public class AIController : MonoBehaviour
                    
                     if (!target.GetComponent<Hide>().isHide)
                     {
-                       
+                       if(isCrawler)
+                        {
+                            if(isCrawlerChasing)
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                return false;
+                            }
+                        }
                         return true;
                     }      
                 }
