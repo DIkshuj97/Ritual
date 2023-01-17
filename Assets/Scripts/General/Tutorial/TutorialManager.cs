@@ -10,8 +10,6 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private AudioClip tutSfx; // play it later using AuidoManager
 
     public static TutorialManager ins;
-
-    private Animator tutAnim;
     private GameObject trigger;
 
     private void Awake()
@@ -29,17 +27,14 @@ public class TutorialManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tutAnim = GetComponent<Animator>();
         tutGO.SetActive(false);
     }
-    public void PlayAnim(GameObject triggerObj = null)
-    {
-        tutAnim.ResetTrigger("Tutorial");
+    public void TutorialActivate(GameObject triggerObj = null)
+    {    
         trigger = triggerObj;
         tutGO.SetActive(true);
-        tutAnim.SetTrigger("Tutorial");
     }
-    public void TriggerDeactivate()
+    public void TutorialDeactivate()
     {
         if (trigger != null) trigger.SetActive(false);
         tutGO.SetActive(false);

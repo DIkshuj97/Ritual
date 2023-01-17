@@ -364,7 +364,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1035606730137617067}
-  - component: {fileID: 3944768130584828642}
   - component: {fileID: 2293511643940579323}
   m_Layer: 5
   m_Name: Tutorial Manager
@@ -394,26 +393,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &3944768130584828642
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006261135438047044}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 409f7e3399aea884baa7e9486714c97a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &2293511643940579323
 MonoBehaviour:
   m_ObjectHideFlags: 0

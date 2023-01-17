@@ -28,6 +28,10 @@ public class FlashlightAdvanced : MonoBehaviour
    [HideInInspector] public float fillvalue;
 
     [SerializeField] private AudioSource aS;
+
+    bool isFirstTimeUse = true;
+    bool isFirstTimeRecharge = true;
+
     void Start()
     {
         f_light = GetComponent<Light>();
@@ -69,6 +73,12 @@ public class FlashlightAdvanced : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F) && off ) 
         {
+            if(isFirstTimeUse)
+            {
+                TutorialManager.ins.TutorialDeactivate();
+                isFirstTimeUse = false;
+            }
+            
             TurnOn();
         }
         else if (Input.GetKeyDown(KeyCode.F) && on )
@@ -96,6 +106,12 @@ public class FlashlightAdvanced : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R) && batteries >= 1)
         {
+            if (isFirstTimeRecharge)
+            {
+                TutorialManager.ins.TutorialDeactivate();
+                isFirstTimeRecharge = false;
+            }
+
             batteries -= 1;
             lifetime += lifeAmount;
             flickLimit = lifetime / 100 * flickPercent;

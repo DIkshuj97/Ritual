@@ -11,7 +11,7 @@ public class Tutorial : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             TutorialManager.ins.SetText(tutorialText);
-            TutorialManager.ins.PlayAnim(gameObject);
+            TutorialManager.ins.TutorialActivate(gameObject);
         }
     }
 }

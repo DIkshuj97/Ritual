@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class InteractableTorch : MonoBehaviour,IInteractable
 {
+    [TextArea(3, 10)] [SerializeField] private string tutorialText;
+
     public void Interact()
     {
+        TutorialManager.ins.SetText(tutorialText);
+        TutorialManager.ins.TutorialActivate(gameObject);
         var dt = GetComponent<DialogueTrigger>();
         if (dt != null) dt.TriggerDialogue();
         GameManager.ins.player.GetComponent<PlayerController>().UseTorch();

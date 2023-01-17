@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.19983529, g: 0.1945881, b: 0.19862598, a: 1}
+  m_IndirectSpecularColor: {r: 0.19987768, g: 0.19454071, b: 0.19839263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5306,6 +5306,65 @@ Transform:
   m_Father: {fileID: 917071313}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &256749774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 256749775}
+  - component: {fileID: 256749777}
+  - component: {fileID: 256749776}
+  m_Layer: 0
+  m_Name: Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &256749775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256749774}
+  m_LocalRotation: {x: 0, y: 0.1324294, z: 0, w: 0.99119246}
+  m_LocalPosition: {x: 148.66, y: 108.21, z: 907.97}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1485352135}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 15.22, z: 0}
+--- !u!65 &256749776
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256749774}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 5, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &256749777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256749774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aacb599ca4159640b624455a248ac8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialText: Press E to interact with objects
 --- !u!1 &267288842
 GameObject:
   m_ObjectHideFlags: 0
@@ -14348,6 +14407,7 @@ MonoBehaviour:
   dialogue:
     name: Truck
     sentences:
+    - .......
     - There must be some useful stuff in the truck I should look
 --- !u!1001 &744109894
 PrefabInstance:
@@ -27583,6 +27643,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffc2cf60b5e2c04798de32c9abe47a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1485352134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1485352135}
+  m_Layer: 0
+  m_Name: Tutorials
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1485352135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485352134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 256749775}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1487216599
 GameObject:
   m_ObjectHideFlags: 0
@@ -41147,7 +41239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &71070008958965121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49657,6 +49749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34216389cc50f714fb3b038c64a0eff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorialText: Press F to use torch
 --- !u!114 &3240646239763418071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49672,6 +49765,7 @@ MonoBehaviour:
   dialogue:
     name: Flashlight
     sentences:
+    - ......
     - Oh this flashlight will help me see in the forest.
 --- !u!65 &3240646239763418072
 BoxCollider:
@@ -53896,6 +53990,71 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1793288818}
+    - target: {fileID: 650817353831464549, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035606730137617067, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035606730137617067, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035606730137617067, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035606730137617067, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035606730137617067, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035606730137617067, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -170
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077747384062681235, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077747384062681235, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077747384062681235, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077747384062681235, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077747384062681235, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077747384062681235, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1520331952409333249, guid: 26ff16c43d5d9ca40be08273eeb8b116,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -54036,7 +54195,28 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1312491433}
-    m_RemovedComponents: []
+    - target: {fileID: 7397632367923896620, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397632367923896620, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397632367923896620, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397632367923896620, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3944768130584828642, guid: 26ff16c43d5d9ca40be08273eeb8b116, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 26ff16c43d5d9ca40be08273eeb8b116, type: 3}
 --- !u!1 &5710942413760693481 stripped
 GameObject:
@@ -56390,12 +56570,12 @@ PrefabInstance:
     - target: {fileID: 2841401378057695144, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.004828038
+      value: -0.004828044
       objectReference: {fileID: 0}
     - target: {fileID: 2841401378057695144, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.01387459
+      value: -0.013874609
       objectReference: {fileID: 0}
     - target: {fileID: 2841401378057695151, guid: 38d64065750b6994187119566930adec,
         type: 3}
@@ -56455,12 +56635,12 @@ PrefabInstance:
     - target: {fileID: 3909402398699646925, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0391285
+      value: 0.039128464
       objectReference: {fileID: 0}
     - target: {fileID: 3909402398699646925, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0064574033
+      value: 0.0064573977
       objectReference: {fileID: 0}
     - target: {fileID: 3909402399427797376, guid: 38d64065750b6994187119566930adec,
         type: 3}
@@ -56490,17 +56670,17 @@ PrefabInstance:
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.013638508
+      value: -0.013638482
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.020485628
+      value: 0.020485591
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00027947803
+      value: 0.000279477
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375709218972, guid: 38d64065750b6994187119566930adec,
         type: 3}
@@ -56744,6 +56924,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6834168750523442306, guid: b741fa043c0908c499bb320804aa111b,
+        type: 3}
+      propertyPath: tutorialText
+      value: Press R to Recharge Flashlight
+      objectReference: {fileID: 0}
     - target: {fileID: 8074043237466973464, guid: b741fa043c0908c499bb320804aa111b,
         type: 3}
       propertyPath: m_Height
@@ -56797,6 +56982,7 @@ MonoBehaviour:
   dialogue:
     name: Battery
     sentences:
+    - ......
     - This looks like something useful for my flashlight...
 --- !u!4 &7083334950027585558
 Transform:
