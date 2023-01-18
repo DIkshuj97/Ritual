@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource heartBeatAS;
 
     public static bool playerControl;
+    public static bool isOnlyLook = false;
 
     private void Start()
     {
@@ -78,7 +79,11 @@ public class PlayerController : MonoBehaviour
             moveDirection.y -= gravity * Time.deltaTime;
 
             // Move the controller
-            characterController.Move(moveDirection * Time.deltaTime);
+            if(!isOnlyLook)
+            {
+                characterController.Move(moveDirection * Time.deltaTime);
+            }
+            
 
             // Player and Camera rotation
             if (canMove && !UIManager.ins.gameIsPaused)
@@ -87,6 +92,7 @@ public class PlayerController : MonoBehaviour
                 rotation.y += Input.GetAxis("Mouse X") * lookSpeed;
                 rotation.x += -Input.GetAxis("Mouse Y") * lookSpeed;
                 rotation.x = Mathf.Clamp(rotation.x, -lookXLimit, lookXLimit);
+
                 playerHeadCam.localRotation = Quaternion.Euler(rotation.x, 0, 0);
                 transform.eulerAngles = new Vector2(0, rotation.y);
             } else

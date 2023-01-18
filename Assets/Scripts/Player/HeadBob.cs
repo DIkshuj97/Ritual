@@ -19,7 +19,7 @@ public class HeadBob : MonoBehaviour
     private Vector3 targetCameraPosition;
     private void Update()
     {
-        if(PlayerDeath.isAlive && PlayerController.playerControl)
+        if(PlayerDeath.isAlive && PlayerController.playerControl && !PlayerController.isOnlyLook)
         {
             // Set time and offset to 0
             if (!isWalking) walkingTime = 0;
