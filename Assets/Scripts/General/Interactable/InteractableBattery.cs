@@ -8,6 +8,7 @@ public class InteractableBattery : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        SoundManager.ins.PlayEquip();
         TutorialManager.ins.SetText(tutorialText);
         TutorialManager.ins.TutorialActivate(gameObject);
         //PlayerInteract.canInteractAgain = true;

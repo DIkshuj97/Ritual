@@ -8,6 +8,7 @@ public class InteractableTorch : MonoBehaviour,IInteractable
 
     public void Interact()
     {
+        SoundManager.ins.PlayEquip();
         TutorialManager.ins.SetText(tutorialText);
         TutorialManager.ins.TutorialActivate(gameObject);
         var dt = GetComponent<DialogueTrigger>();

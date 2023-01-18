@@ -26,7 +26,8 @@ public class UIManager : MonoBehaviour
 
     public Sprite hidingOn;
     public Sprite hidingOff;
-    public GameObject SaveUI; 
+    public GameObject SaveUI;
+    public RectTransform minimapBorder;
     private void Awake()
     {
         if (ins != null && ins != this)
@@ -56,6 +57,8 @@ public class UIManager : MonoBehaviour
         }
         //batteryText.text = "Batteries : "+(GameManager.ins.fLightScript.batteries+1).ToString();
         batteryBar.fillAmount = GameManager.ins.fLightScript.fillvalue;
+
+
     }
      public void GameOverUI(bool value)
      {

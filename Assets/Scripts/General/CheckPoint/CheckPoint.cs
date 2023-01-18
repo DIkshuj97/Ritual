@@ -11,6 +11,7 @@ public class CheckPoint : MonoBehaviour
         // If the player passes through the checkpoint, we activate it
         if (other.CompareTag("Player"))
         {
+            SoundManager.ins.PlaySave();
             GameManager.ins.checkpointManager.ActivateCheckPoint(this);
             GetComponent<BoxCollider>().enabled = false;
         }

@@ -95,6 +95,7 @@ public class PlayerController : MonoBehaviour
 
                 playerHeadCam.localRotation = Quaternion.Euler(rotation.x, 0, 0);
                 transform.eulerAngles = new Vector2(0, rotation.y);
+                UIManager.ins.minimapBorder.localRotation = Quaternion.Euler(0, 0, rotation.y);
             } else
             {
                 headBobScript.isWalking = false;
