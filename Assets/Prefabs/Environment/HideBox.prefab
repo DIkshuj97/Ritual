@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2622339434960779318}
   - component: {fileID: 2622339434960779313}
   - component: {fileID: 2622339434960779312}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 2622339435018426307}
   - component: {fileID: 2622339435018426306}
   - component: {fileID: 2622339435018426333}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 2622339435098510440}
   - component: {fileID: 2622339435098510443}
   - component: {fileID: 2622339435098510442}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 2622339435216708821}
   - component: {fileID: 2622339435216708820}
   - component: {fileID: 2622339435216708823}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 2622339435646640012}
   - component: {fileID: 2622339435646640015}
   - component: {fileID: 2622339435646640014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 2622339435862461731}
   - component: {fileID: 2622339435862461730}
   - component: {fileID: 2622339435862461757}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +578,7 @@ BoxCollider:
   m_GameObject: {fileID: 2622339435862461759}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 2622339436081871277}
   - component: {fileID: 2622339436081871276}
   - component: {fileID: 2622339436081871279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ BoxCollider:
   m_GameObject: {fileID: 2622339436081871273}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -688,7 +688,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2622339436355018090}
-  m_Layer: 0
+  - component: {fileID: 1480564829}
+  - component: {fileID: 1480564830}
+  m_Layer: 8
   m_Name: HideBox
   m_TagString: Hide
   m_Icon: {fileID: 0}
@@ -716,6 +718,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1480564829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622339436355018085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 5, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 1.55}
+--- !u!114 &1480564830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622339436355018085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed667bd459eb8414f93735bf6ef0f743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHide: 0
 --- !u!1 &2622339436556119020
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,7 +753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2622339436556119021}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +767,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2622339436556119020}
-  m_LocalRotation: {x: 0, y: 0.8263932, z: 0, w: 0.5630936}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -1.5, y: 0, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -748,4 +776,4 @@ Transform:
   - {fileID: 2622339435862461756}
   m_Father: {fileID: 2622339436355018090}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 111.46, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}

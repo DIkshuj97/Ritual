@@ -23,7 +23,7 @@ public class PlayerInteract : MonoBehaviour
         {
             UIManager.ins.handIcon.SetActive(true);
             GameObject hitObject = hitInfo.transform.gameObject;
-            if (hitObject.GetComponent<IInteractable>() != null && Input.GetKeyDown(KeyCode.E) && canInteractAgain)
+            if (hitObject.GetComponent<IInteractable>() != null && Input.GetKeyDown(KeyCode.E) /* && canInteractAgain*/)
             {
                 hitObject.GetComponent<IInteractable>().Interact();
                 canInteractAgain = false;
