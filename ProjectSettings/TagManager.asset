@@ -7,6 +7,7 @@ TagManager:
   - Hide
   - Crawler
   - CheckPoint
+  - Light
   layers:
   - Default
   - TransparentFX

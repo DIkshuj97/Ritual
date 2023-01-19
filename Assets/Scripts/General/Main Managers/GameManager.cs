@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] CrawlerRespawn crawlerRespawn;
 
+    [HideInInspector] public GameObject dLight;
+
+    private float intensity = 2f;
     private void Awake()
     {
         if (ins != null && ins != this)
@@ -41,6 +44,9 @@ public class GameManager : MonoBehaviour
         fLightScript = player.GetComponent<PlayerController>().flashLightScript;
         checkpointManager = GetComponent<CheckPointManager>();
         playerDeath = player.GetComponent<PlayerDeath>();
+        dLight = GameObject.FindGameObjectWithTag("Light");
+        dLight.SetActive(false);
+        dLight.GetComponent<Light>().intensity = intensity;
     }
 
     public void Respawn()
