@@ -20,15 +20,21 @@ public class InteractableHideSpot : MonoBehaviour
 
     public void Interact()
     {
-        
         if (!isHide)
         {
             SoundManager.ins.PlayToilet();
+            GameManager.ins.player.GetComponent<CharacterController>().enabled = false;
             boxCollider.isTrigger = true;
-            GameManager.ins.player.GetComponent<CharacterController>().Move(new Vector3(0,0,-4));
-            PlayerController.isOnlyLook = true;
+            Vector3 pos = new Vector3(transform.position.x, GameManager.ins.player.transform.position.y, transform.position.z);
+           
+            GameManager.ins.player.transform.position = pos;
+            //GameManager.ins.player.GetComponent<CharacterController>().Move(new Vector3(pos.x,0,-pos.y));
+            //
+            //PlayerController.isOnlyLook = true;
             boxCollider.isTrigger = false;
             isHide = true;
+            UIManager.ins.ChangeHideBushImage(true);
+            StartCoroutine(EnableController());
         }
         else
         {
@@ -37,8 +43,14 @@ public class InteractableHideSpot : MonoBehaviour
             PlayerController.isOnlyLook = false;
             boxCollider.isTrigger = false;
             isHide = false;
+            UIManager.ins.ChangeHideBushImage(false);
         }
     }
 
-   
+    IEnumerator EnableController()
+    {
+        yield return new WaitForSeconds(0.2f);
+        GameManager.ins.player.GetComponent<CharacterController>().enabled = true;
+    }
+
 }
