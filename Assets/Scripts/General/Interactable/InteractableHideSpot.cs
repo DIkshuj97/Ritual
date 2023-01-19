@@ -25,12 +25,11 @@ public class InteractableHideSpot : MonoBehaviour
             SoundManager.ins.PlayToilet();
             GameManager.ins.player.GetComponent<CharacterController>().enabled = false;
             boxCollider.isTrigger = true;
-            Vector3 pos = new Vector3(transform.position.x, GameManager.ins.player.transform.position.y, transform.position.z);
+            Vector3 pos = new Vector3(transform.position.x, GameManager.ins.player.transform.position.y, transform.position.z+0.5f);
            
             GameManager.ins.player.transform.position = pos;
-            //GameManager.ins.player.GetComponent<CharacterController>().Move(new Vector3(pos.x,0,-pos.y));
-            //
-            //PlayerController.isOnlyLook = true;
+
+            PlayerController.isOnlyLook = true;
             boxCollider.isTrigger = false;
             isHide = true;
             UIManager.ins.ChangeHideBushImage(true);
@@ -39,7 +38,7 @@ public class InteractableHideSpot : MonoBehaviour
         else
         {
             boxCollider.isTrigger = true;
-            GameManager.ins.player.GetComponent<CharacterController>().Move(new Vector3(0, 0, 4));
+            GameManager.ins.player.GetComponent<CharacterController>().Move(new Vector3(0, 0, 3));
             PlayerController.isOnlyLook = false;
             boxCollider.isTrigger = false;
             isHide = false;
