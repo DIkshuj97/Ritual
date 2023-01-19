@@ -5,7 +5,7 @@ using UnityEngine;
 public class InteractableHideSpot : MonoBehaviour
 {
     public bool isHide = false;
-
+    [SerializeField] BoxCollider boxCollider;
     private void OnTriggerStay(Collider other)
     {
         if(other.tag=="Player")
@@ -20,20 +20,22 @@ public class InteractableHideSpot : MonoBehaviour
 
     public void Interact()
     {
-        if(!isHide)
+        
+        if (!isHide)
         {
-            GetComponent<BoxCollider>().isTrigger = true;
-            GameManager.ins.player.GetComponent<CharacterController>().Move(new Vector3(0,0,-3));
+            SoundManager.ins.PlayToilet();
+            boxCollider.isTrigger = true;
+            GameManager.ins.player.GetComponent<CharacterController>().Move(new Vector3(0,0,-4));
             PlayerController.isOnlyLook = true;
-           GetComponent<BoxCollider>().isTrigger = false;
+            boxCollider.isTrigger = false;
             isHide = true;
         }
         else
         {
-            GetComponent<BoxCollider>().isTrigger = true;
+            boxCollider.isTrigger = true;
             GameManager.ins.player.GetComponent<CharacterController>().Move(new Vector3(0, 0, 4));
             PlayerController.isOnlyLook = false;
-            GetComponent<BoxCollider>().isTrigger = false;
+            boxCollider.isTrigger = false;
             isHide = false;
         }
     }

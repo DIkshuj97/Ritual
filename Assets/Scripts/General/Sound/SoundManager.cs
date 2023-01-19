@@ -34,6 +34,12 @@ public class SoundManager : MonoBehaviour
     {
         PlayExtraAudio("Save", Toilet_Save_AudioSource);
     }
+
+    public void PlayToilet()
+    {
+        PlayExtraAudio("ToiletIn", Toilet_Save_AudioSource);
+    }
+
     public void PlayChaseSound()
     {
         if(!ChaseAudioSource.isPlaying)
