@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public GameObject dLight;
 
+    private float intensity = 2f;
     private void Awake()
     {
         if (ins != null && ins != this)
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
         playerDeath = player.GetComponent<PlayerDeath>();
         dLight = GameObject.FindGameObjectWithTag("Light");
         dLight.SetActive(false);
+        dLight.GetComponent<Light>().intensity = intensity;
     }
 
     public void Respawn()
