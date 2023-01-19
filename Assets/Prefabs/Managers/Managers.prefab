@@ -623,6 +623,9 @@ MonoBehaviour:
   crawler: {fileID: 0}
   checkpointManager: {fileID: 0}
   playerDeath: {fileID: 0}
+  crawlerRespawnPoint: {fileID: 0}
+  crawlerRespawn: {fileID: 0}
+  dLight: {fileID: 0}
 --- !u!114 &941990876178393012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,7 +826,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Save
     clip: {fileID: 8300000, guid: fbfdc6635b96cd4439c9ed9c71629f2e, type: 3}
-    volume: 0.5
+    volume: 0.35
     pitch: 1
     loop: 0
     source: {fileID: 0}
