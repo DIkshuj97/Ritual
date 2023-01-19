@@ -52,6 +52,7 @@ public class PlayerDeath : MonoBehaviour
 
     public void RespawnAnim()
     {
+        TriggerOnce = true;
         anim.SetTrigger("Respawn");
     }
     public void DisableAnimator()

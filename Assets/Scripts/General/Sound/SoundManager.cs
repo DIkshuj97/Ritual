@@ -6,10 +6,11 @@ public class SoundManager : MonoBehaviour
     public Sound[] allSfx;
     public Sound[] allMusic;
     public Sound[] extras;
-    public AudioSource EffectsSource;
-    public AudioSource MusicSource;
-    public AudioSource ChaseAudioSource;
-    [SerializeField] private AudioSource hover_bushSource;
+    [SerializeField] private AudioSource EffectsSource;
+    [SerializeField] private AudioSource MusicSource;
+    [SerializeField] private AudioSource ChaseAudioSource;
+    [SerializeField] private AudioSource Hover_Bush_EquipSource;
+    [SerializeField] private AudioSource Toilet_Save_AudioSource;
     public static SoundManager ins;
     void Awake()
     {
@@ -29,6 +30,15 @@ public class SoundManager : MonoBehaviour
         SetAllMusic();
         PlayMusic("BGM");
     }
+    public void PlaySave()
+    {
+        PlayExtraAudio("Save", Toilet_Save_AudioSource);
+    }
+
+    public void PlayToilet()
+    {
+        PlayExtraAudio("ToiletIn", Toilet_Save_AudioSource);
+    }
 
     public void PlayChaseSound()
     {
@@ -38,21 +48,25 @@ public class SoundManager : MonoBehaviour
         }
         
     }
+    public void PlayEquip()
+    {
+        PlayExtraAudio("Equip", Hover_Bush_EquipSource);
+    }
     public void PlayBush()
     {
       //  hover_bushSource.ignoreListenerPause = true;
-        PlayExtraAudio("Bush", hover_bushSource);
+        PlayExtraAudio("Bush", Hover_Bush_EquipSource);
     }
 
     public void PlayHover()
     {
-        hover_bushSource.ignoreListenerPause = true;
-        PlayExtraAudio("Click", hover_bushSource);
+        Hover_Bush_EquipSource.ignoreListenerPause = true;
+        PlayExtraAudio("Click", Hover_Bush_EquipSource);
     }
     public void PlayPress()
     {
-        hover_bushSource.ignoreListenerPause = true;
-        PlayExtraAudio("Press", hover_bushSource);
+        Hover_Bush_EquipSource.ignoreListenerPause = true;
+        PlayExtraAudio("Press", Hover_Bush_EquipSource);
     }
     void SetAllSfx()
     {

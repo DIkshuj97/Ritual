@@ -95,6 +95,7 @@ public class PlayerController : MonoBehaviour
 
                 playerHeadCam.localRotation = Quaternion.Euler(rotation.x, 0, 0);
                 transform.eulerAngles = new Vector2(0, rotation.y);
+                UIManager.ins.minimapBorder.localRotation = Quaternion.Euler(0, 0, rotation.y);
             } else
             {
                 headBobScript.isWalking = false;
@@ -103,7 +104,7 @@ public class PlayerController : MonoBehaviour
 
             headBobScript.isWalking = (Mathf.Abs(characterController.velocity.x) > 0.1f || Mathf.Abs(characterController.velocity.z) > 0.1f) ? true : false;
 
-            if (canMove && headBobScript.isWalking && characterController.isGrounded)
+            if (canMove && headBobScript.isWalking && characterController.isGrounded && !isOnlyLook)
             {
                 walkAS.UnPause();
             } else
