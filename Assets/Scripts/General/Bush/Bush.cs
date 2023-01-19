@@ -18,6 +18,8 @@ public class Bush : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player")) SetModeTransparent();
+
+        TutorialManager.ins.TutorialDeactivate();
     }
 
     private void OnTriggerExit(Collider other)

@@ -15,6 +15,11 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public CheckPointManager checkpointManager;
 
     [HideInInspector] public PlayerDeath playerDeath;
+
+    [SerializeField] Transform crawlerRespawnPoint;
+
+    [SerializeField] CrawlerRespawn crawlerRespawn;
+
     private void Awake()
     {
         if (ins != null && ins != this)
@@ -42,5 +47,10 @@ public class GameManager : MonoBehaviour
     {
         player.transform.position = checkpointManager.GetActiveCheckPointPosition();
         playerDeath.RespawnAnim();
+        
+        if(crawlerRespawn.isReSpawn)
+        {
+            crawler.transform.position = crawlerRespawnPoint.position;
+        }
     }
 }

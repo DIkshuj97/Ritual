@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class CheckPointManager : MonoBehaviour
 {
-   
-   
 
    // private Animator thisAnimator;
 
