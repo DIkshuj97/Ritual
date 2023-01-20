@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public GameObject dLight;
 
+    [HideInInspector] public bool flashLightPicked;
+
     private float intensity = 2f;
     private void Awake()
     {
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
         dLight = GameObject.FindGameObjectWithTag("Light");
         dLight.SetActive(false);
         dLight.GetComponent<Light>().intensity = intensity;
+        flashLightPicked = false;
     }
 
     public void Respawn()

@@ -8,6 +8,7 @@ public class InteractableTorch : MonoBehaviour,IInteractable
 
     public void Interact()
     {
+        GameManager.ins.flashLightPicked = true;
         SoundManager.ins.PlayEquip();
         TutorialManager.ins.SetText(tutorialText);
         TutorialManager.ins.TutorialActivate(gameObject);
