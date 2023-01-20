@@ -982,7 +982,8 @@ MonoBehaviour:
   EffectsSource: {fileID: 0}
   MusicSource: {fileID: 0}
   ChaseAudioSource: {fileID: 0}
-  hoverSource: {fileID: 0}
+  Hover_Bush_EquipSource: {fileID: 0}
+  Toilet_Save_AudioSource: {fileID: 0}
 --- !u!4 &995579979
 Transform:
   m_ObjectHideFlags: 0
@@ -2155,7 +2156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 393ee4f52d5e3814bb238ad878ff441d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 2
+  sceneIndex: 4
 --- !u!95 &71070009174887902
 Animator:
   serializedVersion: 5
