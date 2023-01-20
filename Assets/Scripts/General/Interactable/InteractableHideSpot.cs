@@ -2,26 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableHideSpot : MonoBehaviour
+public class InteractableHideSpot : MonoBehaviour, IInteractable
 {
-    public bool isHide = false;
+    bool inside = false;
+    bool outside = true;
     [SerializeField] BoxCollider boxCollider;
-    private void OnTriggerStay(Collider other)
-    {
-        if(other.tag=="Player")
-        {
-            if(Input.GetKeyDown("e"))
-            {
-                Interact();
-            }
-           
-        }
-    }
 
     public void Interact()
     {
-        if (!isHide)
+        if (outside && !inside)
         {
+            outside = false;
+            inside = true;
+            
             SoundManager.ins.PlayToilet();
             GameManager.ins.player.GetComponent<CharacterController>().enabled = false;
             boxCollider.isTrigger = true;
@@ -31,21 +24,28 @@ public class InteractableHideSpot : MonoBehaviour
 
             PlayerController.isOnlyLook = true;
             boxCollider.isTrigger = false;
-            isHide = true;
+           
             UIManager.ins.ChangeHideBushImage(true);
             StartCoroutine(EnableController());
         }
-        else
+        else if(inside && !outside)
         {
+            outside = true;
+            inside = false;
             boxCollider.isTrigger = true;
             GameManager.ins.player.GetComponent<CharacterController>().Move(new Vector3(0, 0, 3));
             PlayerController.isOnlyLook = false;
             boxCollider.isTrigger = false;
-            isHide = false;
+            //isHide = false;
             UIManager.ins.ChangeHideBushImage(false);
         }
+        StartCoroutine(EnableInteract());
     }
-
+    IEnumerator EnableInteract()
+    {
+        yield return new WaitForSeconds(0.5f);
+        PlayerInteract.canInteractAgain = true;
+    }
     IEnumerator EnableController()
     {
         yield return new WaitForSeconds(0.2f);
