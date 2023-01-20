@@ -15,7 +15,7 @@ public class InteractableHideSpot : MonoBehaviour, IInteractable
             outside = false;
             inside = true;
             
-            SoundManager.ins.PlayToilet();
+            SoundManager.ins.PlayToiletIn();
             GameManager.ins.player.GetComponent<CharacterController>().enabled = false;
             boxCollider.isTrigger = true;
             Vector3 pos = new Vector3(transform.position.x, GameManager.ins.player.transform.position.y, transform.position.z+0.5f);
@@ -30,6 +30,7 @@ public class InteractableHideSpot : MonoBehaviour, IInteractable
         }
         else if(inside && !outside)
         {
+            SoundManager.ins.PlayToiletOut();
             outside = true;
             inside = false;
             boxCollider.isTrigger = true;

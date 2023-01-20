@@ -818,6 +818,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: ToiletOut
+    clip: {fileID: 8300000, guid: c3f1c6fd44a4d8e4b9fb890a3c763aba, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   - name: Equip
     clip: {fileID: 8300000, guid: 34faadc4b24ec7d4c9ed27396cc5a2fe, type: 3}
     volume: 0.75
