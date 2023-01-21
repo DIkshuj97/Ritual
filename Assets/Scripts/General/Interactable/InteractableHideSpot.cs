@@ -18,7 +18,7 @@ public class InteractableHideSpot : MonoBehaviour, IInteractable
             inside = true;
             GameManager.ins.player.GetComponent<CharacterController>().enabled = false;
             boxCollider.isTrigger = true;
-            Vector3 pos = new Vector3(transform.position.x, GameManager.ins.player.transform.position.y, transform.position.z+0.5f);
+            Vector3 pos = new Vector3(transform.position.x, GameManager.ins.player.transform.position.y, transform.position.z);
            
             GameManager.ins.player.transform.position = pos;
 
@@ -35,13 +35,20 @@ public class InteractableHideSpot : MonoBehaviour, IInteractable
             outside = true;
             inside = false;
             boxCollider.isTrigger = true;
-            GameManager.ins.player.GetComponent<CharacterController>().Move(new Vector3(0, 0, 3));
+            Vector3 dir = GameManager.ins.player.transform.TransformDirection(Vector3.forward*4);
+            GameManager.ins.player.GetComponent<CharacterController>().Move(dir);
             PlayerController.isOnlyLook = false;
-            boxCollider.isTrigger = false;
+           
             //isHide = false;
             UIManager.ins.ChangeHideBushImage(false);
+            StartCoroutine(EnableTrigger());
         }
         StartCoroutine(EnableInteract());
+    }
+    IEnumerator EnableTrigger()
+    {
+        yield return new WaitForSeconds(0.2f);
+        boxCollider.isTrigger = false;
     }
     IEnumerator EnableInteract()
     {
