@@ -30,7 +30,7 @@ public class InteractableHideSpot : MonoBehaviour, IInteractable
         }
         else if(inside && !outside)
         {
-            GameManager.ins.dLight.SetActive(true);
+            GameManager.ins.dLight.SetActive(false);
             SoundManager.ins.PlayToiletOut();
             outside = true;
             inside = false;

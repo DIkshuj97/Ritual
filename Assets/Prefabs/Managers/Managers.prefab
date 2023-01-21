@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 571914948}
   - component: {fileID: 571914947}
   m_Layer: 0
-  m_Name: Toilet/Save Audiosource
+  m_Name: Toilet/Save/Scream Audiosource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -626,6 +626,7 @@ MonoBehaviour:
   crawlerRespawnPoint: {fileID: 0}
   crawlerRespawn: {fileID: 0}
   dLight: {fileID: 0}
+  flashLightPicked: 0
 --- !u!114 &941990876178393012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -836,11 +837,17 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Scream
+    clip: {fileID: 8300000, guid: 3a257b886be042444813fccc0407dbf3, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   EffectsSource: {fileID: 4430052137790136163}
   MusicSource: {fileID: 3100070270045308181}
   ChaseAudioSource: {fileID: 723601232}
   Hover_Bush_EquipSource: {fileID: 329426523}
-  Toilet_Save_AudioSource: {fileID: 571914947}
+  Toilet_Save_Scream_AudioSource: {fileID: 571914947}
 --- !u!1 &3424230028452369056
 GameObject:
   m_ObjectHideFlags: 0

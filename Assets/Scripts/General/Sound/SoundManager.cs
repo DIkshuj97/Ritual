@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioSource MusicSource;
     [SerializeField] private AudioSource ChaseAudioSource;
     [SerializeField] private AudioSource Hover_Bush_EquipSource;
-    [SerializeField] private AudioSource Toilet_Save_AudioSource;
+    [SerializeField] private AudioSource Toilet_Save_Scream_AudioSource;
     public static SoundManager ins;
     void Awake()
     {
@@ -32,16 +32,16 @@ public class SoundManager : MonoBehaviour
     }
     public void PlaySave()
     {
-        PlayExtraAudio("Save", Toilet_Save_AudioSource);
+        PlayExtraAudio("Save", Toilet_Save_Scream_AudioSource);
     }
 
     public void PlayToiletIn()
     {
-        PlayExtraAudio("ToiletIn", Toilet_Save_AudioSource);
+        PlayExtraAudio("ToiletIn", Toilet_Save_Scream_AudioSource);
     }
     public void PlayToiletOut()
     {
-        PlayExtraAudio("ToiletOut", Toilet_Save_AudioSource);
+        PlayExtraAudio("ToiletOut", Toilet_Save_Scream_AudioSource);
     }
     public void PlayChaseSound()
     {
@@ -51,6 +51,12 @@ public class SoundManager : MonoBehaviour
         }
         
     }
+
+    public void PlayScreamSound()
+    {
+        PlayExtraAudio("Scream", Toilet_Save_Scream_AudioSource);
+    }
+
     public void PlayEquip()
     {
         PlayExtraAudio("Equip", Hover_Bush_EquipSource);
