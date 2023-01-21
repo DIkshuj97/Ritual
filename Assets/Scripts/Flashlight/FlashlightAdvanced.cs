@@ -42,6 +42,11 @@ public class FlashlightAdvanced : MonoBehaviour
         f_light.enabled = false;
     }
 
+    public void SetLifeTime(float lifeTime)
+    {
+        lifetime = lifeTime;
+    }
+
     private void TurnOn()
     {
         // sound of button on

@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
     {
         player.transform.position = checkpointManager.GetActiveCheckPointPosition();
         playerDeath.RespawnAnim();
+        fLightScript.SetLifeTime(80);
         
         if(crawlerRespawn.isReSpawn)
         {
