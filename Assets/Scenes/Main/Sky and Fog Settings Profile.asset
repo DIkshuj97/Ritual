@@ -15,19 +15,19 @@ MonoBehaviour:
   active: 1
   indirectDiffuseLightingMultiplier:
     m_OverrideState: 1
-    m_Value: 0.3
+    m_Value: 0.2
   indirectDiffuseLightingLayers:
     m_OverrideState: 0
     m_Value: 255
   reflectionLightingMultiplier:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.2
   reflectionLightingLayers:
     m_OverrideState: 0
     m_Value: 255
   reflectionProbeIntensityMultiplier:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.2
 --- !u!114 &-3051863399138289189
 MonoBehaviour:
   m_ObjectHideFlags: 3

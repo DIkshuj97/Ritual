@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public bool flashLightPicked;
 
-    private float intensity = 2f;
+    private float intensity = 3f;
     private void Awake()
     {
         if (ins != null && ins != this)
