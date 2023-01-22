@@ -3154,8 +3154,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640290631}
-  m_LocalRotation: {x: -0.0114272265, y: -0.6023619, z: -0.008624698, w: 0.7980947}
-  m_LocalPosition: {x: 37.16277, y: 7.991, z: 26.486}
+  m_LocalRotation: {x: 0.254942, y: -0.48866346, z: 0.15184249, w: 0.82046115}
+  m_LocalPosition: {x: -278.80002, y: 6, z: 68.28246}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5452,11 +5452,14 @@ MonoBehaviour:
   dialogueCine:
     name: Yo
     sentences:
-    - asdasdad
-    - asdadasda
-    - asdascascxzxzsdasdc
-    - zxczxczcxzxc
-    - zcxzzxcx
+    - 'Sarah: Are you sure we took the right exit? '
+    - 'Jake: I have travelled on this route before, this one is shortest route
+
+'
+    - 'Sarah: There are also no cars on this road and the fog is giving me the creeps'
+    - "Jake: No cars? That's good right we'll reach the destination early \r\n"
+    - 'Sarah: What''s that, watch out!'
+    - 'Jake: Hold on!'
   aS: {fileID: 0}
 --- !u!4 &1089805142
 Transform:
@@ -9796,7 +9799,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015523280}
-  m_LocalRotation: {x: 0.254942, y: -0.48866343, z: 0.15184246, w: 0.82046115}
+  m_LocalRotation: {x: 0.254942, y: -0.48866346, z: 0.15184249, w: 0.82046115}
   m_LocalPosition: {x: -278.80002, y: 6, z: 68.28246}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

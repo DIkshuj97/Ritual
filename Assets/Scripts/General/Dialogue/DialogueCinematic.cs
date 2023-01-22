@@ -83,9 +83,9 @@ public class DialogueCinematic : MonoBehaviour
 			
 			//SoundManager.ins.PlayExtraAudio("DialogueType", aS);
 			dialogueText.text += letter;
-			yield return new WaitForSeconds(0.04f);
+			yield return new WaitForSeconds(0.03f);
 		}
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(1f);
 		DisplayNextSentence();
 	}
 

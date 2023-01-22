@@ -1825,6 +1825,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 251288909473991684, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 251288909473991684, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: That's her hat dropped I'm going in the right direction
+      objectReference: {fileID: 0}
     - target: {fileID: 5663393533424418142, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
         type: 3}
       propertyPath: m_Name
@@ -2225,6 +2235,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Cultist: Hey, who are you? you don't look like you're a cult member.
+        What are you doing over here? \n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 'Jake (Player): I''m Jake, I had a car accident and I was unconscious
+        and woke up from the scream of my wife I am trying to find her. But who are
+        you and who are these people over here? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: 'Cultist:  I see. I''m part of this forest cult and I have left the
+        demonic worship they do and I''m trying to convince others do that too'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: 'Cultist: I''ve seen your wife, the cult members are going to sacrifice
+        her to the false gods, I tried to stop them but they would not listen'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: 'Cultist: After you save her follow the path to the north and don''t
+        deviate. It''ll lead you back to the road
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: "Jake (Player): Oh f**k, I'll go right away, I must save her I can't
+        let this happen \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: "Jake (Player): Oh f**k, I'll go right away, I must save her I can't
+        let this happen \r"
+      objectReference: {fileID: 0}
     - target: {fileID: 6352391701685459370, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
         type: 3}
       propertyPath: m_Name
@@ -2365,6 +2425,29 @@ PrefabInstance:
       propertyPath: cinematicTrigger
       value: 
       objectReference: {fileID: 5070528377712693193}
+    - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 'Jake (Player): I couldn''t save her from these lunatics'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: 'Praying Cultist: You have disturbed this ritual by entering this site,
+        the gods have unleashed the ghoul you must also be sacrificed to make this
+        right.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: 'Praying Cultist: You have disturbed this ritual by entering this ritual
+        site, the gods have unleashed the ghoul you must also DIE to make this right.'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a861e82d2302484fab8b321d4cee4f0, type: 3}
 --- !u!1001 &7003253337748787732
@@ -2412,12 +2495,12 @@ PrefabInstance:
     - target: {fileID: 2841401378057695144, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.004828044
+      value: -0.004828038
       objectReference: {fileID: 0}
     - target: {fileID: 2841401378057695144, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.013874609
+      value: -0.01387459
       objectReference: {fileID: 0}
     - target: {fileID: 2841401378057695151, guid: 38d64065750b6994187119566930adec,
         type: 3}
@@ -2492,12 +2575,12 @@ PrefabInstance:
     - target: {fileID: 3909402398699646925, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0391285
+      value: 0.039128464
       objectReference: {fileID: 0}
     - target: {fileID: 3909402398699646925, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0064574033
+      value: 0.0064573977
       objectReference: {fileID: 0}
     - target: {fileID: 3909402399427797376, guid: 38d64065750b6994187119566930adec,
         type: 3}
@@ -2537,17 +2620,17 @@ PrefabInstance:
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.013638482
+      value: -0.013638508
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.020485591
+      value: 0.020485628
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000279477
+      value: 0.00027947803
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375709218972, guid: 38d64065750b6994187119566930adec,
         type: 3}
@@ -2820,6 +2903,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329660671453374, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: dialogue.name
+      value: Screaming Sarah
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329660671453374, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: I'm coming I won't let anything happen to her
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36c3edaf1767c084b8a8214aac5f8df1, type: 3}
