@@ -17,7 +17,7 @@ public class FlashlightAdvanced : MonoBehaviour
     [SerializeField] private float flickerSpeed;
     [SerializeField] private float flickerNoise;
 
-    [SerializeField] private bool canFlicker = false;
+    public bool canFlicker = false;
     float flickLimit;
     [SerializeField] private int flickPercent;
 

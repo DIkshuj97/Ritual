@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
         HideManager.HideToggle(false);
         playerDeath.RespawnAnim();
         fLightScript.SetLifeTime(80);
+        fLightScript.canFlicker = false;
         
         if(crawlerRespawn.isReSpawn)
         {
