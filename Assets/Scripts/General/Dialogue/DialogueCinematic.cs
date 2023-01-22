@@ -27,16 +27,17 @@ public class DialogueCinematic : MonoBehaviour
 
 	private void Update()
 	{
-		if (sentences != null)
-		{
-			if (Input.GetKeyDown(KeyCode.E) && animator.GetBool("IsOpen"))
-			{
-				//aS.s
-				DisplayNextSentence();
-				//SoundManager.ins.PlayExtraAudio("DialogueSkip", aS);
-			}
-		}
-	}
+        //if (sentences != null)
+        //{
+        //    if (Input.GetKeyDown(KeyCode.E) && animator.GetBool("IsOpen"))
+        //    {
+        //        aS.s
+
+        //        DisplayNextSentence();
+        //        SoundManager.ins.PlayExtraAudio("DialogueSkip", aS);
+        //    }
+        //}
+    }
 
 	IEnumerator StartingDialogue()
 	{
