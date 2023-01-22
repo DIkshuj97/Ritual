@@ -817,6 +817,31 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1520331953962243887}
+    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
+        type: 3}
+      propertyPath: extras.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
+        type: 3}
+      propertyPath: extras.Array.data[17].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7dbf09baba40dd54b82f88280da9c589, type: 3}
+    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
+        type: 3}
+      propertyPath: extras.Array.data[17].name
+      value: ScreamStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
+        type: 3}
+      propertyPath: extras.Array.data[17].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
+        type: 3}
+      propertyPath: extras.Array.data[17].volume
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a, type: 3}
 --- !u!114 &1793288818 stripped
@@ -2632,17 +2657,17 @@ PrefabInstance:
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.013638508
+      value: -0.013638482
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.020485628
+      value: 0.020485591
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00027947803
+      value: 0.000279477
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375709218972, guid: 38d64065750b6994187119566930adec,
         type: 3}
@@ -2856,6 +2881,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9673342
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2535047
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -29.37
+      objectReference: {fileID: 0}
     - target: {fileID: 8690329660331214489, guid: 36c3edaf1767c084b8a8214aac5f8df1,
         type: 3}
       propertyPath: m_RootOrder
@@ -2924,7 +2984,7 @@ PrefabInstance:
     - target: {fileID: 8690329660671453374, guid: 36c3edaf1767c084b8a8214aac5f8df1,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: I'm coming I won't let anything happen to her
+      value: I'm coming Sarah, I won't let anything happen to you
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36c3edaf1767c084b8a8214aac5f8df1, type: 3}

@@ -52,6 +52,16 @@ public class SoundManager : MonoBehaviour
         
     }
 
+    public void PlayStartScreamSound()
+    {
+        if (Toilet_Save_Scream_AudioSource != null)
+        {
+            PlayExtraAudio("ScreamStart", Toilet_Save_Scream_AudioSource);
+        }
+
+    }
+
+
     public void PlayScreamSound()
     {
         if(Toilet_Save_Scream_AudioSource!=null)
