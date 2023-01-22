@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class IntroDialogue : MonoBehaviour
 {
+    [SerializeField] GameObject continuedText;
     private void Update()
     {
         if(DialogueManager.isDialogueEnded)
         {
-            FindObjectOfType<Fader>().FadeToLevel();
+            continuedText.SetActive(true);
+           
         }
     }
 }

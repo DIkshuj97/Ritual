@@ -41,6 +41,7 @@ public class DialogueManager : MonoBehaviour {
 
 	IEnumerator StartingDialogue()
     {
+		SoundManager.ins.PlayScreamSound();
 		yield return new WaitForSeconds(1f);
 		dialogueTrigger.TriggerDialogue();
     }
