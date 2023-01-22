@@ -81,7 +81,7 @@ public class DialogueCinematic : MonoBehaviour
 		dialogueText.text = "";
 		foreach (char letter in sentence.ToCharArray())
 		{
-			
+			aS.Play();
 			//SoundManager.ins.PlayExtraAudio("DialogueType", aS);
 			dialogueText.text += letter;
 			yield return new WaitForSeconds(0.03f);
