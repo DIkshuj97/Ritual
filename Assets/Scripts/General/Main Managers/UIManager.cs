@@ -28,6 +28,7 @@ public class UIManager : MonoBehaviour
     public Sprite hidingOff;
     public GameObject SaveUI;
     public RectTransform minimapBorder;
+    public GameObject aim;
     private void Awake()
     {
         if (ins != null && ins != this)

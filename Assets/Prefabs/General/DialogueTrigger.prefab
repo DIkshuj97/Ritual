@@ -25,14 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8690329659220342731}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.2535047, z: 0, w: 0.9673342}
   m_LocalPosition: {x: 416.7, y: 15, z: -292.1}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 10, y: 10, z: 40}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8690329660331214489}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -29.37, z: 0}
 --- !u!65 &8690329659220342724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61,8 +61,7 @@ MonoBehaviour:
   dialogue:
     name: Ritual Place
     sentences:
-    - It looks like someone is in that big house
-    - I can feel something is not right over here, I feel a evil presence here
+    - That's the altar, the cultist was talking about. She must be around there.
 --- !u!1 &8690329660272015161
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,9 +123,7 @@ MonoBehaviour:
   dialogue:
     name: Praying Site
     sentences:
-    - Who are these people in cloaks they don't seem friendly at all
-    - It looks like they are praying
-    - There's a hut over there. I should look if she's in there
+    - Are they praying to these rocks in the middle?
 --- !u!1 &8690329660331214494
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,8 +220,7 @@ MonoBehaviour:
   dialogue:
     name: Strange House
     sentences:
-    - It looks like someone is in that big house
-    - I can feel something is not right over here, I feel a evil presence here
+    - I can feel something is not right over here, There is an evil presence.
 --- !u!1 &8690329660671453373
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,14 +247,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8690329660671453373}
-  m_LocalRotation: {x: 0.011574549, y: -0.16796988, z: 0.098581195, w: 0.9807823}
-  m_LocalPosition: {x: 372.8, y: 4.8, z: -309.3}
+  m_LocalRotation: {x: 0.03692442, y: 0.3855908, z: 0.08788266, w: 0.91773254}
+  m_LocalPosition: {x: 251.4, y: -0.8, z: -301.5}
   m_LocalScale: {x: 10, y: 5, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8690329660331214489}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 3.2, y: -19.13, z: 10.94}
+  m_LocalEulerAnglesHint: {x: 0, y: 45.58, z: 10.94}
 --- !u!65 &8690329660671453372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -270,8 +266,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 13.556671}
+  m_Center: {x: 0.0000095181085, y: -0.0000053167455, z: -1.8406212}
 --- !u!114 &8690329660671453374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,9 +281,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Scream
+    name: Screaming Sarah
     sentences:
-    - Screaming Sarah
+    - I'm coming Sarah, I won't let anything happen to you.
 --- !u!114 &8690329660671453369
 MonoBehaviour:
   m_ObjectHideFlags: 0

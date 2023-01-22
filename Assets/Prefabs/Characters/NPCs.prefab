@@ -1145,23 +1145,26 @@ MonoBehaviour:
     name: Strange Talk
     sentences:
     - "Cultist: Hey, who are you? you don't look like you're a cult member. What
-      are you doing over here? \r\n"
-    - 'Jake (Player): I''m Jake, me and my wife Sarah came here for hiking, she''s
-      lost I am trying to find her. But who are you and who are these people over
-      here?'
-    - 'Cultist: I see. I''m part of this forest cult and I have left the demonic
-      worship they do and I''m trying to convince others do that too'
-    - 'Cultist: I''ve seen a girl over here, they were taking her to sacrifice it
-      to the false gods, I tried to stop them but they would not listen'
+      are you doing over here? \n"
+    - 'Jake (Player): I''m Jake, I had a car accident. I was unconscious and woke
+      up from the scream of my wife. I am trying to find her but who are you and
+      who are these people?'
+    - 'Cultist:  I''m part of this forest cult and I have left the demonic worship
+      they do and I''m trying to convince others do that too'
+    - 'Jake (Player): What is happening here? '
+    - 'Cultist: It''s Full moon today, we do a sacrifice to keep the Ghoul asleep.
+      otherwise it will bring chaos to our village and destroy everything'
+    - 'Jake (Player): Have you seen my wife?'
+    - 'Cultist: I''ve seen someone, the cult members are going to sacrifice her to
+      the Ghoul, I tried to stop them but they would not listen '
+    - 'Jake (Player): WHERE?'
     - 'Cultist: You should go and follow this path behind me it''ll lead you to the
-      altar and maybe you could stop them'
-    - 'Cultist: After you save her, follow the path to the left from the ritual site
-      and if you don''t deviate, you will find a path to road
+      Altar and maybe you could stop them'
+    - 'Cultist: After you save her follow the path to the North. It''ll lead you
+      back to the road
 
 '
-    - 'Cultist: GOOD LUCK!!!'
-    - 'Jake (Player): Oh f**k, I''ll go right away, I must save her I can''t let
-      this happen'
+    - 'Jake (Player): Oh f**k!  I must save her, I''ll go right away.'
 --- !u!114 &1588885151676357898
 MonoBehaviour:
   m_ObjectHideFlags: 0

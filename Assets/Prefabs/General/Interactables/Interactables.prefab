@@ -454,8 +454,7 @@ MonoBehaviour:
   dialogue:
     name: Sarah's Hat
     sentences:
-    - Her hat is dropped here, did something happened to her?
-    - She may have crossed the river for some reason
+    - Oh no! That's her hat. Maybe,  I'm going in the right direction.
 --- !u!1 &263477682376577074
 GameObject:
   m_ObjectHideFlags: 0
@@ -11183,7 +11182,7 @@ MonoBehaviour:
   dialogue:
     name: Truck
     sentences:
-    - There must be some useful stuff in the truck I should look
+    - There must be some useful stuff in the truck, I should have a look.
 --- !u!4 &5232227329418884940 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 433736863412850863, guid: c8b0ee0e3965acf4b9c9abc1cf684d17,
@@ -11223,7 +11222,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824422697, guid: 33b0c7c5c82bc49428a8ca2281f3555e, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Brain Meal????
+      value: "Brain ??? \nI don't want to be here anymore, this is not normal at
+        all."
       objectReference: {fileID: 0}
     - target: {fileID: 1481581361109270, guid: 33b0c7c5c82bc49428a8ca2281f3555e, type: 3}
       propertyPath: m_Name
@@ -11294,7 +11294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 969884360, guid: 1ddaad2133ac5034c8cd8a584512788a, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: I think I should stay away from this creepy stuff and find Sarah
+      value: I should stay away from this creepy stuff and find Sarah.
       objectReference: {fileID: 0}
     - target: {fileID: 492779351726889105, guid: 1ddaad2133ac5034c8cd8a584512788a,
         type: 3}
@@ -11594,8 +11594,7 @@ PrefabInstance:
     - target: {fileID: 5921358947614890532, guid: 1856c9e1e13c1f44a995a49affd95bdd,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: What the f**k is this! These people are worshipping this creature I
-        think so
+      value: What the f**k is this! These people are worshipping this creature
       objectReference: {fileID: 0}
     - target: {fileID: 5921358947614890532, guid: 1856c9e1e13c1f44a995a49affd95bdd,
         type: 3}
@@ -11736,7 +11735,7 @@ PrefabInstance:
     - target: {fileID: 6897658895779343516, guid: 385c00b708a46a4448341e29c1e45ca5,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: What is this doll seems like something to do with black magic
+      value: What is this doll? Seems like something to do with black magic!
       objectReference: {fileID: 0}
     - target: {fileID: 6897658895779343516, guid: 385c00b708a46a4448341e29c1e45ca5,
         type: 3}

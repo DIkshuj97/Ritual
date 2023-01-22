@@ -2431,7 +2431,7 @@ Transform:
   m_GameObject: {fileID: 6811513991630432251}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6811513991701980051}
@@ -3426,7 +3426,6 @@ MonoBehaviour:
   dialogue:
     name: Flashlight
     sentences:
-    - ......
     - Oh this flashlight will help me see in the forest.
 --- !u!114 &8250116742703592974
 MonoBehaviour:
@@ -3591,11 +3590,12 @@ MonoBehaviour:
     name: Ritual
     sentences:
     - 'Jake (Player): NO! they have killed her. Why has this happened to me'
-    - 'Jake (Player): We should''ve never came to this place'
-    - 'Jake (Player): I shouldn''t have told her to get water it''s all my fault'
-    - 'Jake (Player): I will not be able to forgive myself for this'
-    - 'Praying Cultist: You have disturbed this ritual by entering this ritual site,
-      the gods have unleashed the ghoul you must also DIE to make this right.'
+    - 'Jake (Player): I couldn''t save her from these lunatics'
+    - 'Praying Cultist: **Angry**
+
+      What have you done? You have disturbed this
+      ritual by entering this site.'
+    - 'Praying Cultist: The Ghoul is awaken, now you must face the wrath of the Ghoul.'
 --- !u!114 &7062030019467277362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7964,6 +7964,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Campfire_FBX
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0fbfa4dd174b56340885954612707475,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fbfa4dd174b56340885954612707475, type: 3}
@@ -19186,6 +19191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tent 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9668ee2f4e96aa24c998c11ee243adbb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9668ee2f4e96aa24c998c11ee243adbb, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -24578,6 +24587,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 30f4d8764a7d95747b0360e8303cb34e, type: 3}
       propertyPath: m_Name
       value: Tent 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 30f4d8764a7d95747b0360e8303cb34e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30f4d8764a7d95747b0360e8303cb34e, type: 3}
       propertyPath: m_RootOrder

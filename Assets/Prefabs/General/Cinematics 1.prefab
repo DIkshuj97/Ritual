@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2841401377682779607}
   m_Layer: 0
-  m_Name: Cinematics 3
+  m_Name: 'Cinematics Cabin Creature '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,7 +485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2841401377863172321}
   m_Layer: 0
-  m_Name: Cinematics 6
+  m_Name: Cinematics Crawler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -637,7 +637,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2841401378057695147}
-  m_LocalRotation: {x: -0.004828044, y: 0.94435066, z: -0.013874609, w: -0.3286123}
+  m_LocalRotation: {x: -0.004828038, y: 0.94435066, z: -0.01387459, w: -0.3286123}
   m_LocalPosition: {x: 155.1, y: 102.15, z: 711.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -831,7 +831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2841401378249878527}
   m_Layer: 0
-  m_Name: Cinematics 4
+  m_Name: Cinematics Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1019,7 +1019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2841401378282739912}
   m_Layer: 0
-  m_Name: Cinematics 1
+  m_Name: Cinematics Enemy Into
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1253,7 +1253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2841401378557977836}
   m_Layer: 0
-  m_Name: Cinematics 2
+  m_Name: Cinematics First Cabin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2273,12 +2273,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5418448852393909895}
   m_Layer: 0
-  m_Name: Cinematics 7
+  m_Name: Cinematics Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5418448852393909895
 Transform:
   m_ObjectHideFlags: 0
@@ -2508,7 +2508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7003253338371745911}
   m_Layer: 0
-  m_Name: Cinematics 5
+  m_Name: Cinematics Ritual Place
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2721,7 +2721,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8079139375693629733}
-  m_LocalRotation: {x: -0.013638482, y: 0.020485591, z: 0.000279477, w: 0.9996971}
+  m_LocalRotation: {x: -0.013638508, y: 0.020485628, z: 0.00027947803, w: 0.9996971}
   m_LocalPosition: {x: 155.1, y: 102.15, z: 711.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2844,7 +2844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8079139376287988242}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Escape Route Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

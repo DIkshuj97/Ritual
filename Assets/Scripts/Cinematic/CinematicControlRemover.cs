@@ -27,6 +27,7 @@ public class CinematicControlRemover : MonoBehaviour
     }
     void DisableControl(PlayableDirector pd)
     {
+        UIManager.ins.aim.SetActive(false);
         GameManager.ins.dLight.SetActive(true);
         cinematicAnimator.SetBool("On",true);
         PlayerController.playerControl = false;
@@ -39,6 +40,7 @@ public class CinematicControlRemover : MonoBehaviour
 
     void EnableControl(PlayableDirector pd)
     {
+        UIManager.ins.aim.SetActive(true);
         GameManager.ins.dLight.SetActive(false);
         cinematicAnimator.SetBool("On",false);
         PlayerController.playerControl = true;

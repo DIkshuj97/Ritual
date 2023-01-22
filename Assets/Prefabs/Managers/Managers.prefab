@@ -655,6 +655,7 @@ MonoBehaviour:
   hidingOff: {fileID: 21300000, guid: 41481b50f0d170c46b7725319951f281, type: 3}
   SaveUI: {fileID: 0}
   minimapBorder: {fileID: 0}
+  aim: {fileID: 0}
 --- !u!114 &7178533307789635475
 MonoBehaviour:
   m_ObjectHideFlags: 0

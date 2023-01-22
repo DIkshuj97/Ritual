@@ -671,6 +671,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
         type: 3}
+      propertyPath: aim
+      value: 
+      objectReference: {fileID: 5710942413760693482}
+    - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
+        type: 3}
       propertyPath: SaveUI
       value: 
       objectReference: {fileID: 5710942413760693481}
@@ -1410,26 +1415,11 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 156518657}
-    - target: {fileID: 803498385918836578, guid: 77aac483da859d84394eaee58b1cca8c,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 803498385918836583, guid: 77aac483da859d84394eaee58b1cca8c,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.65
-      objectReference: {fileID: 0}
     - target: {fileID: 2010822782999236210, guid: 77aac483da859d84394eaee58b1cca8c,
         type: 3}
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 986225494}
-    - target: {fileID: 3199344338735979028, guid: 77aac483da859d84394eaee58b1cca8c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 190.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77aac483da859d84394eaee58b1cca8c, type: 3}
 --- !u!4 &1036175899095304134 stripped
@@ -1517,16 +1507,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1827559035424431960, guid: 159dddf51ef20c34fa403949f80fc372,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.234
-      objectReference: {fileID: 0}
-    - target: {fileID: 1827559037147381436, guid: 159dddf51ef20c34fa403949f80fc372,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.32
-      objectReference: {fileID: 0}
     - target: {fileID: 1827559037212604391, guid: 159dddf51ef20c34fa403949f80fc372,
         type: 3}
       propertyPath: m_Name
@@ -1814,26 +1794,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 251288909473991684, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 251288909473991684, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: Oh no! That's her hat. Maybe,  I'm going in the right direction.
-      objectReference: {fileID: 0}
-    - target: {fileID: 882797973850814391, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: What the f**k is this! These people are worshipping this creature
-      objectReference: {fileID: 0}
-    - target: {fileID: 3559043296313979895, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: What is this doll? Seems like something to do with black magic!
-      objectReference: {fileID: 0}
     - target: {fileID: 5663393533424418142, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
         type: 3}
       propertyPath: m_Name
@@ -1899,32 +1859,6 @@ PrefabInstance:
       propertyPath: flashLight
       value: 
       objectReference: {fileID: 3240646239763418069}
-    - target: {fileID: 5663393534106757114, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: There must be some useful stuff in the truck, I should have a look.
-      objectReference: {fileID: 0}
-    - target: {fileID: 5663393534446329252, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: I should stay away from this creepy stuff and find Sarah.
-      objectReference: {fileID: 0}
-    - target: {fileID: 5663393534446329255, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5663393534446329255, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: "Brain ??? \nI don't want to be here anymore, this is not normal at
-        all."
-      objectReference: {fileID: 0}
-    - target: {fileID: 5663393534446329255, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c034c18db6de2f4ba8a61fa469f14b0, type: 3}
 --- !u!114 &5707502096991525526 stripped
@@ -1986,16 +1920,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1520331953704923547, guid: 26ff16c43d5d9ca40be08273eeb8b116,
-        type: 3}
-      propertyPath: m_ReferencePixelsPerUnit
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1520331953704923548, guid: 26ff16c43d5d9ca40be08273eeb8b116,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1520331953704923549, guid: 26ff16c43d5d9ca40be08273eeb8b116,
         type: 3}
@@ -2117,6 +2041,12 @@ PrefabInstance:
 --- !u!1 &5710942413760693481 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3885621873415744729, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+    type: 3}
+  m_PrefabInstance: {fileID: 5710942413760693480}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5710942413760693482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1520331953752944351, guid: 26ff16c43d5d9ca40be08273eeb8b116,
     type: 3}
   m_PrefabInstance: {fileID: 5710942413760693480}
   m_PrefabAsset: {fileID: 0}
@@ -2265,76 +2195,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: "Cultist: Hey, who are you? you don't look like you're a cult member.
-        What are you doing over here? \n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
-      value: 'Jake (Player): I''m Jake, I had a car accident. I was unconscious and
-        woke up from the scream of my wife. I am trying to find her but who are you
-        and who are these people?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[2]
-      value: 'Cultist:  I''m part of this forest cult and I have left the demonic
-        worship they do and I''m trying to convince others do that too'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[3]
-      value: 'Jake (Player): What is happening here? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[4]
-      value: 'Cultist: It''s Full moon today, we do a sacrifice to keep the Ghoul
-        asleep. otherwise it will bring chaos to our village and destroy everything'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[5]
-      value: 'Jake (Player): Have you seen my wife?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[6]
-      value: 'Cultist: I''ve seen someone, the cult members are going to sacrifice
-        her to the Ghoul, I tried to stop them but they would not listen '
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[7]
-      value: 'Jake (Player): WHERE?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[8]
-      value: 'Cultist: You should go and follow this path behind me it''ll lead you
-        to the Altar and maybe you could stop them'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[9]
-      value: 'Cultist: After you save her follow the path to the North. It''ll lead
-        you back to the road
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588885151676357899, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[10]
-      value: 'Jake (Player): Oh f**k!  I must save her, I''ll go right away.'
-      objectReference: {fileID: 0}
     - target: {fileID: 6352391701685459370, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
         type: 3}
       propertyPath: m_Name
@@ -2410,11 +2270,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5928481155921076868, guid: 2a861e82d2302484fab8b321d4cee4f0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6811513990928104515, guid: 2a861e82d2302484fab8b321d4cee4f0,
         type: 3}
       propertyPath: m_Name
@@ -2475,55 +2330,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6811513991194172419, guid: 2a861e82d2302484fab8b321d4cee4f0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6811513991683736827, guid: 2a861e82d2302484fab8b321d4cee4f0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7062030019467277362, guid: 2a861e82d2302484fab8b321d4cee4f0,
         type: 3}
       propertyPath: cinematicTrigger
       value: 
       objectReference: {fileID: 5070528377712693193}
-    - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
-      value: 'Jake (Player): I couldn''t save her from these lunatics'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[2]
-      value: 'Praying Cultist: **Angry**
-
-        What have you done? You have disturbed
-        this ritual by entering this site.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[3]
-      value: 'Praying Cultist: The Ghoul is awaken, now you must face the wrath of
-        the Ghoul.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 8250116742703592975, guid: 2a861e82d2302484fab8b321d4cee4f0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8250116742703592975, guid: 2a861e82d2302484fab8b321d4cee4f0,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: Oh this flashlight will help me see in the forest.
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a861e82d2302484fab8b321d4cee4f0, type: 3}
 --- !u!1001 &7003253337748787732
@@ -2558,16 +2369,6 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1036175899095304134}
-    - target: {fileID: 2841401377682779604, guid: 38d64065750b6994187119566930adec,
-        type: 3}
-      propertyPath: m_Name
-      value: 'Cinematics Cabin Creature '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2841401377863172322, guid: 38d64065750b6994187119566930adec,
-        type: 3}
-      propertyPath: m_Name
-      value: Cinematics Crawler
-      objectReference: {fileID: 0}
     - target: {fileID: 2841401378057695144, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -2583,31 +2384,16 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 4382890258495597}
-    - target: {fileID: 2841401378249878524, guid: 38d64065750b6994187119566930adec,
-        type: 3}
-      propertyPath: m_Name
-      value: Cinematics Bridge
-      objectReference: {fileID: 0}
     - target: {fileID: 2841401378255513236, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 310692037}
-    - target: {fileID: 2841401378282739915, guid: 38d64065750b6994187119566930adec,
-        type: 3}
-      propertyPath: m_Name
-      value: Cinematics Enemy Into
-      objectReference: {fileID: 0}
     - target: {fileID: 2841401378368703394, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1036175900780137591}
-    - target: {fileID: 2841401378557977839, guid: 38d64065750b6994187119566930adec,
-        type: 3}
-      propertyPath: m_Name
-      value: Cinematics First Cabin
-      objectReference: {fileID: 0}
     - target: {fileID: 2841401378723101132, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_SceneBindings.Array.data[2].value
@@ -2651,12 +2437,12 @@ PrefabInstance:
     - target: {fileID: 3909402398699646925, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.039128464
+      value: 0.0391285
       objectReference: {fileID: 0}
     - target: {fileID: 3909402398699646925, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0064573977
+      value: 0.0064574033
       objectReference: {fileID: 0}
     - target: {fileID: 3909402399427797376, guid: 38d64065750b6994187119566930adec,
         type: 3}
@@ -2678,21 +2464,6 @@ PrefabInstance:
       propertyPath: cinematicAnimator
       value: 
       objectReference: {fileID: 1654115966}
-    - target: {fileID: 5418448852393909892, guid: 38d64065750b6994187119566930adec,
-        type: 3}
-      propertyPath: m_Name
-      value: Cinematics Road
-      objectReference: {fileID: 0}
-    - target: {fileID: 5418448852393909892, guid: 38d64065750b6994187119566930adec,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7003253338371745910, guid: 38d64065750b6994187119566930adec,
-        type: 3}
-      propertyPath: m_Name
-      value: Cinematics Ritual Place
-      objectReference: {fileID: 0}
     - target: {fileID: 8079139375683004885, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LookAt
@@ -2773,11 +2544,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8079139376287988243, guid: 38d64065750b6994187119566930adec,
-        type: 3}
-      propertyPath: m_Name
-      value: Escape Route Point
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d64065750b6994187119566930adec, type: 3}
 --- !u!1001 &7206077623418227392
@@ -2787,11 +2553,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2956161722506115282, guid: 3a847bcee6c7b2c49a644c684ce21c7b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7206077623334195240, guid: 3a847bcee6c7b2c49a644c684ce21c7b,
         type: 3}
       propertyPath: m_Name
@@ -2930,67 +2691,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8690329659220342725, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329659220342725, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: That's the altar, the cultist was talking about. She must be around
-        there.
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9673342
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.2535047
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -29.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329660272015163, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329660272015163, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: Are they praying to these rocks in the middle?
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329660272015163, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
-      value: There's a hut over there, better to look inside
-      objectReference: {fileID: 0}
     - target: {fileID: 8690329660331214489, guid: 36c3edaf1767c084b8a8214aac5f8df1,
         type: 3}
       propertyPath: m_RootOrder
@@ -3050,26 +2750,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329660462668767, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329660462668767, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: I can feel something is not right over here, There is an evil presence.
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329660671453374, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: dialogue.name
-      value: Screaming Sarah
-      objectReference: {fileID: 0}
-    - target: {fileID: 8690329660671453374, guid: 36c3edaf1767c084b8a8214aac5f8df1,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: I'm coming Sarah, I won't let anything happen to you.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36c3edaf1767c084b8a8214aac5f8df1, type: 3}
