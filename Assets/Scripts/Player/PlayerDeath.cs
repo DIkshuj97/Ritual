@@ -26,7 +26,7 @@ public class PlayerDeath : MonoBehaviour
     private void Update()
     {
 
-       //if (Input.GetKeyDown(KeyCode.G)) TriggerDeath();
+       if (Input.GetKeyDown(KeyCode.G)) TriggerDeath();
 
     }
 
