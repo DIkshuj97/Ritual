@@ -1812,7 +1812,7 @@ PrefabInstance:
     - target: {fileID: 251288909473991684, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Oh no! That's her hat. Maybe,  I'm going in the right direction
+      value: Oh no! That's her hat. Maybe,  I'm going in the right direction.
       objectReference: {fileID: 0}
     - target: {fileID: 882797973850814391, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
         type: 3}
@@ -1892,12 +1892,28 @@ PrefabInstance:
     - target: {fileID: 5663393534106757114, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: There must be some useful stuff in the truck, I should have a look
+      value: There must be some useful stuff in the truck, I should have a look.
       objectReference: {fileID: 0}
     - target: {fileID: 5663393534446329252, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: I should stay away from this creepy stuff and find Sarah.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663393534446329255, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663393534446329255, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Brain ??? \nI don't want to be here anymore, this is not normal at
+        all."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663393534446329255, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c034c18db6de2f4ba8a61fa469f14b0, type: 3}
@@ -2467,7 +2483,7 @@ PrefabInstance:
     - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
         type: 3}
@@ -2477,15 +2493,16 @@ PrefabInstance:
     - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: 'Praying Cultist: You have disturbed this ritual by entering this site,
-        the gods have unleashed the ghoul you must also be sacrificed to make this
-        right.'
+      value: 'Praying Cultist: **Angry**
+
+        What have you done? You have disturbed
+        this ritual by entering this site.'
       objectReference: {fileID: 0}
     - target: {fileID: 7062030019467277363, guid: 2a861e82d2302484fab8b321d4cee4f0,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
-      value: 'Praying Cultist: You have disturbed this ritual by entering this ritual
-        site, the gods have unleashed the ghoul you must also DIE to make this right.'
+      value: 'Praying Cultist: The Ghoul is awaken, now you must face the wrath of
+        the Ghoul.'
       objectReference: {fileID: 0}
     - target: {fileID: 8250116742703592975, guid: 2a861e82d2302484fab8b321d4cee4f0,
         type: 3}
@@ -2674,17 +2691,17 @@ PrefabInstance:
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.013638482
+      value: -0.013638508
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.020485591
+      value: 0.020485628
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375693629732, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000279477
+      value: 0.00027947803
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375709218972, guid: 38d64065750b6994187119566930adec,
         type: 3}
@@ -2903,6 +2920,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8690329659220342725, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329659220342725, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: That's the altar, the cultist was talking about. She must be around
+        there.
+      objectReference: {fileID: 0}
     - target: {fileID: 8690329659220342730, guid: 36c3edaf1767c084b8a8214aac5f8df1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3021,8 +3049,7 @@ PrefabInstance:
     - target: {fileID: 8690329660462668767, guid: 36c3edaf1767c084b8a8214aac5f8df1,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: I can feel something is not right over here, I feel a evil presence
-        here
+      value: I can feel something is not right over here, There is an evil presence.
       objectReference: {fileID: 0}
     - target: {fileID: 8690329660671453374, guid: 36c3edaf1767c084b8a8214aac5f8df1,
         type: 3}
@@ -3032,7 +3059,7 @@ PrefabInstance:
     - target: {fileID: 8690329660671453374, guid: 36c3edaf1767c084b8a8214aac5f8df1,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: I'm coming Sarah, I won't let anything happen to you
+      value: I'm coming Sarah, I won't let anything happen to you.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36c3edaf1767c084b8a8214aac5f8df1, type: 3}
