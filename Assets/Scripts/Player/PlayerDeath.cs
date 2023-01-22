@@ -42,7 +42,7 @@ public class PlayerDeath : MonoBehaviour
 
     public void TriggerDeath()
     {
-        SoundManager.ins.PlayExtraAudio("PlayerDeath", aS_2);
+        SoundManager.ins.PlayExtraAudio("PlayerDeath", aS);
         isAlive = false;
         anim.enabled = true;
         anim.SetTrigger("Death");

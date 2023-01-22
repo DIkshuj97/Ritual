@@ -16,7 +16,7 @@ public class CinematicTrigger : MonoBehaviour
         if (!alreadyTriggered && other.gameObject.tag == "Player")
         {
             SoundManager.ins.PlaySfx(clipName);
-            Debug.Log("Play");
+           
             GetComponent<PlayableDirector>().Play();
            
             alreadyTriggered = true;

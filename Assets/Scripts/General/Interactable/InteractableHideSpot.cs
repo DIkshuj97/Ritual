@@ -4,48 +4,43 @@ using UnityEngine;
 
 public class InteractableHideSpot : MonoBehaviour, IInteractable
 {
-    bool inside = false;
-    bool outside = true;
     [SerializeField] BoxCollider boxCollider;
 
     public void Interact()
     {
-        if (outside && !inside)
+        if (HideManager.outside  && !HideManager.inside)
         {
             GameManager.ins.dLight.SetActive(true);
             SoundManager.ins.PlayToiletIn();
-            outside = false;
-            inside = true;
+            HideManager.HideToggle(true);
             GameManager.ins.player.GetComponent<CharacterController>().enabled = false;
             boxCollider.isTrigger = true;
             Vector3 pos = new Vector3(transform.position.x, GameManager.ins.player.transform.position.y, transform.position.z);
-           
+
             GameManager.ins.player.transform.position = pos;
 
             PlayerController.isOnlyLook = true;
             boxCollider.isTrigger = false;
-           
+
             UIManager.ins.ChangeHideBushImage(true);
             StartCoroutine(EnableController());
         }
-        else if(inside && !outside)
+        else if (HideManager.inside && !HideManager.outside)
         {
             GameManager.ins.dLight.SetActive(false);
             SoundManager.ins.PlayToiletOut();
-            outside = true;
-            inside = false;
+            HideManager.HideToggle(false);
             boxCollider.isTrigger = true;
-            Vector3 dir = GameManager.ins.player.transform.TransformDirection(Vector3.forward*4);
+            Vector3 dir = GameManager.ins.player.transform.TransformDirection(Vector3.forward * 4);
             GameManager.ins.player.GetComponent<CharacterController>().Move(dir);
             PlayerController.isOnlyLook = false;
-           
-            //isHide = false;
             UIManager.ins.ChangeHideBushImage(false);
-            StartCoroutine(EnableTrigger());
+            StartCoroutine(DisableTrigger());
         }
         StartCoroutine(EnableInteract());
     }
-    IEnumerator EnableTrigger()
+
+    IEnumerator DisableTrigger()
     {
         yield return new WaitForSeconds(0.2f);
         boxCollider.isTrigger = false;

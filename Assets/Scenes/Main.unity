@@ -108,7 +108,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.52
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -116,7 +116,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.17333333
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -352,7 +352,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &551004574
 MonoBehaviour:
@@ -612,7 +612,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1452849551 stripped
 MonoBehaviour:
@@ -669,14 +669,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1640530226, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a, type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1640530226, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a, type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: Her scream came from that direction, God knows where is she?
-      objectReference: {fileID: 0}
     - target: {fileID: 941990876178393012, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
         type: 3}
       propertyPath: SaveUI
@@ -735,7 +727,7 @@ PrefabInstance:
     - target: {fileID: 941990876178393013, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 941990876178393013, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
         type: 3}
@@ -817,31 +809,6 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1520331953962243887}
-    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
-        type: 3}
-      propertyPath: extras.Array.size
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
-        type: 3}
-      propertyPath: extras.Array.data[17].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7dbf09baba40dd54b82f88280da9c589, type: 3}
-    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
-        type: 3}
-      propertyPath: extras.Array.data[17].name
-      value: ScreamStart
-      objectReference: {fileID: 0}
-    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
-        type: 3}
-      propertyPath: extras.Array.data[17].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 941990878095244554, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a,
-        type: 3}
-      propertyPath: extras.Array.data[17].volume
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56e2b2d938fbbdc42ab167ffad6dfb6a, type: 3}
 --- !u!114 &1793288818 stripped
@@ -900,7 +867,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1863387404
 MonoBehaviour:
@@ -961,7 +928,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2075582996
 GameObject:
@@ -1173,7 +1140,7 @@ RectTransform:
   m_Children:
   - {fileID: 71070007637532942}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1223,7 +1190,7 @@ PrefabInstance:
     - target: {fileID: 128498716290182942, guid: 2ab5e4cd41cb37d469c232313044bb15,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 128498716290182942, guid: 2ab5e4cd41cb37d469c232313044bb15,
         type: 3}
@@ -1297,7 +1264,7 @@ PrefabInstance:
     - target: {fileID: 7803024499347209186, guid: 0eea7dd5ba717dc4596649bcbe99a64f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7803024499347209186, guid: 0eea7dd5ba717dc4596649bcbe99a64f,
         type: 3}
@@ -1366,7 +1333,7 @@ PrefabInstance:
     - target: {fileID: 380455193359367538, guid: 77aac483da859d84394eaee58b1cca8c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 380455193359367538, guid: 77aac483da859d84394eaee58b1cca8c,
         type: 3}
@@ -1443,6 +1410,16 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 156518657}
+    - target: {fileID: 803498385918836578, guid: 77aac483da859d84394eaee58b1cca8c,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 803498385918836583, guid: 77aac483da859d84394eaee58b1cca8c,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.65
+      objectReference: {fileID: 0}
     - target: {fileID: 2010822782999236210, guid: 77aac483da859d84394eaee58b1cca8c,
         type: 3}
       propertyPath: patrolPath
@@ -1622,7 +1599,7 @@ PrefabInstance:
     - target: {fileID: 382557742103682160, guid: a4f9dcdf45c5f734bb8400b31b9d37df,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 382557742103682160, guid: a4f9dcdf45c5f734bb8400b31b9d37df,
         type: 3}
@@ -1749,7 +1726,7 @@ PrefabInstance:
     - target: {fileID: 4808083766259780833, guid: 84d94a695fdda394685a953bb33eb2d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4808083766259780833, guid: 84d94a695fdda394685a953bb33eb2d8,
         type: 3}
@@ -1837,6 +1814,16 @@ PrefabInstance:
       propertyPath: dialogue.sentences.Array.data[0]
       value: Oh no! That's her hat. Maybe,  I'm going in the right direction
       objectReference: {fileID: 0}
+    - target: {fileID: 882797973850814391, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: What the f**k is this! These people are worshipping this creature
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559043296313979895, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: What is this doll? Seems like something to do with black magic!
+      objectReference: {fileID: 0}
     - target: {fileID: 5663393533424418142, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
         type: 3}
       propertyPath: m_Name
@@ -1845,7 +1832,7 @@ PrefabInstance:
     - target: {fileID: 5663393533424418143, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5663393533424418143, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
         type: 3}
@@ -1902,6 +1889,16 @@ PrefabInstance:
       propertyPath: flashLight
       value: 
       objectReference: {fileID: 3240646239763418069}
+    - target: {fileID: 5663393534106757114, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: There must be some useful stuff in the truck, I should have a look
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663393534446329252, guid: 4c034c18db6de2f4ba8a61fa469f14b0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: I should stay away from this creepy stuff and find Sarah.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c034c18db6de2f4ba8a61fa469f14b0, type: 3}
 --- !u!114 &5707502096991525526 stripped
@@ -1969,6 +1966,11 @@ PrefabInstance:
       propertyPath: m_ReferencePixelsPerUnit
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 1520331953704923548, guid: 26ff16c43d5d9ca40be08273eeb8b116,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1520331953704923549, guid: 26ff16c43d5d9ca40be08273eeb8b116,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1982,7 +1984,7 @@ PrefabInstance:
     - target: {fileID: 1520331953704923549, guid: 26ff16c43d5d9ca40be08273eeb8b116,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1520331953704923549, guid: 26ff16c43d5d9ca40be08273eeb8b116,
         type: 3}
@@ -2102,7 +2104,7 @@ PrefabInstance:
     - target: {fileID: 6149327912325256385, guid: 4e6f49386d2cb2f43b7fcce190b6fa2d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6149327912325256385, guid: 4e6f49386d2cb2f43b7fcce190b6fa2d,
         type: 3}
@@ -2171,7 +2173,7 @@ PrefabInstance:
     - target: {fileID: 6221388612202558256, guid: 02ea776d7871d54499ffc537424f9869,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6221388612202558256, guid: 02ea776d7871d54499ffc537424f9869,
         type: 3}
@@ -2315,7 +2317,7 @@ PrefabInstance:
     - target: {fileID: 6352391701685459371, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6352391701685459371, guid: c9c7cdbbb9d7df347b0cc75e2d429c0a,
         type: 3}
@@ -2395,7 +2397,7 @@ PrefabInstance:
     - target: {fileID: 6811513990928104516, guid: 2a861e82d2302484fab8b321d4cee4f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6811513990928104516, guid: 2a861e82d2302484fab8b321d4cee4f0,
         type: 3}
@@ -2485,6 +2487,16 @@ PrefabInstance:
       value: 'Praying Cultist: You have disturbed this ritual by entering this ritual
         site, the gods have unleashed the ghoul you must also DIE to make this right.'
       objectReference: {fileID: 0}
+    - target: {fileID: 8250116742703592975, guid: 2a861e82d2302484fab8b321d4cee4f0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250116742703592975, guid: 2a861e82d2302484fab8b321d4cee4f0,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Oh this flashlight will help me see in the forest.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a861e82d2302484fab8b321d4cee4f0, type: 3}
 --- !u!1001 &7003253337748787732
@@ -2532,12 +2544,12 @@ PrefabInstance:
     - target: {fileID: 2841401378057695144, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.004828038
+      value: -0.004828044
       objectReference: {fileID: 0}
     - target: {fileID: 2841401378057695144, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.01387459
+      value: -0.013874609
       objectReference: {fileID: 0}
     - target: {fileID: 2841401378057695151, guid: 38d64065750b6994187119566930adec,
         type: 3}
@@ -2644,6 +2656,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cinematics Road
       objectReference: {fileID: 0}
+    - target: {fileID: 5418448852393909892, guid: 38d64065750b6994187119566930adec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7003253338371745910, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_Name
@@ -2677,7 +2694,7 @@ PrefabInstance:
     - target: {fileID: 8079139375709218975, guid: 38d64065750b6994187119566930adec,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8079139375709218975, guid: 38d64065750b6994187119566930adec,
         type: 3}
@@ -2743,6 +2760,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2956161722506115282, guid: 3a847bcee6c7b2c49a644c684ce21c7b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7206077623334195240, guid: 3a847bcee6c7b2c49a644c684ce21c7b,
         type: 3}
       propertyPath: m_Name
@@ -2916,6 +2938,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -29.37
       objectReference: {fileID: 0}
+    - target: {fileID: 8690329660272015163, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329660272015163, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Are they praying to these rocks in the middle?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329660272015163, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: There's a hut over there, better to look inside
+      objectReference: {fileID: 0}
     - target: {fileID: 8690329660331214489, guid: 36c3edaf1767c084b8a8214aac5f8df1,
         type: 3}
       propertyPath: m_RootOrder
@@ -2975,6 +3012,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329660462668767, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690329660462668767, guid: 36c3edaf1767c084b8a8214aac5f8df1,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: I can feel something is not right over here, I feel a evil presence
+        here
       objectReference: {fileID: 0}
     - target: {fileID: 8690329660671453374, guid: 36c3edaf1767c084b8a8214aac5f8df1,
         type: 3}

@@ -55,6 +55,12 @@ public class GameManager : MonoBehaviour
     public void Respawn()
     {
         player.transform.position = checkpointManager.GetActiveCheckPointPosition();
+        player.GetComponent<Hide>().isHide = false;
+        dLight.SetActive(false);
+        PlayerController.isOnlyLook = false;
+        
+        UIManager.ins.ChangeHideBushImage(false);
+        HideManager.HideToggle(false);
         playerDeath.RespawnAnim();
         fLightScript.SetLifeTime(80);
         

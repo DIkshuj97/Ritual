@@ -559,8 +559,7 @@ MonoBehaviour:
   dialogue:
     name: Jake
     sentences:
-    - Damn why hasn't she come back yet
-    - I better go and look out for her
+    - Her scream came from that direction, God knows where is she?
 --- !u!1 &941990876178393014
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,6 +573,7 @@ GameObject:
   - component: {fileID: 941990876178393012}
   - component: {fileID: 7178533307789635475}
   - component: {fileID: 941990878095244552}
+  - component: {fileID: 3080451014835135253}
   - component: {fileID: 941990878095244554}
   m_Layer: 0
   m_Name: Managers
@@ -684,6 +684,18 @@ MonoBehaviour:
   animator: {fileID: 0}
   aS: {fileID: 6240464086027174728}
   dialogueTrigger: {fileID: 1640530226}
+--- !u!114 &3080451014835135253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941990876178393014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29c3238142ee002489ee9417fd56b701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &941990878095244554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,6 +851,12 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Scream
     clip: {fileID: 8300000, guid: 3a257b886be042444813fccc0407dbf3, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ScreamStart
+    clip: {fileID: 8300000, guid: 7dbf09baba40dd54b82f88280da9c589, type: 3}
     volume: 0.1
     pitch: 1
     loop: 0

@@ -104,11 +104,13 @@ public class PlayerController : MonoBehaviour
 
             headBobScript.isWalking = (Mathf.Abs(characterController.velocity.x) > 0.1f || Mathf.Abs(characterController.velocity.z) > 0.1f) ? true : false;
 
-            if (canMove && headBobScript.isWalking && characterController.isGrounded && !isOnlyLook)
+            if (canMove && headBobScript.isWalking && characterController.isGrounded && !isOnlyLook )
             {
+                
                 walkAS.UnPause();
             } else
             {
+               
                 walkAS.Pause();
             }
            
@@ -127,7 +129,7 @@ public class PlayerController : MonoBehaviour
                heartBeatAS.Pause();
             }
 
-        }else if(!playerControl)
+        }else 
         {
             walkAS.Pause();
         }
