@@ -116,7 +116,7 @@ public class FlashlightAdvanced : MonoBehaviour
                 TutorialManager.ins.TutorialDeactivate();
                 isFirstTimeRecharge = false;
             }
-
+            canFlicker = false;
             batteries -= 1;
             lifetime += lifeAmount;
             flickLimit = lifetime / 100 * flickPercent;
