@@ -701,8 +701,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<size=100>Thanks For Playing...\nGHOUL - THE RITUAL </size>\n\nTeam\nIrtaza\nDikshu\nSarim\n\nSpecial
-    Thanks \nto \nPeter Bickhofe"
+  m_text: "<size=100>Thanks For Playing...\nGHOUL - THE RITUAL </size>\n\nTeam\nIrtaza
+    - Team Lead - Game Programmer - Game Designer\nDikshu - Game Programmer - Level
+    Designer\nSarim - Game Artist\n\nSpecial Thanks \nto \nPeter Bickhofe"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2032339f567bde146b32a51cb1425adf, type: 2}
   m_sharedMaterial: {fileID: 21694689038030200, guid: 2032339f567bde146b32a51cb1425adf,
